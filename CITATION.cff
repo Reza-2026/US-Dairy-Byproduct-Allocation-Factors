@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: 'If you use this dataset, please cite it as below.'
+title: 'Transparent and Harmonized Allocation Factors for Crop-Processing Byproducts'
+type: dataset
+year: 2026
+license: CC-BY-4.0
+authors:
+  - family-names: '[Author Last Name]'
+    given-names: '[First Initial]'
+    # Add additional authors as needed
+doi: '10.5281/zenodo.[XXXXXXX]'
