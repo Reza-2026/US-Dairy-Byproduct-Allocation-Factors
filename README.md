@@ -1,6 +1,6 @@
 # Crop Byproduct Allocation Factors for U.S. Dairy Rations: Methodology & Data
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI: 10.5281/zenodo.20631642.svg)](https://DOI: 10.5281/zenodo.20631642)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 This repository contains the comprehensive, line-by-line methodology documentation for calculating co-product allocation factors for **22 U.S. crop-processing systems**, yielding factors for **65 dairy-relevant co-products**. 
