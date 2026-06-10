@@ -64,6 +64,12 @@ Every file in this repository has undergone **line-by-line forensic fact-checkin
 For each co-product, we provide three dimensionless allocation factors:
 
 1. **Economic Allocation**: Partitions burden based on relative market value (revenue).
+*(Note: Navigate to the `/methodologies/` folder and click on any `.md` file to view the full mass-balance and allocation math for that specific system.)*
+
+## 📈 Allocation Methods Documented
+
+For each co-product, we provide three dimensionless allocation factors:
+1. **Economic Allocation**: Partitions burden based on relative market value (revenue). Highly sensitive to market volatility and US policy (e.g., the US Sugar Program).
 2. **Dry-Matter Mass Allocation**: Partitions burden based on the physical dry matter content of the co-products.
 3. **Gross Energy Allocation**: Partitions burden based on the gross energy content (MJ/kg DM) of the co-products.
 
@@ -72,6 +78,9 @@ Additionally, a **Cross-Method Divergence Index** is calculated for each co-prod
 ## How to Use This Data
 
 These allocation factors are **impact-category neutral** and designed to interface with any upstream crop life-cycle inventory (LCI) expressed per unit of parent input (e.g., per kg of rough rice, per kg of seed cotton, per kg of soybeans).
+## 📥 How to Use This Data
+
+These allocation factors are **impact-category neutral** and designed to interface with any upstream crop life-cycle inventory (LCI) expressed per unit of parent input (e.g., per kg of rough rice, per kg of seed cotton, per kg of soybeans). 
 
 To apply these factors:
 1. Identify the crop-processing system that matches your LCA system boundary.
@@ -83,6 +92,9 @@ To apply these factors:
 **LCA practitioners are responsible for selecting the pathway** (e.g., wet vs. dry pulp, solvent vs. expeller oil extraction, direct feed use vs. crushing) that matches their specific system boundary. For systems with dual pathways (e.g., Cottonseed used directly as feed vs. crushed for oil/meal), ensure you select the pathway that matches the physical reality of the supply chain you are modeling.
 
 ## How to Cite
+*For systems with dual pathways (e.g., Cottonseed used directly as feed vs. crushed for oil/meal), ensure you select the pathway that matches the physical reality of the supply chain you are modeling.*
+
+## 📝 Citation
 
 If you use this methodology database or the resulting allocation factors in your research, please cite both the repository and the main manuscript:
 
