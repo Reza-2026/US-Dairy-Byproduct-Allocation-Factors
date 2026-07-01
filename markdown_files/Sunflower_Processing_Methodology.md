@@ -1,6 +1,6 @@
 # Sunflower Crushing: Co-Product Allocation Methodology, Data Sources, and Calculations
 
-**Document Version:** 1.0   
+**Document Version:** 1   
 **Date:** June 2026  
 **Basis:** 1 metric ton (t) of sunflower seed at 9% moisture  
 **Price Period:** 2024–2025 average (unless otherwise noted)  
@@ -28,7 +28,7 @@
 |-----------|-------|--------|
 | **Parent crop** | Sunflower (*Helianthus annuus*, oil-type) | — |
 | **Input quantity** | 1 metric ton (1,000 kg) | — |
-| **Moisture content** | 9.0% | As stated in original table. The USDA standard moisture for sunflower is 10% for marketing and crop insurance; 9–10% is recommended for storage [^1^]. The 9% basis is at the low end of the standard range. |
+| **Moisture content** | 9.0% | The USDA standard moisture for sunflower is 10% for marketing and crop insurance; 9–10% is recommended for storage [^1^]. The 9% basis is at the low end of the standard range. |
 | **Dry matter (DM) input** | 0.910 t DM/t sunflower seed | Calculated: 1.000 × (1 − 0.09) = 0.910 |
 | **Bushel equivalent** | 73.5 bushels/t | 1,000 kg ÷ 13.608 kg/bu (30 lb at standard moisture) |
 | **Bushel weight** | 30 lb (13.608 kg) | Typical test weight for oil-type sunflower at 9% moisture. USDA No. 1 minimum test weight: 25 lb/bu per 7 CFR 810.1804. Typical commercial test weights range from 28–32 lb/bu (NSA 2025 Crop Quality Report: average 30.2 lb/bu). [^1^] |
