@@ -149,7 +149,7 @@ Barley is modeled as a 2-stage cascade, consistent with the economic and mass al
 | BSG (dried) | 95.7% × 21.0% | **20.1%** |
 | **Total** | | **100.0%** |
 
-¹ DM output from Barley_Processing_Methodology_v2.1.md
+¹ DM output from barley processing methodology document
 ² GE from this document (Section 9 and Section 10)
 
 ### 3.3 Three-Way Comparison (Cascade)
