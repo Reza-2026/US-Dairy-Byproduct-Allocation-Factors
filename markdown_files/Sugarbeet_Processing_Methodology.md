@@ -1,6 +1,6 @@
 # Sugar Beet Processing: Co-Product Allocation Methodology, Data Sources, and Calculations
 
-**Document Version:** 1.0 
+**Document Version:** 1
 **Date:** March 2026  
 **Basis:** 1 metric ton (t) of sugar beets at ~75% moisture (25% DM)  
 **Price Period:** 2024–2025 average (unless otherwise noted)  
