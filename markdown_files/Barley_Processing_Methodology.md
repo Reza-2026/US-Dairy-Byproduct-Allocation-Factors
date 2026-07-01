@@ -62,6 +62,16 @@
 | [^9^] | Tridge (2025). *Barley Malt Price in United States* | Industry/Market | https://dir.tridge.com/prices/barley-malt/US |
 | [^10^] | Briggs, D.E., Boulton, C.A., Brookes, P.A. & Stevens, R. (2004). *Brewing: Science and Practice*. Woodhead Publishing (now Elsevier). | Academic textbook | https://www.elsevier.com/books/brewing-science-and-practice/briggs/978-1-85573-906-1 |
 
+### 2.2 How Sources Were Used
+
+- **Yield data (malting):** Brewers Association [^2^] and Briggs et al. [^3^] provided malting yield data and malt loss factors (respiration, rootlet removal, steeping/screening losses).
+- **Yield data (brewing):** Mussatto et al. [^4^] provided brewers spent grain (BSG) yield and composition data. Briggs et al. [^10^] provided beer yield data from malt.
+- **Price data (malt):** USDA FAS [^7^] and IndexBox [^5^] provided barley and malt price data from global markets.
+- **Price data (beer):** Industry estimates and market data from IndexBox [^5^] informed brewery-gate bulk beer prices.
+- **Price data (BSG):** Thomas & Rahman [^8^] and Mussatto et al. [^4^] provided BSG price estimates for dried feed-grade material.
+- **Price data (malt sprouts):** Comparable feed ingredients (DDGS, corn gluten feed) informed malt sprouts pricing [^9^].
+- **DM contents:** Briggs et al. [^3^][^10^] provided malt and beer DM specifications. Mussatto et al. [^4^] provided BSG DM content.
+- **Bushel weight and grading:** USDA AMS/FGIS [^1^] provided barley grade standards and test weight requirements.
 ---
 
 ## 3. Process Description
