@@ -30,7 +30,7 @@
 |-----------|-------|--------|
 | **Parent crop** | Safflower (*Carthamus tinctorius*) | — |
 | **Input quantity** | 1 metric ton (1,000 kg) | — |
-| **Moisture content** | 9.0% | As stated in original table. The USDA standard moisture for safflower is 8% [^1^]; the 9% basis is within the typical harvest moisture range (8–10%) and is retained for continuity with prior versions. |
+| **Moisture content** | 9.0% | The typical harvest moisture range is 8–10%; the USDA standard moisture for safflower is 8% [^1^] |
 | **Dry matter (DM) input** | 0.910 t DM/t safflower seed | Calculated: 1.000 × (1 − 0.09) = 0.910 |
 | **Bushel equivalent** | 55.1 bushels/t | 1,000 kg ÷ 18.144 kg/bu (40 lb at typical test weight) |
 | **Bushel weight** | 40 lb (18.144 kg) | Typical test weight for commercial safflower. USDA FSA standard weight is 36 lb/bu; typical test weights range from 38–42 lb/bu depending on variety and hull content. [^1^] |
@@ -97,7 +97,7 @@ Safflower crushing involves the following steps:
 - **Safflower oil:** The primary high-value product (food, industrial, nutraceutical).
 - **Safflower meal (non-dehulled):** The primary high-volume co-product (ruminant animal feed, low-protein roughage).
 
-> **Why no separate hulls line:** Unlike sunflower (where dehulling is standard and produces a distinct hulls co-product), safflower is typically crushed WITHOUT dehulling. The thick hulls (30–50% of seed weight) remain with the meal, and the meal yield of 0.605 t/t reflects this non-dehulled configuration. If a specific crushing facility does dehull safflower, a hulls line would need to be added, meal yield would drop to ~0.40–0.45 t/t, meal protein would rise to ~35–42%, and meal price would increase accordingly. See Section 9.3.1 for the dehulled configuration comparison.
+> **Why no separate hulls line:** Unlike sunflower (where dehulling is standard and produces a distinct hulls co-product), safflower is typically crushed WITHOUT dehulling. The thick hulls (30–50% of seed weight) remain with the meal, and the meal yield of 0.605 t/t reflects this non-dehulled configuration. If a specific crushing facility does dehull safflower, a hulls line would need to be added, meal yield would drop to ~0.40–0.45 t/t, meal protein would rise to ~35–42%, and meal price would increase accordingly.
 
 ### 3.2 Process Flow
 
