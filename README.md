@@ -1,6 +1,5 @@
 # Crop Byproduct Allocation Factors for U.S. Dairy Rations: Methodology and Data
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20631642.svg)](https://doi.org/10.5281/zenodo.20631642)
 
 This repository contains methodology files and supporting code for calculating allocation factors for crop-processing co-products used in U.S. dairy rations.
 
@@ -117,10 +116,3 @@ If you use these materials, please cite the Zenodo record for this repository an
 
 This repository and its contents are licensed under the **Creative Commons Attribution 4.0 International License (CC-BY 4.0)**. You are free to share and adapt the material for any purpose, even commercially, as long as appropriate credit is given.
 
-## Contact
-
-For questions about the methodology or repository contents, please contact:
-
-**Reza Keshavarz Afshar**  
-rekeshavarz0@gmail.com  
-https://orcid.org/0000-0002-2379-948X
