@@ -77,7 +77,7 @@
 - **Price data (mill feed):** Feedipedia [^7^] and university extension feed reports [^8^] provided oat mill feed price data. Mill feed is a mid-value byproduct used in animal feed.
 - **DM contents and composition:** Feedipedia [^6^][^7^] and academic literature [^2^][^4^] for oat product composition data.
 
-> **Note on URL specificity (V4.0 addition):** References [^3^] (USDA NASS) and [^8^] (Univ. of MN Extension) currently link to organizational homepages rather than specific report pages. This is because specific annual NASS reports and extension PDFs rotate URLs with each publication cycle. Specific annual NASS Oats reports (e.g., "Crop Production" and "Agricultural Prices" summaries) and extension feed ingredient market reports were consulted; homepage URLs are provided for general navigation as specific report URLs are not persistent.
+> **Note on URL specificity:** References [^3^] (USDA NASS) and [^8^] (Univ. of MN Extension) currently link to organizational homepages rather than specific report pages. This is because specific annual NASS reports and extension PDFs rotate URLs with each publication cycle. Specific annual NASS Oats reports (e.g., "Crop Production" and "Agricultural Prices" summaries) and extension feed ingredient market reports were consulted; homepage URLs are provided for general navigation as specific report URLs are not persistent.
 
 ---
 
