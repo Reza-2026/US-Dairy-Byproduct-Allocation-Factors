@@ -18,7 +18,7 @@
 7. [Mass Balance Verification](#7-mass-balance-verification)
 8. [Complete Data Table](#8-complete-data-table)
 9. [Data Quality and Limitations](#9-data-quality-and-limitations)
-
+10. [System Boundary Assumption and Alternative Cascade Approach](#10-system-boundary-assumption-and-alternative-cascade-approach)
 
 ---
 
@@ -766,3 +766,31 @@ All values below are on a **per-tonne-of-seed-cotton basis** for consistency. St
 8. **Cottonseed oil as a byproduct vs. co-product:** In some economic frameworks, cottonseed oil is treated as a byproduct (with meal as the primary product) because the crushing decision is driven by meal demand rather than oil demand. This distinction affects the interpretation of economic allocation but does not change the calculation method. Under the co-product framework used in this review, all products with market value are treated equally.
 
 ---
+## 10. System Boundary Assumption and Alternative Cascade Approach
+
+### 10.1 Assumption: Single Integrated Processing Block
+
+This methodology models the entire cotton processing chain—ginning and cottonseed crushing—as a **single, integrated processing block**. The system boundary is defined at the point where seed cotton enters the gin and extends to the point where all final, marketable co-products exit the system (lint, oil, meal, hulls, and linters).
+
+Under this assumption, economic allocation is applied to the combined set of final co-products using their final market values (see Section 8). This results in a lint allocation of **73.1%** (economic) for the overall system burden.
+
+### 10.2 Alternative: Sequential Unit Process Boundary
+
+If the system were modeled as **two separate unit processes** (Ginning Process 1 and Crushing Process 2), the allocation would follow a different, cascade-based logic:
+
+- **Process 1 (Ginning):** The upstream ginning burden would be allocated between lint (final product) and whole cottonseed (intermediate product). Under ISO 14044, allocation at this divergence point would use the **market price of whole cottonseed** ($290/t) rather than the derived value of the crushed products. This would result in lint receiving approximately **77.7%** of the ginning burden.
+- **Process 2 (Crushing):** The seed’s share of the ginning burden (22.3%) would be cascaded into the crusher and then subdivided among oil, meal, hulls, and linters based on their relative Stage 2 revenues.
+
+The alternative sequential approach is methodologically valid for process-level LCA studies where ginning and crushing have distinct emission factors, energy sources, and waste streams (e.g., gin trash vs. hexane emissions).
+
+### 10.3 Justification for the Chosen Approach
+
+The **single integrated block** approach is selected as the primary methodology for this document because:
+
+1. **Vertically Integrated Supply Chain:** In practice, a significant portion of U.S. cottonseed moves directly from the gin to the crusher without entering the open market as a separate transaction, effectively acting as an internal transfer. Modeling the chain as a single block reflects this operational reality.
+
+2. **Avoids Arbitrary Intermediate Pricing:** Whole cottonseed spot prices are volatile and vary regionally based on dairy demand and crushing capacity. Using them to split upstream burdens would introduce unnecessary uncertainty and market dependency into the environmental allocation without improving the physical accuracy of the mass balance.
+
+3. **Final Products as the System Outputs:** The LCA practitioner's goal is typically to attribute environmental burden to the final products that leave the system boundary. Treating the entire processing chain as a single system ensures that all five final co-products are competing for the same total economic pie, providing a consistent and straightforward basis for allocation.
+
+> **Guidance for LCA Practitioners:** If your specific LCA model requires separate process modules for the gin and crusher (e.g., because you have process-specific emission factors), you should adopt the sequential cascade logic described in Section 10.2. The allocation factors for that alternative approach are provided for reference in the notes accompanying Section 8. However, for the purposes of this document and its primary data table, the single integrated block approach (lint at 73.1%) is the recommended default.
