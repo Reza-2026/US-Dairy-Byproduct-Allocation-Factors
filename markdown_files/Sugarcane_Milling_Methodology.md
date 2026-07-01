@@ -1,6 +1,6 @@
 # Sugarcane Milling: Co-Product Allocation Methodology, Data Sources, and Calculations
 
-**Document Version:** 1.0
+**Document Version:** 1
 **Date:** June 2026  
 **Basis:** 1 metric ton (t) of sugarcane at ~70% moisture (30% DM)  
 **Price Period:** 2024–2025 average (unless otherwise noted)  
