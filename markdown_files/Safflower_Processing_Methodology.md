@@ -30,25 +30,31 @@
 |-----------|-------|--------|
 | **Parent crop** | Safflower (*Carthamus tinctorius*) | — |
 | **Input quantity** | 1 metric ton (1,000 kg) | — |
-| **Moisture content** | 9.0% | The typical harvest moisture range is 8–10%; the USDA standard moisture for safflower is 8% [^1^] |
+| **Moisture content** | 9.0% | Safflower is **not** a grain for which official U.S. standards exist (7 CFR 810.101 lists barley, canola, corn, flaxseed, mixed grain, oats, rye, sorghum, soybeans, sunflower seed, triticale and wheat) [^1^], so there is no USDA standard moisture. Extension guidance across the U.S. growing area gives ≤8% for safe long-term storage [^10^][^11^][^12^]; harvest and delivery moisture typically runs 8–10%. The 9.0% basis used here is a representative trading moisture within that band. |
 | **Dry matter (DM) input** | 0.910 t DM/t safflower seed | Calculated: 1.000 × (1 − 0.09) = 0.910 |
-| **Bushel equivalent** | 55.1 bushels/t | 1,000 kg ÷ 18.144 kg/bu (40 lb at typical test weight) |
-| **Bushel weight** | 40 lb (18.144 kg) | Typical test weight for commercial safflower. USDA FSA standard weight is 36 lb/bu; typical test weights range from 38–42 lb/bu depending on variety and hull content. [^1^] |
-| **Typical oil content** | ~36% (dry matter basis) | Industry average for commercial safflower varieties. Range is approximately 25–45% DM depending on variety and environment. [^2^] |
+| **Bushel equivalent** | 58.0 bushels/t | 1,000 kg ÷ 17.237 kg/bu (38 lb/bu) |
+| **Bushel weight** | 38 lb (17.237 kg) | Conventional bushel weight for safflower [^12^] ("weighs about 38 lb/bushel"); Oregon State [^11^] treats 38 lb/bu or higher as premium quality. Measured test weights range roughly 36–42 lb/bu by variety and hull content [^10^]. There is no USDA grain standard for safflower [^1^]. |
+| **Typical oil content** | ~40% (as-is basis at 9% moisture), equivalent to ~44% (dry matter basis) | **U.S. commercial safflower.** Montana dryland trials report 37–42% seed oil content as a three-year average [^9^]; Montana State cultivar × water trials span 36.3–44.8% [^13^]. Oregon State [^11^] reports 32–52% across commercial varieties with the seed market demanding above 34%; NDSU [^10^] gives 30–50%. The ~40% as-is midpoint is used here. See the note below on why world-average figures are lower. |
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Point values are given to the precision the underlying sources support and are not intended to imply plant-level accuracy. Derived quantities (DM outputs, revenues, allocation percentages) are carried at four decimals internally and reported to one decimal place.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
-| 1 bushel safflower | ~40 lb ≈ 18.14 kg (at typical test weight) |
+| 1 bushel safflower | 38 lb = 17.237 kg (conventional bushel weight) |
 | 1 lb | 0.453592 kg = 0.000453592 t |
-| 1 t safflower seed | ~55.1 bushels (at 40 lb/bu) |
+| 1 t safflower seed | ~58.0 bushels (at 38 lb/bu) |
 | 1 short ton | 2,000 lb = 0.907185 metric ton |
 | 1 metric ton | 2,204.62 lb = 1.10231 short tons |
 
-> **Note on safflower varieties:** Two main types of safflower are grown commercially: **high-linoleic** (traditional, ~70–80% linoleic acid, used for edible oil and paint) and **high-oleic** (developed for stability, ~75–80% oleic acid, used for food and frying). Both types have similar oil content (~25–45% on a DM basis, with ~36% as a typical midpoint for commercial varieties) and yield similar amounts of oil and meal. The high-oleic variety typically commands a price premium. This table covers both types, with the price range capturing the difference.
+> **Note on safflower varieties:** Two main types of safflower are grown commercially: **high-linoleic** (traditional, ~70–80% linoleic acid, used for edible oil and paint) and **high-oleic** (developed for stability, ~75–80% oleic acid, used for food and frying). Both types have similar oil content and yield similar amounts of oil and meal. The high-oleic variety typically commands a price premium. This table covers both types, with the price range capturing the difference.
 
-> **Note on safflower vs. sunflower:** Although they are both oilseeds in the Asteraceae family, safflower and sunflower differ in several key respects. Safflower has **thicker hulls** (30–50% of seed weight vs. 20–30% for oil-type sunflower), lower oil content (~36% DM vs. ~42% DM for oil-type sunflower), and lower meal protein (~20–24% for non-dehulled vs. ~25–28% for non-dehulled sunflower meal). Safflower is also a much smaller crop globally, with less price transparency and market data. The thicker hull content of safflower is the primary reason non-dehulled safflower meal has lower protein than non-dehulled sunflower meal.
+> **Note on scope — U.S. safflower, not world-average safflower:** This document models **U.S. commercial safflower**, which is grown predominantly in Montana, together with North Dakota, California and neighbouring states. That matters for the seed parameters, because U.S. commercial germplasm is materially higher in oil and lower in hull than the world safflower population. Feedipedia's feed tables, compiled from worldwide seed accessions, give 28.3 ± 4.5% oil on a dry matter basis and a hull fraction of about 45% (range 33–60%) [^14^]; those figures are dominated by traditional thick-hulled types grown in India and elsewhere and are **not** representative of what U.S. crushers receive. Montana trials report 37–42% seed oil [^9^], and the U.S. seed market pays a premium for oil content above 34% [^11^]. Where this document quotes seed composition, it uses the U.S. figures; Feedipedia is used for meal and hull composition, where the two agree more closely.
+
+> **Note on safflower vs. sunflower:** Although both are oilseeds in the Asteraceae family, safflower and sunflower differ in several respects. Safflower has **thicker hulls** (~25–35% of seed weight for U.S. commercial varieties, against ~20–30% for oil-type sunflower) and **lower meal protein** (~22–25% for non-dehulled safflower meal against ~28–32% for non-dehulled sunflower meal), and it is a far smaller crop with much less price transparency. Seed oil content is closer than the hull difference suggests: U.S. safflower at ~44% DM against oil-type sunflower at ~46% DM. The decisive processing difference is that sunflower is routinely dehulled before extraction and safflower usually is not, which is why sunflower carries a separate hulls co-product in this work and safflower does not.
 
 ---
 
@@ -58,7 +64,7 @@
 
 | Citation | Full Title | Type | URL |
 |----------|-----------|------|-----|
-| [^1^] | USDA AMS (formerly GIPSA) — Grain Inspection Standards for Safflower (FGIS-9180.53) | Government (USDA) | https://www.ams.usda.gov/ |
+| [^1^] | USDA AMS. *Official United States Standards for Grain*, 7 CFR 810.101 — grains for which standards are established (safflower is not among them) | Government (USDA) | https://www.ecfr.gov/current/title-7/subtitle-B/chapter-VIII/subchapter-A/part-810 |
 | [^2^] | FAO. *Crop Information: Safflower* (water relations and agronomy); plus Eckey, E.W. (1992). *Minor Oil Crops* (FAO technical bulletin, includes safflower processing section) | International Organization | https://www.fao.org/land-water/databases-and-software/crop-information/safflower/en |
 | [^3^] | USDA ERS (August 2025). *Oil Crops Outlook* | Government (USDA) | https://ers.usda.gov/ |
 | [^4^] | USDA WASDE (February 2026). *World Agricultural Supply and Demand Estimates* | Government (USDA) | https://www.usda.gov/ |
@@ -66,13 +72,21 @@
 | [^6^] | IndexBox. *World: Safflower Seed — Market Report. Analysis and Forecast to 2025* | Industry/Market | https://www.indexbox.io/ |
 | [^7^] | Bergman, J.W. and Flynn, C.R. (2001). "High oleic safflower as a diesel fuel extender: A potential new market for Montana safflower." *5th International Safflower Conference Proceedings* | Academic (Conference) | — |
 | [^8^] | Tridge. *Safflower Meal Price (Global)* | Industry/Market | https://dir.tridge.com/prices/safflower-meal |
-| [^9^] | OECD-FAO (2025). *Agricultural Outlook 2025–2034: Oilseeds and Oilseed Products* (Chapter 3) | International Organization | https://www.oecd.org/ |
+| [^9^] | eXtension Farm Energy. *Safflower (Carthamus tinctorius L.) for Biofuel Production* — Montana dryland trial seed oil content and meal protein | University Extension | https://farm-energy.extension.org/safflower-carthamus-tinctorius-l-for-biofuel-production/ |
+| [^10^] | NDSU Extension. *Safflower Production* (A-870) | University Extension | https://www.ndsu.edu/agriculture/sites/default/files/2021-05/a870.pdf |
+| [^11^] | Oregon State University Extension. *Safflower* (EM 8792) | University Extension | https://extension.oregonstate.edu/sites/extd8/files/documents/em8792.pdf |
+| [^12^] | University of Wisconsin, Corn Agronomy. *Alternative Field Crops: Safflower* | University Extension | https://corn.agronomy.wisc.edu/Crops/Safflower.aspx |
+| [^13^] | Montana State University. *Fertilizer Facts FF14 — Safflower Seed Yield and Oil Content as Affected by Water and Nitrogen* | University Research | https://landresources.montana.edu/fertilizerfacts/documents/FF14SafflowerYieldNWater.pdf |
+| [^14^] | Feedipedia. *Safflower (Carthamus tinctorius) seeds and oil meal* (INRAE/CIRAD/AFZ/FAO) | Scientific Database | https://www.feedipedia.org/node/49 |
+| [^15^] | Saskatchewan Agriculture / Agriculture and Agri-Food Canada. *Safflower Production on the Canadian Prairies: revisited in 2004* | Government (Canada) | https://s3.wp.wsu.edu/uploads/sites/2171/2017/08/SafflowerProduction_Canada.pdf |
 
 ### 2.2 How Sources Were Used
 
 - **Yield data:** USDA ERS [^3^], FAO [^2^], and Bergman & Flynn [^7^] provided safflower crush yield data. The ranges reflect variation across extraction methods (expeller vs. solvent) and seed varieties.
 - **Price data (oil):** USDA ERS [^3^], WASDE [^4^], and Tridge [^5^] provided safflower oil price data. Safflower oil is a specialty oil with less price transparency than major vegetable oils.
 - **Price data (meal):** USDA ERS [^3^], Tridge [^8^], and IndexBox [^6^] provided safflower meal price data. Safflower meal is a niche product with limited markets.
+- **Seed composition (oil content, hull fraction):** U.S. extension and research sources were used in preference to world-average feed tables, because U.S. commercial safflower is higher in oil and lower in hull than the global seed population. Montana dryland trials [^9^] and Montana State cultivar trials [^13^] provided seed oil content; NDSU [^10^], Oregon State [^11^] and Wisconsin [^12^] provided corroborating ranges, test weight and storage moisture. Dehulled-kernel oil content, used to derive the hull fraction, comes from the Canadian Prairies review [^15^].
+- **Meal composition:** Meal protein for non-dehulled and dehulled safflower meal is consistent across [^9^][^10^][^11^][^12^][^15^] and Feedipedia [^14^].
 - **DM contents:** Industry trading specifications for safflower meal (max 12% moisture = min 88% DM) and oil (negligible moisture = ~100% DM).
 
 ---
@@ -84,7 +98,7 @@
 Safflower crushing involves the following steps:
 
 1. **Cleaning:** Foreign material (dirt, weed seeds, chaff) is removed.
-2. **Conditioning (optional dehulling):** Safflower seeds have **thick fibrous hulls representing 30–50% of seed weight** for traditional varieties (reduced-hull varieties exist at 15–25%). Unlike sunflower, most commercial safflower crushing does NOT dehull the seed before extraction. The hulls remain with the meal, producing non-dehulled meal with ~20–24% protein. Some specialty operations do dehull for higher-protein meal (~35–42% protein), but this is less common.
+2. **Conditioning (optional dehulling):** Safflower seeds have **thick fibrous hulls, about 25–35% of seed weight for U.S. commercial varieties** (see Section 4.1; traditional thick-hulled germplasm grown outside North America runs 40–50% [^14^]). Unlike sunflower, most commercial safflower crushing does NOT dehull the seed before extraction. The hulls remain with the meal, producing non-dehulled meal at ~22–25% protein [^9^][^11^][^12^][^15^]. Some specialty operations do dehull for higher-protein meal (~40% protein [^9^][^11^]), but this is less common.
 3. **Conditioning:** Seeds are heated to improve oil extractability.
 4. **Flaking:** Seeds are rolled into thin flakes to rupture cell walls and increase surface area.
 5. **Pressing (optional):** Some facilities use a mechanical screw press (expeller) to remove ~50–70% of the oil before solvent extraction.
@@ -97,7 +111,7 @@ Safflower crushing involves the following steps:
 - **Safflower oil:** The primary high-value product (food, industrial, nutraceutical).
 - **Safflower meal (non-dehulled):** The primary high-volume co-product (ruminant animal feed, low-protein roughage).
 
-> **Why no separate hulls line:** Unlike sunflower (where dehulling is standard and produces a distinct hulls co-product), safflower is typically crushed WITHOUT dehulling. The thick hulls (30–50% of seed weight) remain with the meal, and the meal yield of 0.605 t/t reflects this non-dehulled configuration. If a specific crushing facility does dehull safflower, a hulls line would need to be added, meal yield would drop to ~0.40–0.45 t/t, meal protein would rise to ~35–42%, and meal price would increase accordingly.
+> **Why no separate hulls line:** Unlike sunflower (where dehulling is standard and produces a distinct hulls co-product), safflower is typically crushed WITHOUT dehulling — the Canadian Prairies review notes that "most commercial safflower meal includes hulls" [^15^]. The hulls (~25–35% of seed weight) remain with the meal, and the meal yield of 0.605 t/t reflects this non-dehulled configuration. If a specific crushing facility does dehull safflower, a hulls line would need to be added, meal yield would drop to ~0.40–0.45 t/t, meal protein would rise to ~40% [^9^][^11^], and meal price would increase accordingly.
 
 ### 3.2 Process Flow
 
@@ -131,10 +145,22 @@ TWO CO-PRODUCTS from 1 t safflower seed:
 
 | Co-product | Yield (t/t safflower) | Range | Source & Calculation |
 |------------|----------------------|-------|---------------------|
-| **Safflower oil** | 0.375 | 0.35–0.40 | Industry standard for solvent extraction [^2^][^3^][^7^]. The 0.375 value is the exact mathematical midpoint of the range: (0.35 + 0.40) / 2 = 0.375. Yields vary with oil content (25–45% DM basis), extraction efficiency, and variety (high-linoleic vs. high-oleic). Expeller-only yields are ~0.28–0.33 t/t; solvent extraction achieves ~0.35–0.40 t/t. |
-| **Safflower meal (non-dehulled)** | 0.605 | 0.58–0.63 | Industry standard for non-dehulled, solvent-extracted meal [^2^][^7^]. The 0.605 value is the exact mathematical midpoint of the range: (0.58 + 0.63) / 2 = 0.605. This is also consistent with mass balance: 1.00 − 0.375 (oil) − 0.020 (losses) = 0.605. Meal yield is inversely related to oil yield: higher oil extraction means less meal. Non-dehulled meal includes hulls (30–50% of seed weight) and has ~20–24% protein. |
+| **Safflower oil** | 0.375 | 0.35–0.40 | Solvent extraction of U.S. commercial safflower [^2^][^3^][^7^]; reproduced from seed composition in the note below. Yields vary with seed oil content (37–42% as-is for Montana seed [^9^]), extraction efficiency, and variety. Expeller-only yields are ~0.28–0.33 t/t because 6–10% residual oil is left in the cake; solvent extraction achieves ~0.35–0.40 t/t at ~1% residual oil. |
+| **Safflower meal (non-dehulled)** | 0.605 | 0.58–0.63 | Derived as the residual of the as-is balance: 1.00 − 0.375 (oil) − 0.020 (losses) = 0.605, and consistent with reported yields for non-dehulled solvent-extracted meal [^2^][^7^]. Because the meal yield is the residual, the as-is balance in Section 7.3 closes by construction rather than by independent measurement; the dry-matter balance in Section 7.2 is the check that carries information. Meal yield is inversely related to oil yield: higher oil extraction means less meal. Non-dehulled meal includes the hulls (~25–35% of seed weight) and runs ~22–25% protein [^9^][^11^][^12^][^15^]. |
 
-> **Note on yield relationship:** Oil and meal yields are inversely related, as with all oilseeds. When more oil is extracted, less meal is produced. The values in this table (0.375 oil, 0.605 meal) sum to 0.98 t/t, consistent with ~2% processing losses. Both yield values are exact midpoints of their respective ranges, satisfying the midpoint rule.
+*Reconciling the oil yield with seed composition:* The oil yield can be derived from the seed itself, and doing so reproduces the adopted value. U.S. commercial safflower carries ~40% oil on an as-is basis at 9% moisture (Montana dryland trials: 37–42% [^9^]; Montana State cultivar trials: 36.3–44.8% [^13^]), so 1 t of seed contains about 0.40 t of oil. Commercial solvent extraction leaves roughly 1% residual oil in the meal, recovering ~93–96%.
+
+| Seed oil content (as-is) | Extraction recovery | Oil yield (t/t seed) |
+|---|---|---|
+| 37% | 93% | 0.344 |
+| **40%** | **94%** | **0.376** |
+| 42% | 96% | 0.403 |
+
+The adopted **0.375 t/t** and the stated range **0.35–0.40** both follow from this. Read in reverse, 0.375 t/t implies a seed oil content of 39.9% as-is (43.8% DM), which sits inside the Montana range.
+
+*Deriving the hull fraction:* Dehulled safflower kernel is relatively constant in oil content at 59–64% on a dry basis [^15^], so the hull fraction follows from seed oil content: at ~44% oil on a DM basis, the kernel is roughly 69–75% of the seed and the hull 25–31%. Across the U.S. seed oil range this gives a hull fraction of about **25–35%**, which is the figure used throughout this document. Feedipedia's ~45% hull [^14^] reflects worldwide germplasm, not U.S. commercial seed.
+
+> **Note on yield relationship:** Oil and meal yields are inversely related, as with all oilseeds. When more oil is extracted, less meal is produced. The values in this table (0.375 oil, 0.605 meal) sum to 0.98 t/t, consistent with ~2% processing losses.
 
 ### 4.2 Dry Matter Contents
 
@@ -160,8 +186,8 @@ TWO CO-PRODUCTS from 1 t safflower seed:
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Safflower oil** | 1,300 | 1,000–1,600 | USDA ERS [^3^]; WASDE [^4^]; Tridge [^5^] | 2024–2025 average. Safflower oil is a specialty oil commanding a premium over commodity vegetable oils. High-oleic varieties fetch higher prices ($1,400–1,800/t) than high-linoleic ($900–1,300/t). The midpoint of $1,300/t reflects a weighted average. Midpoint of range: ($1,000 + $1,600) / 2 = $1,300. |
-| **Safflower meal (non-dehulled)** | 150 | 100–200 | USDA ERS [^3^]; Tridge [^8^]; IndexBox [^6^] | 2024–2025 average. Safflower meal is a low-protein (~20–24%) feed ingredient, less valuable than sunflower or soybean meal. Used primarily in ruminant rations as a protein and fiber source. Limited price transparency due to small market. Midpoint of range: ($100 + $200) / 2 = $150. |
+| **Safflower oil** | 1,300 | 1,000–1,600 | USDA ERS [^3^]; WASDE [^4^]; Tridge [^5^] | 2024–2025 average. Safflower oil is a specialty oil commanding a premium over commodity vegetable oils. High-oleic varieties fetch higher prices ($1,400–1,800/t) than high-linoleic ($900–1,300/t). The midpoint of $1,300/t reflects a weighted average. |
+| **Safflower meal (non-dehulled)** | 150 | 100–200 | USDA ERS [^3^]; Tridge [^8^]; IndexBox [^6^] | 2024–2025 average. Safflower meal is a low-protein (~22–25%) feed ingredient, less valuable than sunflower or soybean meal. Used primarily in ruminant rations as a protein and fiber source. Limited price transparency due to small market. |
 
 ### 5.2 Price Verification
 
@@ -174,9 +200,7 @@ Tridge (2024-2025): safflower oil import/export prices ~$1,000-1,600/t
 IMARC Group (2025): USA safflower oil prices ~$1,399/t (Dec 2025 Q4)
 High-oleic premium: +$200-400/t above high-linoleic
 
-Selected midpoint: $1,300/t
-Mathematical midpoint of range ($1,000-1,600): $1,300/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $1,300/t, the midpoint of the $1,000–1,600 range
 ```
 
 **Safflower meal (non-dehulled):**
@@ -187,9 +211,7 @@ Tridge (2024): global safflower meal ~$200/t range
 Comparable feed ingredient prices: cottonseed meal ~$200-260/t;
   canola meal ~$180-240/t (both higher protein)
 
-Selected midpoint: $150/t
-Mathematical midpoint of range ($100-200): $150/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $150/t, the midpoint of the $100–200 range
 ```
 
 ### 5.3 Revenue per Tonne of Safflower Seed
@@ -285,7 +307,7 @@ The extreme difference reflects safflower oil's exceptionally high value-to-mass
 | Total co-product DM | **0.9074 t** | |
 | DM balance gap | −0.0026 t | −0.29% of input DM |
 
-> **Balance assessment:** The DM output is 0.0026 t (0.29%) below the DM input. This small deficit represents processing losses (handling, residual solvent, moisture adjustment) and is well within the acceptable range.
+> **Balance assessment:** The DM output is 0.0026 t (0.29%) below the DM input. Because the meal yield is derived as the as-is residual, the as-is balance closes automatically; this dry-matter check is the one that carries information, and it is satisfied independently — the meal DM implied by the residual yield (0.5324 t) is within 0.3% of the non-oil dry matter available in the seed (0.910 − 0.375 = 0.535 t). The small deficit is consistent with handling losses, residual solvent removal and moisture adjustment.
 
 ### 7.3 As-Is Mass Balance
 
@@ -297,7 +319,7 @@ The extreme difference reflects safflower oil's exceptionally high value-to-mass
 | Safflower meal | 0.605 t | — |
 | **Total output** | **0.980 t** | |
 | **Processing losses** | **0.020 t** | 2.0%: handling, moisture loss, fines |
-| **Balance** | **1.000 t** | ✓ Exact |
+| **Balance** | **1.000 t** | Closes by construction — the meal yield is set as 1.00 − oil − losses (Section 4.1) |
 
 ---
 
@@ -305,8 +327,8 @@ The extreme difference reflects safflower oil's exceptionally high value-to-mass
 
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t) | Revenue (USD/t) | Econ Alloc (%) | Mass Alloc (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|-------------|-------------|---------------|-------------|--------|-----------------|-----------------|----------------|----------------|
-| Safflower | Safflower crushing | Single | 36 lb/bu standard weight (USDA FSA) | 9% | 1 t safflower seed at 9% moisture | Safflower oil | 0.375 | 0.35–0.40 | 1,300 | 1,000–1,600 | 100.0 | 0.375 | 487.50 | 84.3 | 41.3 |
-| Safflower | Safflower crushing | Single | 36 lb/bu standard weight (USDA FSA) | 9% | 1 t safflower seed at 9% moisture | Safflower meal (non-dehulled) | 0.605 | 0.58–0.63 | 150 | 100–200 | 88.0 | 0.532 | 90.75 | 15.7 | 58.7 |
+| Safflower | Safflower crushing | Single | No USDA grain standard; 38 lb/bu conventional | 9% | 1 t safflower seed at 9% moisture | Safflower oil | 0.375 | 0.35–0.40 | 1,300 | 1,000–1,600 | 100.0 | 0.375 | 487.50 | 84.3 | 41.3 |
+| Safflower | Safflower crushing | Single | No USDA grain standard; 38 lb/bu conventional | 9% | 1 t safflower seed at 9% moisture | Safflower meal (non-dehulled) | 0.605 | 0.58–0.63 | 150 | 100–200 | 88.0 | 0.532 | 90.75 | 15.7 | 58.7 |
 
 > **Note on allocation rounding:** Raw economic allocations are 84.31% (oil) and 15.69% (meal), rounded to 84.3% and 15.7% to sum to exactly 100.0%. Raw mass allocations are 41.33% (oil) and 58.67% (meal), rounded to 41.3% and 58.7% to sum to exactly 100.0%.
 
@@ -317,20 +339,21 @@ The extreme difference reflects safflower oil's exceptionally high value-to-mass
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Oil yield (0.375 t/t) | **High** | Industry standard for solvent extraction; exact midpoint of verified range [^2^][^3^] |
-| Meal yield (0.605 t/t, non-dehulled) | **High** | Consistent with non-dehulled meal production; exact midpoint of range; mass-balance consistent [^7^] |
+| Seed oil content (~40% as-is) | **High** | Montana dryland trials 37–42% [^9^]; MSU cultivar trials 36.3–44.8% [^13^]; corroborated by [^10^][^11^] |
+| Oil yield (0.375 t/t) | **High** | Reproduced from seed oil content and extraction recovery (Section 4.1) [^2^][^3^][^9^] |
 | Oil DM% (100%) | **High** | Pure lipid with negligible moisture |
 | Meal DM% (88%) | **High** | Industry trading specification (max 12% moisture) |
-| Oil price ($1,300/t) | **Medium-High** | Consistent with 2024-2025 data from Tridge, IMARC Group, and USDA ERS |
+| Meal protein (~22–25%, non-dehulled) | **High** | Consistent across [^9^][^10^][^11^][^12^][^15^] and Feedipedia [^14^] |
+| Oil price ($1,300/t) | **Medium-High** | Consistent with 2024–2025 data from Tridge [^5^], IMARC Group, and USDA ERS [^3^] |
+| Meal yield (0.605 t/t, non-dehulled) | **Medium-High** | Derived as the as-is residual rather than measured independently; consistent with reported non-dehulled meal yields [^7^] |
 | Meal price ($150/t) | **Medium** | Small market with limited price transparency |
-| DM balance (0.29% gap) | **High** | Well within acceptable range |
 
 ### 9.2 Medium-Confidence Data
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Oil yield range (0.35–0.40) | **Medium** | Reflects high-oil varieties and solvent extraction; typical safflower may yield 0.32–0.35 t/t |
-| Meal yield range (0.58–0.63) | **Medium** | Inverse relationship with oil yield; actual values depend on extraction efficiency |
+| Oil yield range (0.35–0.40) | **Medium-High** | Brackets the yields implied by the Montana seed oil range at 93–96% extraction recovery (0.344–0.403, Section 4.1). Seed from outside the U.S., which is lower in oil, would yield less |
+| Meal yield range (0.58–0.63) | **Medium** | The inverse of the oil yield range; actual values depend on extraction efficiency and hull fraction |
 | Price ranges | **Medium** | Safflower has less market data than major oilseeds; ranges are estimated from limited sources |
 | Processing losses (2%) | **Medium** | Estimated from yield balance; not directly measured |
 
@@ -338,20 +361,20 @@ The extreme difference reflects safflower oil's exceptionally high value-to-mass
 
 1. **Non-dehulled configuration only:** This table represents non-dehulled safflower crushing (hulls mixed into meal). A dehulled configuration would produce:
    - Oil: ~0.37–0.40 t/t (slightly higher oil yield due to better extraction from dehulled kernels)
-   - Meal (dehulled): ~0.40–0.45 t/t at ~35–42% protein, priced ~$250–350/t
+   - Meal (dehulled): ~0.40–0.45 t/t at ~40% protein [^9^][^11^], priced ~$250–350/t
    - Hulls: ~0.18–0.22 t/t at ~88–90% DM, priced ~$60–100/t
    - The dehulled configuration changes allocations significantly, especially mass allocation (hulls would carry ~18–20% of DM).
 
-2. **Limited market data:** Safflower is a minor oilseed globally (~0.6 Mt/year production vs. ~60 Mt for sunflower). Price transparency is limited, and prices can be volatile due to thin markets. The price ranges are wider (relative to midpoint) than for major oilseeds to reflect this uncertainty.
+2. **Limited market data:** Safflower is a minor oilseed globally (~0.6 Mt/year production against ~60 Mt for sunflower), and the U.S. crop is smaller still. Price transparency is limited and prices can be volatile in thin markets. The price ranges are wider, relative to the adopted value, than for major oilseeds to reflect this. Prices are the least well-constrained parameters in this table — see limitation 3.
 
-3. **Economic allocation is very sensitive to oil price:** Safflower oil's high price ($1,300/t) and meal's low price ($150/t) mean the economic allocation is dominated by oil (84.3%). If oil drops to $1,000/t, oil's economic allocation drops to 80.9%. If meal price doubles to $300/t, oil's economic allocation drops to 72.3%. This sensitivity should be considered in LCA studies.
+3. **Economic allocation is sensitive to the oil-to-meal price ratio:** Safflower oil's high price ($1,300/t) against meal's low price ($150/t) means the economic allocation is dominated by oil (84.3%). If oil falls to $1,000/t, oil's economic allocation falls to **80.5%** ($375.00 ÷ $465.75). If the meal price doubles to $300/t, oil's economic allocation falls to **72.9%** ($487.50 ÷ $669.00). Both are larger movements than any plausible change in the yields, so studies sensitive to this crop should test the price assumption rather than the yield assumption.
 
 4. **Oil variety premium:** High-oleic safflower oil commands a significant premium over high-linoleic oil ($1,400–1,800/t vs. $900–1,300/t). The $1,300/t midpoint is a weighted average. Studies focused on a specific variety should use variety-specific pricing.
 
-5. **Meal protein content limitation:** Non-dehulled safflower meal at ~20–24% protein is less valuable than most other oilseed meals (sunflower ~25–28%, canola ~35–38%, soybean ~44–48%). This limits its use primarily to ruminant feed. If safflower meal is used for poultry or swine, it must be supplemented with higher-protein ingredients, which affects its effective value.
+5. **Meal protein content limitation:** Non-dehulled safflower meal at ~22–25% protein is less valuable than most other oilseed meals (sunflower ~28–32%, canola ~35–38%, soybean ~44–48%). This limits its use primarily to ruminant feed. If safflower meal is used for poultry or swine, it must be supplemented with higher-protein ingredients, which affects its effective value.
 
 6. **Regional variation:** Safflower is grown in semi-arid regions (US Northern Plains, India, Mexico, Argentina, Australia). Prices and yields vary by region due to variety differences, processing infrastructure, and local demand.
 
-7. **Hull content variation:** Traditional safflower varieties have hull content of 30–50% of seed weight. Specialized reduced-hull (partial hull) varieties have been developed with hull content of 15–25%. The 30–50% range used in this document applies to traditional varieties, which dominate commercial production. Reduced-hull varieties would have different meal yields and protein content.
+7. **Hull content and seed origin:** This document uses a hull fraction of ~25–35% of seed weight, derived in Section 4.1 from U.S. seed oil content and the 59–64% dehulled-kernel oil content reported for the Canadian Prairies [^15^]. Traditional thick-hulled germplasm grown outside North America carries substantially more hull — Feedipedia gives about 45%, range 33–60%, across worldwide accessions, with a corresponding seed oil content of 28.3 ± 4.5% DM [^14^]. Applying this table to non-U.S. safflower would therefore overstate the oil yield and understate the meal yield; the seed composition should be re-derived for that case.
 
 ---

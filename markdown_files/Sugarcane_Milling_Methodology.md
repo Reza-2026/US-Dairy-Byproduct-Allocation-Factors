@@ -1,6 +1,6 @@
 # Sugarcane Milling: Co-Product Allocation Methodology, Data Sources, and Calculations
 
-**Document Version:** 1
+**Document Version:** 1.0
 **Date:** June 2026  
 **Basis:** 1 metric ton (t) of sugarcane at ~70% moisture (30% DM)  
 **Price Period:** 2024–2025 average (unless otherwise noted)  
@@ -33,7 +33,11 @@
 | **Typical fiber content** | ~11–14% (on a cane weight basis) | Industry average [^5^]; fiber content affects bagasse yield and mill extraction efficiency |
 | **Growing regions** | Primarily Florida (Lake Okeechobee area), Louisiana (southern), and Texas (Rio Grande Valley) | US sugarcane production is concentrated in these three states [^3^]. Hawaii was historically a major producer but its last sugar mill closed in 2016. |
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Point values are given to the precision the underlying sources support. Derived quantities (DM outputs, revenues, allocation percentages) are carried at four decimals internally and reported to one decimal place. This document is self-contained: all reconciliations are internal to sugarcane milling and no comparison is made to other crop processing systems.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -45,7 +49,7 @@
 
 > **Note on sugarcane definition:** "Sugarcane" refers to the whole sugarcane stalk (cane) as delivered to the sugar mill. The stalks are typically cut into 20–30 cm billets during mechanical harvesting. Leaf material (trash) is mostly removed in the field by the harvester, though some trash (typically 5–15% of delivered cane weight) remains in the billeted cane. Mills may include a cleaning station to remove field trash before milling. The clean cane is the input to the processing system modeled here.
 
-> **Note on raw sugar vs. refined sugar:** This document models the production of **raw cane sugar** (typically 96–99° pol, ~97–99% sucrose), which is the primary product of sugarcane milling. Raw sugar may be further refined at a separate refinery to produce white refined sugar, but the refining stage is not included in this system boundary. The $600/t price is for raw sugar under the US Sugar Program, which is lower than refined sugar (~$900/t) because it retains a thin molasses film and requires further processing for use in most food applications.
+> **Note on raw sugar vs. refined sugar:** This document models the production of **raw cane sugar** (typically 96–99° pol, ~97–99% sucrose), which is the primary product of sugarcane milling. Raw sugar may be further refined at a separate refinery to produce white refined sugar, but the refining stage is outside this system boundary. Raw sugar trades below refined sugar because it retains a thin film of residual molasses and requires further purification for most food applications; the price adopted here is for raw sugar at the mill.
 
 ---
 
@@ -82,7 +86,7 @@ Sugarcane milling is an integrated, single-stage system that converts whole suga
 **Processing steps:**
 
 1. **Cane preparation:** Billeted cane is shredded by rotating knives and/or heavy-duty shredders (hammer mills) to break the cane into a fibrous mat that maximizes juice extraction efficiency.
-2. **Juice extraction (milling or diffusion):** The prepared cane passes through a series of three-roller mills (typically 4–6 mills in tandem) that crush the cane and extract the juice. Alternatively, some factories use a diffuser (similar to sugar beet processing) for extraction. The extraction efficiency of a modern milling tandem is typically 94–97%. The fibrous residue after juice extraction is **bagasse**.
+2. **Juice extraction (milling or diffusion):** The prepared cane passes through a series of three-roller mills (typically 4–6 mills in tandem) that crush the cane and extract the juice. Alternatively, some factories use a diffuser rather than a milling tandem for extraction. The extraction efficiency of a modern milling tandem is typically 94–97%. The fibrous residue after juice extraction is **bagasse**.
 3. **Bagasse handling:** Bagasse (~45–55% moisture) is conveyed to the boiler house where it is burned to generate steam and electricity for the mill. Most sugarcane mills are energy self-sufficient, using only bagasse as fuel. Surplus electricity (if any) may be sold to the grid. Bagasse is not modeled as a marketed co-product in this document because it is consumed internally for process energy and does not leave the system boundary as a tradable product.
 4. **Juice clarification:** The extracted juice (mixed juice) is heated, treated with lime (CaO) and flocculant, and settled to remove impurities (soil, fiber, proteins, waxes). The clear juice is decanted from the settled mud. The mud is filtered to recover additional juice (filter press), and the filter cake (press mud) is returned to the fields as a soil amendment.
 5. **Evaporation:** The clarified juice is concentrated in multiple-effect evaporators from ~12–15° Brix to ~55–65° Brix syrup.
@@ -154,6 +158,16 @@ ALLOCATION (single stage, marketed co-products only, US Domestic):
 | **Raw sugar** | 0.11 | 0.10–0.12 | Midpoint of range. Industry average for US sugarcane mills with modern extraction technology [^1^][^5^]. The 0.11 value is the mathematical midpoint of the stated range. Sugar yield depends on cane sugar content (typically 12–15% sucrose on a cane weight basis), mill extraction efficiency (94–97%), and crystallization recovery. Florida mills, which process higher-sugar cane, tend to achieve yields at the upper end of the range. Louisiana mills, processing cane with lower sugar content and higher fiber, tend to achieve yields at the lower end. |
 | **Cane molasses** | 0.0425 | 0.035–0.05 | Midpoint of range. Represents the final (blackstrap) molasses from the C-strike crystallization stage [^5^][^7^]. The 0.0425 value is the mathematical midpoint of the stated range: (0.035 + 0.05) / 2 = 0.0425. Molasses yield depends on the non-sugar content of the cane juice (higher impurities → more molasses), the number of crystallization stages, and whether additional sugar recovery from molasses is practiced. |
 
+*Reconciling the sugar yield with cane sucrose content:* The adopted sugar yield can be checked against the sucrose present in the cane. US sugarcane carries 12–15% sucrose on a cane-weight basis (Section 1.1), so 1 t of cane contains 0.120–0.150 t of sucrose. Raw sugar at ~98° pol accounts for 0.11 × 0.98 ≈ 0.108 t, and the final molasses carries a further ~0.021 t (0.0425 t at roughly 50% total sugars).
+
+| Cane sucrose | Sucrose present | In raw sugar | In molasses | Residual |
+|---|---|---|---|---|
+| 12% | 0.120 t | 0.108 t | 0.021 t | −0.009 t |
+| 13.5% | 0.135 t | 0.108 t | 0.021 t | +0.006 t |
+| 15% | 0.150 t | 0.108 t | 0.021 t | +0.021 t |
+
+Across the range the sucrose balance closes to within roughly 1–2% of cane weight, the residual being sugar left in bagasse and filter cake, inversion during heating, and deterioration between harvest and milling. This is an independent check on the 0.11 t/t yield rather than a derivation of it.
+
 > **Note on yield relationships:** Sugar and molasses yields are inversely related — more efficient sugar extraction (more crystallization stages, or additional recovery from molasses) reduces molasses yield and increases sugar yield. The two marketed co-products (raw sugar + cane molasses) sum to 0.1525 t/t (as-is), meaning only ~15% of the cane mass leaves as marketed products. The majority of the cane mass becomes bagasse (~0.27 t), water removed during processing (~0.537 t), and minor by-products (filter cake, boiler ash).
 
 ### 4.2 Dry Matter Contents
@@ -161,7 +175,7 @@ ALLOCATION (single stage, marketed co-products only, US Domestic):
 | Co-product | DM (%) | Basis |
 |------------|--------|-------|
 | Raw sugar | 100.0% | Raw cane sugar is essentially pure dry solid with negligible moisture (~0.5–1.0% moisture). The 100% DM value is standard for LCA allocation purposes; the <1% moisture content is negligible for mass balance calculations. |
-| Cane molasses | 75.0% | Cane molasses (blackstrap) typically contains 73–80% total solids (20–27% moisture). The 75% DM value represents standard-density blackstrap molasses as produced at the crystallization stage [^5^][^7^]. Cane molasses has lower sugar content than beet molasses (~55% total sugars vs. ~60%) but higher mineral content. |
+| Cane molasses | 75.0% | Blackstrap cane molasses typically contains 73–80% total solids (20–27% moisture); the adopted 75% represents standard-density blackstrap as produced at the crystallization stage [^5^][^7^]. Total sugars are roughly 50–55% of the as-is weight, the balance of the solids being organic acids, minerals and colour bodies. |
 
 ### 4.3 DM Output per Tonne
 
@@ -182,7 +196,7 @@ ALLOCATION (single stage, marketed co-products only, US Domestic):
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
 | **Raw sugar** | 600 | 450–750 | USDA ERS [^1^]; USDA FSA [^8^]; CRS [^4^] | 2024–2025 average for US domestic raw cane sugar (bulk, FOB mill). Equivalent to ~$0.27/lb. US sugar prices are supported by the US sugar program (tariff-rate quotas, price support loans, marketing allotments), which keeps domestic prices well above world market levels [^4^]. Midpoint of range: ($450 + $750) / 2 = $600. |
-| **Cane molasses** | 180 | 130–230 | USDA ERS [^1^]; USDA FSA [^8^]; industry estimates | 2024–2025 average for blackstrap cane molasses (75–78% DM). Prices vary with sugar content, regional demand from feedlots and fermentation industries, and competing molasses sources. Cane molasses used for rum or ethanol fermentation typically commands a premium over feed-grade molasses. Midpoint of range: ($130 + $230) / 2 = $180. |
+| **Cane molasses** | 180 | 130–230 | USDA ERS [^1^]; USDA FSA [^8^]; industry estimates | 2024–2025 average for blackstrap cane molasses (73–80% DM). Prices vary with sugar content, regional demand from feedlots and fermentation industries, and competing molasses sources. Cane molasses used for rum or ethanol fermentation typically commands a premium over feed-grade molasses. Midpoint of range: ($130 + $230) / 2 = $180. |
 
 ### 5.2 Price Verification
 
@@ -194,9 +208,7 @@ USDA FSA (2025): loan rate ~$0.1975/lb; effective market ~$0.25-0.38/lb = $551-8
 World raw sugar price (2025): ~$0.18-0.28/lb = $400-617/t
 Historical range (2020-2025): $0.18-0.38/lb = $400-838/t
 
-Selected midpoint: $600/t
-Mathematical midpoint of range ($450-750): $600/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $600/t, the midpoint of the $450-750 range.
 
 Note: The US domestic raw sugar price (~$600/t) is substantially above the
 world market price (~$400-500/t) due to the US Sugar Program, which provides
@@ -213,9 +225,7 @@ Feed-grade molasses: ~$130-180/t
 Fermentation-grade molasses: ~$160-240/t
 Blended estimate across end uses: ~$130-230/t
 
-Selected midpoint: $180/t
-Mathematical midpoint of range ($130-230): $180/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $180/t, the midpoint of the $130-230 range.
 ```
 
 ### 5.3 Revenue per Tonne
@@ -226,7 +236,27 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 | **Cane molasses** | 0.0425 × 180 | **$7.65** |
 | **Total** | | **$73.65** |
 
-> **Note on revenue distribution:** Raw sugar accounts for 89.6% of total revenue, making it the dominant product economically. Cane molasses contributes only 10.4% of revenue. This extreme economic concentration in the primary product is characteristic of sugar production from both sugarcane and sugar beet, and is similar to other high-value/low-volume primary products (e.g., oil from oilseeds, juice from citrus). The total revenue per tonne of sugarcane ($73.65) is lower than for sugar beet, reflecting sugarcane's lower sugar yield (0.11 vs. 0.150 t/t) and the difference between raw sugar ($600/t) and refined beet sugar ($900/t) prices.
+> **Note on revenue distribution:** Raw sugar accounts for 89.6% of total revenue and cane molasses for 10.4%. Almost all of the economic value of the mill leaves in the sugar stream, even though sugar carries only about three-quarters of the marketed dry matter.
+
+> **Note on price level versus price ratio — why the absolute prices matter less than they appear to:** Economic allocation is a ratio, so it is unaffected by scaling all prices by the same factor. If raw sugar and cane molasses are both quoted higher, the allocation does not move:
+>
+> | Raw sugar | Cane molasses | Price ratio | Economic allocation |
+> |---|---|---|---|
+> | $600/t | $180/t | 3.33 | 89.6% / 10.4% |
+> | $817/t | $245/t | 3.33 | 89.6% / 10.4% |
+> | $950/t | $285/t | 3.33 | 89.6% / 10.4% |
+>
+> What the allocation actually depends on is the **ratio** between the two prices. Sugar and molasses prices move together, because molasses is itself a sugar-bearing stream whose value tracks the sugar market; the prices adopted here are a coherent pair from the same period rather than independent estimates. The sensitivity that matters is therefore to the ratio, not the level:
+>
+> | Price ratio (sugar ÷ molasses) | Raw sugar | Cane molasses |
+> |---|---|---|
+> | 2.5 | 86.6% | 13.4% |
+> | 3.0 | 88.6% | 11.4% |
+> | **3.33 (adopted)** | **89.6%** | **10.4%** |
+> | 4.0 | 91.2% | 8.8% |
+> | 5.0 | 92.8% | 7.2% |
+>
+> Across a ratio range of 2.5 to 5.0 — wider than these two markets have diverged — the sugar allocation moves by about 6 percentage points. Users applying this table in a period when the sugar-to-molasses ratio differs materially from 3.3 should scale accordingly.
 
 ---
 
@@ -252,7 +282,7 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 
 > **Rounding note:** The exact mass allocation percentages are Raw sugar 77.52% and Cane molasses 22.48%. When rounded to one decimal place, these become 77.5% and 22.5%, summing to 100.0%.
 
-> **Note on mass allocation basis:** Mass allocation is calculated among the marketed co-products only (raw sugar and cane molasses). Bagasse, which carries ~0.135 t DM/t sugarcane (45.0% of total DM output), is excluded because it is not a marketed co-product. If bagasse were included as a co-product, the mass allocation would shift dramatically: raw sugar would drop to ~39.7%, bagasse would receive ~48.8%, and molasses would drop to ~11.5%. See Section 9.1 for a discussion of this issue.
+> **Note on mass allocation basis:** Mass allocation is calculated among the marketed co-products only (raw sugar and cane molasses). Bagasse, which carries ~0.135 t DM/t sugarcane — 45.0% of the cane's dry matter input — is excluded because it is not a marketed co-product. If bagasse were included as a co-product, the mass allocation would shift dramatically: raw sugar would drop to ~39.7%, bagasse would receive ~48.8%, and molasses would drop to ~11.5%. See Section 9.1 for a discussion of this issue.
 
 ### 6.3 Comparison (US Domestic)
 
@@ -263,8 +293,6 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 
 The 12.1 pp difference for raw sugar reflects its high value-to-mass ratio. Raw sugar commands $600/t (3.3× the molasses price) and carries 100% DM, but it represents only 77.5% of the marketed co-product DM. Under economic allocation, sugar's high price per tonne amplifies its share of the environmental burden relative to its mass share. Conversely, molasses carries 22.5% of the marketed DM but only 10.4% of the economic value, because molasses is a lower-value product ($180/t) with significant water content (25% moisture).
 
-The allocation divergence for sugarcane (12.1 pp) is moderate compared to other crops in this review. It is lower than the divergences for safflower oil (43.2 pp), citrus juice (43.1 pp), and cotton lint (34.6 pp in cascade), but slightly higher than for soybean meal (7.5 pp). This reflects raw sugar's position as a high-value product that also carries a large share of the marketed DM — unlike cotton lint, which is high-value but low-DM, or soybean meal, which is moderate-value and moderate-DM.
-
 ### 6.4 World Market Scenario
 
 The US Domestic allocation in Sections 6.1–6.3 uses the US domestic sugar price (~$600/t), which is supported by the US Sugar Program (tariff-rate quotas, price support loans, and marketing allotments) [^4^]. For LCA studies conducted in international contexts — or for studies that wish to avoid the distortion of domestic price support programs — a World Market price scenario is provided below using a representative world raw sugar price of $400/t.
@@ -273,7 +301,7 @@ The US Domestic allocation in Sections 6.1–6.3 uses the US domestic sugar pric
 
 | Co-product | Price (USD/t) | Source | Notes |
 |------------|--------------|--------|-------|
-| Refined sugar | 400 | World market (ICE No. 11 futures, 2024–2025 average) | Representative world raw sugar price. The world raw sugar price is substantially below the US domestic price due to the absence of price support mechanisms. |
+| Raw sugar | 400 | World market (ICE No. 11 raw sugar futures, 2024–2025) | Representative world raw sugar price, substantially below the US domestic level because no price support applies. |
 | Cane molasses | 180 | Unchanged | Molasses price is driven by feed/fermentation demand, not directly by the sugar program. |
 
 **World Market Revenue per Tonne:**
@@ -322,7 +350,7 @@ Under the World Market scenario, raw sugar's economic allocation decreases by 4.
 | Non-marketed: Bagasse DM | ~0.1350 t | 45.0% of input DM |
 | Non-marketed: Filter cake DM | ~0.0175 t | 5.8% of input DM |
 | DM losses | ~0.0056 t | 1.9% of input DM |
-| Total DM output (all streams) | ~0.3000 t | 100.0% of input DM ✓ |
+| Total DM output (all streams) | ~0.3000 t | Closes by construction — the loss term is the residual |
 
 **DM Balance Detail:**
 
@@ -339,7 +367,7 @@ Under the World Market scenario, raw sugar's economic allocation decreases by 4.
 | **DM losses (wastewater organics, evaporation of volatiles)** | ~0.0056 t | ~1.9% of input DM |
 | **Total output DM** | **~0.3000 t** | |
 
-> **Balance assessment:** The DM balance closes when bagasse and filter cake are included. The marketed co-products carry only 47.3% of the input DM, with the remaining 45.0% in bagasse, 5.8% in filter cake, and 1.9% in minor losses. This is fundamentally different from sugar beet processing (where the marketed co-products carry ~93% of the input DM) because sugarcane has a much higher fiber content (~11–14% of cane weight) that becomes bagasse. The 1.9% DM loss is within the acceptable range and represents non-recovered organics in wastewater, volatile losses during heating, and minor measurement uncertainty.
+> **Balance assessment:** The DM balance closes when bagasse and filter cake are included. The marketed co-products carry only 47.3% of the input DM, with 45.0% in bagasse, 5.8% in filter cake and 1.9% in minor losses. The reason the marketed fraction is so low is the cane's fibre content (~11–14% of cane weight), essentially all of which reports to bagasse and is burned inside the mill rather than sold. The 1.9% loss term is the residual of the balance rather than an independent measurement, and represents non-recovered organics in wastewater, volatile losses during heating, and measurement uncertainty.
 >
 > **Note on bagasse yield:** The bagasse yield of ~0.27 t/t cane at ~50% DM (~0.135 t DM) is at the lower end of the typical range (0.25–0.35 t/t cane) and reflects modern high-extraction mills. Older mills with lower extraction efficiency produce more bagasse (up to ~0.30–0.35 t/t) because more juice remains in the fiber. The bagasse yield is inversely related to extraction efficiency: higher extraction → less residual juice in bagasse → lower bagasse yield.
 
@@ -357,7 +385,7 @@ Under the World Market scenario, raw sugar's economic allocation decreases by 4.
 | Filter cake | ~0.035 t | Returned to fields |
 | Water removed (evaporation, wastewater) | ~0.537 t | Total cane water (0.700 t) minus water in products (0.163 t) |
 | DM losses (wastewater organics, volatiles) | ~0.006 t | See DM balance above |
-| **Balance** | **~1.000 t** | ✓ |
+| **Balance** | **~1.000 t** | Closes by construction — water removed and losses are residual terms |
 
 > **Note on water balance:** Sugarcane is ~70% water (0.700 t per tonne of cane). Of this, only ~0.011 t remains in the marketed co-products (all in molasses at 25% moisture), ~0.135 t remains in bagasse (at ~50% moisture), and ~0.0175 t remains in filter cake (at ~50% moisture). The remaining ~0.537 t is removed during processing — primarily by evaporation during juice concentration and crystallization, and as wastewater from clarification and cooling operations. This large water removal, combined with the large bagasse stream, explains why marketed product yields sum to only 15.3% of the input mass.
 
@@ -405,24 +433,22 @@ Including bagasse as a co-product dramatically shifts the mass allocation — ra
 | Raw sugar price ($600/t, US domestic) | **High** | Well-documented commodity with transparent pricing [^1^][^4^] |
 | Bagasse yield (~0.27 t/t) | **High** | Well-documented [^5^][^6^] |
 | Bagasse DM% (~50%) | **High** | Well-documented [^5^][^6^] |
-| DM balance (1.9% gap, fully accounted) | **High** | Well within acceptable range; gap explained by wastewater organics and volatiles |
 
 ### 9.3 Medium-Confidence Data
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
 | Cane molasses yield (0.0425 t/t) | **Medium** | Depends on non-sugar content of juice and number of crystallization stages |
-| Cane molasses DM% (75%) | **Medium** | Standard trading specifications cite 73–80% DM; some factories concentrate further |
+| Cane molasses DM% (75%) | **Medium** | Trading specifications cite 73–80% DM; some factories concentrate further |
 | Cane molasses price ($180/t) | **Medium** | Varies with sugar content, end use (feed vs. fermentation), and competing sources |
 | Sugarcane moisture (~70%) | **Medium** | Varies with variety, growing conditions, and harvest timing (65–75% range) |
-| Filter cake yield (~0.035 t at ~50% DM) | **Medium** | Varies with soil content of cane and clarification process; limited published data |
-| Filter cake composition | Medium | Varies with soil content of delivered cane and clarification process; limited published data available
+| Filter cake yield and composition (~0.035 t at ~50% DM) | **Medium** | Varies with the soil content of delivered cane and with the clarification process; limited published data |
 
 ### 9.4 Known Limitations
 
 1. **Bagasse as internal energy vs. co-product:** This document treats bagasse as an internal energy source, not a co-product. This is appropriate when the mill consumes all bagasse for process energy and no surplus energy is sold. However, many modern sugarcane mills — especially in Brazil — generate surplus electricity from bagasse and sell it to the grid. In such cases, bagasse (or the surplus electricity derived from it) should be included as a co-product. The allocation impact of including bagasse is discussed in Section 9.1 above.
 
-2. **Raw sugar vs. refined sugar system boundary:** This document models sugarcane milling only, producing raw sugar at $600/t (US domestic). Many LCA studies include the subsequent refining step, which produces refined white sugar at ~$900/t. If the system boundary is extended to include refining, the co-product structure changes: refined sugar and refinery molasses become the co-products, and the raw sugar becomes an intermediate product. This would require a two-stage (cascade) allocation model similar to cotton processing.
+2. **Raw sugar vs. refined sugar system boundary:** This document models sugarcane milling only, producing raw sugar at $600/t (US domestic). Many LCA studies include the subsequent refining step, which produces refined white sugar at a premium over raw. If the system boundary is extended to include refining, the co-product structure changes: refined sugar and refinery molasses become the co-products and raw sugar becomes an intermediate, which would require a two-stage cascade allocation rather than the single-stage model used here.
 
 3. **Molasses end use:** Cane molasses has multiple end uses with different economic values: (a) animal feed supplement (lowest value, ~$130–160/t), (b) fermentation substrate for rum, ethanol, or citric acid (medium value, ~$160–200/t), and (c) raw material for additional sugar recovery (reduces molasses yield, increases sugar yield). This table uses a blended price ($180/t) that averages across these end uses. Studies with specific molasses end uses should use the corresponding price.
 

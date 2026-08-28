@@ -33,7 +33,11 @@
 | **Bushel equivalent** | 45.93 bushels/t | 1,000 kg ÷ 21.772 kg/bu (48 lb at standard moisture) |
 | **Bushel weight** | 48.0 lb (21.772 kg) | USDA standard test weight for barley [^1^] |
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Because barley processing is a two-stage system, the treatment of the intermediate product (malt) also has to be stated explicitly; Section 6.1 does that, sets out the alternative, and shows what each implies. Derived quantities (DM outputs, revenues, allocation percentages) are carried at four decimals internally and reported to one decimal place.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -114,32 +118,32 @@ Barley brewing converts malt into beer through mashing, fermentation, and condit
         ▼
   ┌─ STAGE 1: MALTING ──────────────────────────┐
   │                                               │
-  │  Total malting loss: 0.083 t DM              │
+  │  Total malting loss: 0.045 t DM              │
   │  (respiration ~4-5% + steeping/screening)    │
   │                                               │
   │  Malt sprouts: 0.04 t as-is (0.037 t DM)  ◄── final co-product
   │                                               │
-  │  Malt: 0.80 t as-is (0.760 t DM)          ◄── intermediate
+  │  Malt: 0.84 t as-is (0.798 t DM)          ◄── intermediate
   │                                               │
   └───────────────┬───────────────────────────────┘
-                  │ 0.80 t malt (0.760 t DM)
+                  │ 0.84 t malt (0.798 t DM)
                   ▼
   ┌─ STAGE 2: BREWING ──────────────────────────┐
   │                                               │
-  │  + ~4.60 t water                              │
-  │  CO₂ loss: ~0.164 t DM                        │
+  │  + ~4.80 t water                              │
+  │  CO₂ loss: ~0.172 t DM                        │
   │                                               │
   │  BSG (dried): 0.16 t as-is (0.146 t DM)   ◄── final co-product
   │                                               │
-  │  Beer: 4.40 t as-is (0.374 t DM)          ◄── final co-product
+  │  Beer: 4.60 t as-is (0.391 t DM)          ◄── final co-product
   │                                               │
   └───────────────────────────────────────────────┘
 
 THREE FINAL CO-PRODUCTS from 1 t barley:
-  Beer:         4.40 t as-is,  0.374 t DM
+  Beer:         4.60 t as-is,  0.391 t DM
   BSG (dried):  0.16 t as-is, 0.146 t DM
   Malt sprouts: 0.04 t as-is, 0.037 t DM
-  Total:                      0.557 t DM  (from 0.880 t input; 0.247 t lost to malting loss, fermentation CO₂, and other brewing losses)
+  Total:                      0.574 t DM  (from 0.880 t input; 0.306 t lost to malting loss, fermentation CO₂, and other brewing losses)
 ```
 
 ---
@@ -150,10 +154,10 @@ THREE FINAL CO-PRODUCTS from 1 t barley:
 
 | Co-product | Stage | Yield (t/t barley) | Range | Source & Calculation |
 |------------|-------|-------------------|-------|---------------------|
-| **Malt** | 1 (intermediate) | 0.80 | 0.78–0.90 | Industry standard malting yield [^2^][^3^]. Conservative estimate; modern operations achieve 0.82–0.90. Losses through respiration (~4–5% DM), rootlet removal (~3–5%), and steeping/screening (~1–2%) total ~8–12% of barley mass. |
-| **Malt sprouts** | 1 (final) | 0.04 | 0.03–0.05 | [^3^]: rootlets constitute 3–5% of malt produced after kilning (≈ 2.4–4.0% of original barley mass). |
-| **Beer** | 2 (final) | 4.40 | 4.0–5.2 | Calculated: 5.50 t beer/t malt × 0.80 t malt/t barley = 4.40 t/t barley. Beer yield per t malt [^10^]: 4.5–6.0 t/t depending on beer strength and brewhouse efficiency. Midpoint 5.50 t/t malt. |
-| **Brewers spent grain (dried)** | 2 (final) | 0.16 | 0.14–0.18 | Calculated: 0.20 t BSG/t malt × 0.80 t malt/t barley = 0.16 t/t barley. BSG yield per t malt [^4^]: 0.18–0.22 t/t dried. Midpoint 0.20 t/t malt. |
+| **Malt** | 1 (intermediate) | 0.84 | 0.78–0.90 | Midpoint of the stated range. Industry standard malting yield [^2^][^3^]; modern operations achieve 0.82–0.90. Losses through respiration (~4–5% DM), rootlet removal (~3–5%), and steeping/screening (~1–2%) total ~8–12% of barley mass. |
+| **Malt sprouts** | 1 (final) | 0.04 | 0.03–0.05 | Briggs et al. [^3^] report rootlets at 3–5% of the malt produced after kilning. At the 0.84 t/t malting yield that is **0.025–0.042 t/t barley**, so the adopted 0.04 sits near the top of the composition-derived band while remaining the midpoint of the stated 0.03–0.05 range. The two bands overlap but are not identical; the stated range is the wider of the two and is the one carried through this document. |
+| **Beer** | 2 (final) | 4.60 | 4.0–5.2 | Midpoint of the stated range, equivalent to 5.48 t beer per t malt at the 0.84 t/t malting yield. Beer yield per t malt [^10^]: 4.5–6.0 t/t depending on beer strength and brewhouse efficiency. |
+| **Brewers spent grain (dried)** | 2 (final) | 0.16 | 0.14–0.18 | Midpoint of the stated range, equivalent to 0.19 t BSG per t malt at the 0.84 t/t malting yield. BSG yield per t malt [^4^]: 0.18–0.22 t/t dried. |
 
 ### 4.2 Dry Matter Contents
 
@@ -168,13 +172,13 @@ THREE FINAL CO-PRODUCTS from 1 t barley:
 
 | Co-product | Calculation | DM Output (t/t barley) |
 |------------|-------------|----------------------|
-| **Malt** (intermediate) | 0.80 × 0.95 | **0.7600** |
+| **Malt** (intermediate) | 0.84 × 0.95 | **0.7980** |
 | **Malt sprouts** | 0.04 × 0.93 | **0.0372** |
-| Stage 1 total | | **0.7972** |
-| **Beer** | 4.40 × 0.085 | **0.3740** |
+| Stage 1 total | | **0.8352** |
+| **Beer** | 4.60 × 0.085 | **0.3910** |
 | **Brewers spent grain** | 0.16 × 0.91 | **0.1456** |
-| Stage 2 total | | **0.5196** |
-| **All final co-products** | 0.374 + 0.146 + 0.037 | **0.5568** |
+| Stage 2 total | | **0.5366** |
+| **All final co-products** | 0.391 + 0.146 + 0.037 | **0.5738** |
 
 ---
 
@@ -184,27 +188,59 @@ THREE FINAL CO-PRODUCTS from 1 t barley:
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Malt** (intermediate) | 300 | 250–500 | USDA FAS [^7^]; IndexBox [^5^] | Barley grain (feed): $180–230/t; barley grain (malting): $250–350/t [^7^]. Gross malting margin: $60–130/t (malt price minus barley cost; net margin after all costs is $10–40/t). Midpoint $300/t for standard 2-row brewers malt; range reflects regional and quality variation. |
-| **Malt sprouts** | 200 | 150–250 | Comparable to DDGS and corn gluten feed [^9^] | Animal feed, primarily dairy/beef cattle. Niche, thin-market product with limited price transparency. Midpoint $200/t. |
-| **Beer (commodity, brewery-gate bulk)** | 380 | 300–500 | Industry estimate | Brewery-gate bulk liquid price (ex-works, unpackaged). Wholesale/distribution prices are $700–1,200/t. Craft beer: $600–1,200/t at brewery gate. Midpoint $380/t for standard commercial lager at brewery gate. |
-| **Brewers spent grain (dried)** | 180 | 150–220 | Thomas & Rahman [^8^]; Mussatto et al. [^4^] | Dried BSG for animal feed: $150–220/t. Wet BSG: $30–80/t. Midpoint $180/t for dried. |
+| **Malt** (intermediate) | 375 | 250–500 | USDA FAS [^7^]; IndexBox [^5^] | Standard 2-row brewers malt; the adopted $375/t is the midpoint of the stated range, which reflects regional and quality variation. For context, feed barley runs $180–230/t and malting barley $250–350/t [^7^][^6^]. See the note below on how the malt price relates to the barley price. |
+| **Malt sprouts** | 200 | 150–250 | Comparable to DDGS and corn gluten feed [^9^] | Animal feed, primarily dairy/beef cattle. Niche, thin-market product with limited price transparency. The adopted $200/t is the midpoint of the stated range. |
+| **Beer (commodity, brewery-gate bulk)** | 400 | 300–500 | Industry estimate | Brewery-gate bulk liquid price (ex-works, unpackaged). Wholesale/distribution prices are $700–1,200/t. Craft beer: $600–1,200/t at brewery gate. The adopted $400/t is the midpoint of the stated range, for standard commercial lager at brewery gate. |
+| **Brewers spent grain (dried)** | 185 | 150–220 | Thomas & Rahman [^8^]; Mussatto et al. [^4^] | Dried BSG for animal feed: $150–220/t. Wet BSG: $30–80/t. The adopted $185/t is the midpoint of the stated range, for dried BSG. |
+
+> **Note on the malt price relative to the barley price:** These two prices are drawn from independent sources and are not forced to be mutually consistent, and the arithmetic is worth stating openly. At the 0.84 t/t malting yield, one tonne of malt requires 1.19 t of barley, so malting barley at $250–350/t costs $298–417 per tonne of malt produced. Against the adopted malt price of $375/t that implies a gross margin over barley cost of **+$77/t of malt at the bottom of the barley range and −$42/t at the top**; at the midpoints ($375 malt, $300 barley) it is about +$18/t of malt, or +$15 per tonne of barley. The adopted malt price is therefore at the conservative end of what a malting margin would imply, and the stated barley and malt ranges overlap in a way that a single consistent market snapshot would not. Section 9.2 quantifies what this means for the result: the Stage 1 split is the only allocation affected, and moving the malt price to $250/t changes malt sprouts from 2.5% to 3.7%.
 
 ### 5.2 Revenue per Tonne of Barley
 
 | Co-product | Calculation | Revenue (USD/t barley) |
 |------------|-------------|----------------------|
-| **Beer** | 4.40 × 380 | **$1,672.00** |
-| **Brewers spent grain** | 0.16 × 180 | **$28.80** |
+| **Beer** | 4.60 × 400 | **$1,840.00** |
+| **Brewers spent grain** | 0.16 × 185 | **$29.60** |
 | **Malt sprouts** | 0.04 × 200 | **$8.00** |
-| **Total** | | **$1,708.80** |
+| **Total** | | **$1,877.60** |
 
-> **Note:** Malt is not included in the final revenue calculation because it is an intermediate product, not a final co-product. The malt's value is realized through its conversion into beer and BSG. Using malt's intermediate price would distort the allocation by double-counting value (once at the malt stage, once at the beer stage).
+> **Note:** Malt does not appear in this final-co-product revenue total because it is an intermediate, not an output of the system. Malt's value enters the allocation at Stage 1 (Section 6.2), where the barley burden is split between malt and malt sprouts; the split between beer and BSG is then computed within the malt block at Stage 2. This sequential treatment applies allocation at each unit process and is appropriate here because malt is an independently traded commodity with an observable transfer price at the point of separation. Section 6.1 sets out why that convention is used and Section 6.7 sets it against the direct end-of-chain calculation, in which the final-product revenues above form the sole denominator.
 
 ---
 
 ## 6. Two-Stage Allocation
 
-### 6.1 Allocation Approach
+### 6.1 Treatment of the Intermediate Product
+
+Barley processing has an intermediate — malt — that is sold between the two stages, so Stage 1 cannot be allocated without deciding what malt is worth. Two conventions are possible, and they give materially different answers.
+
+**Market-price cascade (used here).** Malt is valued at the price it actually transacts at between maltster and brewer ($375/t, Section 5.1). Stage 1 divides the barley burden between malt and malt sprouts on that basis; Stage 2 divides malt's burden between beer and BSG; the two stage allocations are then multiplied along each product's path.
+
+**Derived valuation (not used here).** Malt is instead valued at the total revenue of the products it becomes ($1,869.60/t barley).
+
+These are not two independent options plus a third. **Valuing the intermediate at its derived value makes the cascade collapse algebraically to the direct end-of-chain calculation**, because the derived value cancels out of the multiplication:
+
+```
+Stage 1 malt share x Stage 2 beer share
+  = D / (D + sprouts)  x  beer / D
+  = beer / (D + sprouts)
+  = beer / (beer + BSG + sprouts)        <- the direct calculation
+
+Numerically: 99.574% x 98.417% = 97.997%, which is exactly
+             1840.00 / 1877.60 = 97.997%
+```
+
+So the choice is between the market-price cascade and the direct end-of-chain calculation, and Section 6.5 reports the direct result for comparison.
+
+**Why the market-price cascade is used for barley:**
+
+1. **Malt is not a final co-product in this work.** It is not a dairy feed; it exists here only as the input to brewing, and the sole reason it appears in the calculation is that it is the point at which the barley burden divides. The three co-products this document reports are beer, BSG and malt sprouts.
+2. **The malt price is an arms-length transfer price into Stage 2.** It is what a brewer pays a maltster for the same stream that enters brewing, so it is the observable value at the point of separation — which is what applying allocation at each unit process requires.
+3. **It keeps the field burden independent of downstream value-add.** Brewing multiplies the value of the stream roughly sixfold using water, hops, yeast and energy, none of which is agricultural. Under derived valuation that value-add would decide how the barley field's burden splits, moving malt sprouts from 2.5% to 0.4% without anything changing in the field.
+
+**Where this convention does not apply.** A different treatment is warranted where the intermediate is itself a marketed final co-product of the system being studied — that is, where the study needs allocation factors for both the intermediate and the products it becomes, because both are genuine outputs. In that case the intermediate's quoted price is the price in a competing end use rather than a transfer price into the next stage, and the direct end-of-chain treatment is used so that all final products sit on one denominator. That situation does not arise for barley: malt has no use outside brewing in this system.
+
+### 6.2 Allocation Approach
 
 Because barley processing has two sequential stages, the allocation is performed in two steps:
 
@@ -221,39 +257,39 @@ Sprouts:    Stage 1 sprouts alloc (no Stage 2)
 
 > **Methodology note:** ISO 14044 (Section 4.3.4.2) requires allocation to be applied at each unit process separately, which naturally leads to a cascade (stepwise) approach when multi-stage processes have intermediate products. The term "cascade allocation" is a practitioner's term, not an ISO-defined concept, and should not be confused with ISO 14044's "stepwise allocation procedure" (which refers to the hierarchy of allocation methods: avoid → physical → economic).
 
-### 6.2 Stage 1: Malting Allocation
+### 6.3 Stage 1: Malting Allocation
 
 **Mass allocation:**
 
 | Co-product | DM Output | Calculation | Stage 1 Allocation |
 |------------|-----------|-------------|-------------------|
-| Malt | 0.7600 t | (0.7600 ÷ 0.7972) × 100 | **95.3%** |
-| Malt sprouts | 0.0372 t | (0.0372 ÷ 0.7972) × 100 | **4.7%** |
+| Malt | 0.7980 t | (0.7980 ÷ 0.8352) × 100 | **95.5%** |
+| Malt sprouts | 0.0372 t | (0.0372 ÷ 0.8352) × 100 | **4.5%** |
 
 **Economic allocation:**
 
 | Co-product | Revenue | Calculation | Stage 1 Allocation |
 |------------|---------|-------------|-------------------|
-| Malt | $240.00 | (240.00 ÷ 248.00) × 100 | **96.8%** |
-| Malt sprouts | $8.00 | (8.00 ÷ 248.00) × 100 | **3.2%** |
+| Malt | $315.00 | (315.00 ÷ 323.00) × 100 | **97.5%** |
+| Malt sprouts | $8.00 | (8.00 ÷ 323.00) × 100 | **2.5%** |
 
-### 6.3 Stage 2: Brewing Allocation
+### 6.4 Stage 2: Brewing Allocation
 
 **Mass allocation:**
 
 | Co-product | DM Output (per t barley) | Calculation | Stage 2 Allocation |
 |------------|-------------------------|-------------|-------------------|
-| Beer | 0.3740 t | (0.3740 ÷ 0.5196) × 100 | **72.0%** |
-| BSG | 0.1456 t | (0.1456 ÷ 0.5196) × 100 | **28.0%** |
+| Beer | 0.3910 t | (0.3910 ÷ 0.5366) × 100 | **72.9%** |
+| BSG | 0.1456 t | (0.1456 ÷ 0.5366) × 100 | **27.1%** |
 
 **Economic allocation:**
 
 | Co-product | Revenue (per t barley) | Calculation | Stage 2 Allocation |
 |------------|----------------------|-------------|-------------------|
-| Beer | $1,672.00 | (1672.00 ÷ 1700.80) × 100 | **98.3%** |
-| BSG | $28.80 | (28.80 ÷ 1700.80) × 100 | **1.7%** |
+| Beer | $1,840.00 | (1840.00 ÷ 1869.60) × 100 | **98.4%** |
+| BSG | $29.60 | (29.60 ÷ 1869.60) × 100 | **1.6%** |
 
-### 6.4 Final Cumulative Allocation
+### 6.5 Final Cumulative Allocation
 
 The final allocation of barley's environmental burden to each of the three final co-products is calculated by cascading the two stages:
 
@@ -261,21 +297,21 @@ The final allocation of barley's environmental burden to each of the three final
 
 | Co-product | Calculation | Final Allocation |
 |------------|-------------|-----------------|
-| **Beer** | 95.3% × 72.0% | **68.6%** |
-| **Brewers spent grain** | 95.3% × 28.0% | **26.7%** |
-| **Malt sprouts** | 4.7% (Stage 1 only) | **4.7%** |
+| **Beer** | 95.5% × 72.9% | **69.6%** |
+| **Brewers spent grain** | 95.5% × 27.1% | **25.9%** |
+| **Malt sprouts** | 4.5% (Stage 1 only) | **4.5%** |
 | **Total** | | **100.0%** |
 
 **Economic allocation (cumulative):**
 
 | Co-product | Calculation | Final Allocation |
 |------------|-------------|-----------------|
-| **Beer** | 96.8% × 98.3% | **95.2%** |
-| **Brewers spent grain** | 96.8% × 1.7% | **1.6%** |
-| **Malt sprouts** | 3.2% (Stage 1 only) | **3.2%** |
+| **Beer** | 97.5% × 98.4% | **96.0%** |
+| **Brewers spent grain** | 97.5% × 1.6% | **1.5%** |
+| **Malt sprouts** | 2.5% (Stage 1 only) | **2.5%** |
 | **Total** | | **100.0%** |
 
-### 6.5 Verification: Direct Calculation
+### 6.6 Verification: Direct Calculation
 
 The cumulative allocation can be verified by calculating directly from the three final co-products' DM and revenue values per tonne of barley, bypassing the intermediate malt stage:
 
@@ -283,50 +319,50 @@ The cumulative allocation can be verified by calculating directly from the three
 
 | Co-product | DM Output (t/t barley) | Calculation | Final Allocation |
 |------------|----------------------|-------------|-----------------|
-| Beer | 0.3740 | (0.3740 ÷ 0.5568) × 100 | **67.2%** |
-| BSG | 0.1456 | (0.1456 ÷ 0.5568) × 100 | **26.1%** |
-| Malt sprouts | 0.0372 | (0.0372 ÷ 0.5568) × 100 | **6.7%** |
-| **Total** | **0.5568** | | **100.0%** |
+| Beer | 0.3910 | (0.3910 ÷ 0.5738) × 100 | **68.1%** |
+| BSG | 0.1456 | (0.1456 ÷ 0.5738) × 100 | **25.4%** |
+| Malt sprouts | 0.0372 | (0.0372 ÷ 0.5738) × 100 | **6.5%** |
+| **Total** | **0.5738** | | **100.0%** |
 
 **Direct economic allocation:**
 
 | Co-product | Revenue (USD/t barley) | Calculation | Final Allocation |
 |------------|----------------------|-------------|-----------------|
-| Beer | $1,672.00 | (1672.00 ÷ 1708.80) × 100 | **97.8%** |
-| BSG | $28.80 | (28.80 ÷ 1708.80) × 100 | **1.7%** |
-| Malt sprouts | $8.00 | (8.00 ÷ 1708.80) × 100 | **0.5%** |
-| **Total** | **$1,708.80** | | **100.0%** |
+| Beer | $1,840.00 | (1840.00 ÷ 1877.60) × 100 | **98.0%** |
+| BSG | $29.60 | (29.60 ÷ 1877.60) × 100 | **1.6%** |
+| Malt sprouts | $8.00 | (8.00 ÷ 1877.60) × 100 | **0.4%** |
+| **Total** | **$1,877.60** | | **100.0%** |
 
-### 6.6 Reconciliation: Cascade vs. Direct
+### 6.7 Reconciliation: Cascade vs. Direct
 
 The cascade and direct methods give different results because they handle the DM losses differently:
 
 | Co-product | Mass (cascade) | Mass (direct) | Econ (cascade) | Econ (direct) |
 |------------|---------------|---------------|----------------|---------------|
-| Beer | 68.6% | 67.2% | 95.2% | 97.8% |
-| BSG | 26.7% | 26.1% | 1.6% | 1.7% |
-| Sprouts | 4.7% | 6.7% | 3.2% | 0.5% |
+| Beer | 69.6% | 68.1% | 96.0% | 98.0% |
+| BSG | 25.9% | 25.4% | 1.5% | 1.6% |
+| Sprouts | 4.5% | 6.5% | 2.5% | 0.4% |
 
 **Why the differences exist:**
 
-- **Mass allocation:** The cascade method calculates Stage 1 allocation using only the Stage 1 DM total (0.7972 t, which excludes total malting loss), then Stage 2 allocation using only the Stage 2 DM total (0.5196 t). The direct method uses the combined total (0.5568 t) which includes both malting and fermentation losses in the denominator. The difference reflects different accounting treatments of DM losses. Mass is conserved across stages, so the differences are moderate (≤1.5 percentage points for beer and BSG, 2.0 pp for sprouts).
+- **Mass allocation:** The cascade method calculates Stage 1 allocation using only the Stage 1 DM total (0.8352 t, which excludes total malting loss), then Stage 2 allocation using only the Stage 2 DM total (0.5366 t). The direct method uses the combined total of the three final co-products (0.5738 t). Neither denominator contains losses; the difference is that the cascade measures sprouts against the Stage 1 pool, before fermentation removes dry matter, whereas the direct method measures them against a pool already reduced by it. Sprouts therefore carry a larger share under the direct method (6.5% against 4.5%), while beer and BSG shift by no more than 1.5 percentage points.
 
-- **Economic allocation:** The cascade method uses malt's price ($300/t) for Stage 1, which is lower than beer's price ($380/t). This means the cascade method assigns a larger share of barley's burden to the malt intermediate (via malt's revenue) than the direct method assigns to the final products. The direct method captures the full value chain (barley → beer at $380/t), giving beer 97.8% instead of 95.2%. The economic difference (2.6 pp for beer) is larger than the mass difference because economic value is transformed across stages (unlike mass, which is conserved).
+- **Economic allocation:** The cascade values the intermediate at malt's own transfer price ($375/t), so malt sprouts compete against malt revenue of $315.00/t barley. The direct calculation places sprouts against the total revenue of all three final co-products ($1,877.60/t barley), nearly six times the Stage 1 total, because brewing adds substantial non-agricultural value. Sprouts therefore fall from 2.5% under the cascade to 0.4% under the direct calculation, and beer rises from 96.0% to 98.0%. The difference (2.0 pp for beer, 2.1 pp for sprouts) is larger than on the mass side because economic value is transformed across stages whereas mass is conserved. As shown in Section 6.1, the direct column is also what would result from valuing malt at the revenue of the products it becomes — the two are the same calculation.
 
 **Which method to use:**
 
-- The **cascade method** is consistent with ISO 14044's requirement that allocation be applied at each unit process separately when a unit process has intermediate products that cross system boundaries (i.e., malt could be sold independently). It reflects the economic reality at each processing stage.
-- The **direct method** is simpler and more transparent, but it obscures the two-stage nature of the process and can give misleading results if the intermediate product (malt) has a very different value than the final product (beer).
+- The **cascade method** applies allocation at each unit process separately, which is appropriate when the intermediate crosses a system boundary and is independently traded, as malt is. It reflects the transaction at each processing stage and prevents brewing value-add from determining how the barley field burden is split.
+- The **direct calculation** is simpler and uses a single denominator, but it collapses the two-stage structure and lets the value added in Stage 2 govern the Stage 1 split. It is the more appropriate treatment where the intermediate is itself a marketed final co-product of the system, which malt is not.
 
-For this document, we report both methods and recommend the **cascade method** as the primary allocation for LCA purposes, consistent with ISO 14044.
+Both results are reported here. The **cascade method is the primary allocation** for this document, for the reasons set out in Section 6.1: malt is not a final co-product of this system, its price is an arms-length transfer price into brewing, and the cascade keeps the split of the field burden independent of the value that brewing adds using non-agricultural inputs. The direct result is reported so that a user who prefers an end-of-chain denominator can apply it.
 
-### 6.7 Recommended Final Allocation
+### 6.8 Recommended Final Allocation
 
 | Co-product | Mass Allocation | Economic Allocation |
 |------------|----------------|-------------------|
-| **Beer** | **68.6%** | **95.2%** |
-| **Brewers spent grain** | **26.7%** | **1.6%** |
-| **Malt sprouts** | **4.7%** | **3.2%** |
+| **Beer** | **69.6%** | **96.0%** |
+| **Brewers spent grain** | **25.9%** | **1.5%** |
+| **Malt sprouts** | **4.5%** | **2.5%** |
 | **Total** | **100.0%** | **100.0%** |
 
 ---
@@ -339,15 +375,15 @@ For this document, we report both methods and recommend the **cascade method** a
 |------|-------|-------|
 | Input DM (1 t barley at 12% moisture) | 0.880 t | — |
 | **Output DM — final co-products:** | | |
-| Beer | 0.374 t | 4.40 t × 8.5% DM |
+| Beer | 0.391 t | 4.60 t × 8.5% DM |
 | Brewers spent grain (dried) | 0.146 t | 0.16 t × 91% DM |
 | Malt sprouts | 0.037 t | 0.04 t × 93% DM |
-| Total co-product DM | **0.557 t** | |
+| Total co-product DM | **0.574 t** | |
 | **Losses:** | | |
-| Total malting DM loss (respiration + steeping + screening) | 0.083 t | 9.4% of input DM; includes respiration (~4–5%), steeping loss, and screening loss |
-| CO₂ from fermentation | 0.164 t | Stoichiometric: ethanol in beer (~0.172 t at 5% ABV) × 88/92 |
-| **Total accounted** | **0.804 t** | |
-| Unaccounted | 0.076 t | 8.6% of input; includes yeast biomass (~0.02–0.03 t), evaporation during boiling, trub loss, and minor inconsistencies in independently-sourced yield parameters |
+| Total malting DM loss (respiration + steeping + screening) | 0.045 t | 5.1% of input DM; consistent with literature respiration loss of ~4–5% plus small steeping and screening losses |
+| CO₂ from fermentation | 0.172 t | Stoichiometric: ethanol in beer (~0.179 t at 5% ABV) × 88/92 |
+| **Total accounted** | **0.791 t** | |
+| Unaccounted | 0.089 t | 10.1% of input; includes yeast biomass (~0.02–0.03 t), evaporation during boiling, trub loss, and minor inconsistencies in independently-sourced yield parameters |
 
 ### 7.2 Stage-by-Stage Balance
 
@@ -356,25 +392,25 @@ For this document, we report both methods and recommend the **cascade method** a
 | Item | Value | Notes |
 |------|-------|-------|
 | Input DM | 0.880 t | 1 t barley at 12% moisture |
-| Malt DM | 0.760 t | 0.80 t × 95% DM |
+| Malt DM | 0.798 t | 0.84 t × 95% DM |
 | Sprouts DM | 0.037 t | 0.04 t × 93% DM |
-| Total malting DM loss | 0.083 t | 0.880 − 0.760 − 0.037 |
+| Total malting DM loss | 0.045 t | 0.880 − 0.798 − 0.037 |
 | **Total accounted** | **0.880 t** | ✓ Exact |
 
-> **Note on malting loss composition:** The 0.083 t total malting DM loss (9.4% of input) comprises respiration loss (~4–5% of input DM, primarily starch oxidized to CO₂ and H₂O), rootlet growth beyond the 0.037 t recovered as sprouts (included in respiration accounting), steeping loss (fine particles and soluble materials washed away, ~0.5–1%), and screening/cleaning losses (~1–2%). Literature consistently reports respiration alone at ~4–5% of input DM (Maule, 1971; Wiley-VCH Technology of Malting), not the full 9.4%.
+> **Note on malting loss composition:** The 0.045 t total malting DM loss (5.1% of input) comprises respiration loss (~4–5% of input DM, primarily starch oxidized to CO₂ and H₂O), rootlet growth beyond the 0.037 t recovered as sprouts (included in respiration accounting), steeping loss (fine particles and soluble materials washed away, ~0.5–1%), and screening/cleaning losses (~1–2%). Literature consistently reports respiration alone at ~4–5% of input DM (Maule, 1971; Wiley-VCH Technology of Malting), which is consistent with the 5.1% total obtained here.
 
 **Stage 2: Brewing**
 
 | Item | Value | Notes |
 |------|-------|-------|
-| Input DM (malt) | 0.760 t | From Stage 1 |
-| Beer DM | 0.374 t | 4.40 t × 8.5% DM |
+| Input DM (malt) | 0.798 t | From Stage 1 |
+| Beer DM | 0.391 t | 4.60 t × 8.5% DM |
 | BSG DM | 0.146 t | 0.16 t × 91% DM |
-| CO₂ from fermentation | 0.164 t | Ethanol in beer (~0.172 t at 5% ABV) × 88/92 |
-| **Total accounted** | **0.684 t** | |
-| Unaccounted | 0.076 t | 10.0% of malt DM; see note below |
+| CO₂ from fermentation | 0.172 t | Ethanol in beer (~0.179 t at 5% ABV) × 88/92 |
+| **Total accounted** | **0.709 t** | |
+| Unaccounted | 0.089 t | 11.2% of malt DM; see note below |
 
-> The 0.076 t DM gap in brewing arises because the beer yield (5.50 t/t malt) and BSG yield (0.20 t/t malt) are independently estimated from industry data and are not forced to close stoichiometrically. The gap represents: (1) yeast biomass production (~0.02–0.03 t DM/t barley from malt sugars, not captured as a co-product), (2) evaporation losses during boiling (~0.01–0.02 t DM equivalent), (3) trub loss (hot break, cold break — partially recovered with BSG), and (4) minor inconsistencies between independently-sourced yield parameters. A fully consistent set would require adjusting either the beer yield or the BSG yield. The allocation results are not highly sensitive to this gap because the relative proportions of beer, BSG, and sprouts DM are robust.
+> The 0.089 t DM gap in brewing arises because the beer yield (5.48 t/t malt) and BSG yield (0.19 t/t malt) are independently estimated from industry data and are not forced to close stoichiometrically. The gap represents: (1) yeast biomass production (~0.02–0.03 t DM/t barley from malt sugars, not captured as a co-product), (2) evaporation losses during boiling (~0.01–0.02 t DM equivalent), (3) trub loss (hot break, cold break — partially recovered with BSG), and (4) minor inconsistencies between independently-sourced yield parameters. A fully consistent set would require adjusting either the beer yield or the BSG yield. The allocation results are not highly sensitive to this gap because the relative proportions of beer, BSG, and sprouts DM are robust.
 
 ### 7.3 As-Is Mass Balance
 
@@ -382,17 +418,18 @@ For this document, we report both methods and recommend the **cascade method** a
 |------|-------|-------|
 | Input (barley) | 1.000 t | — |
 | Water added during steeping | +0.400 t | Absorbed then removed by kilning (net zero) |
-| Water added during mashing/brewing | +4.600 t | Becomes part of beer |
-| Malting mass loss (CO₂ + H₂O from respiration and steeping) | −0.173 t | Stoichiometric: complete oxidation of 0.083 t DM produces ~0.123 t CO₂ + ~0.050 t H₂O |
-| Fermentation CO₂ loss | −0.164 t | CO₂ from sugar fermentation |
+| Water added during mashing/brewing | +4.800 t | Becomes part of beer |
+| Malting mass loss (CO₂ + H₂O from respiration and steeping) | −0.094 t | Stoichiometric: complete oxidation of 0.045 t DM produces ~0.067 t CO₂ + ~0.027 t H₂O |
+| Fermentation CO₂ loss | −0.172 t | CO₂ from sugar fermentation |
+| Water removed by kilning and by evaporation during the boil | −1.134 t | The balancing term: steeping water plus the barley's own moisture driven off during kilning (malt leaves at 3–6% moisture), plus wort evaporation during boiling. Obtained as the residual of this table, not measured independently |
 | **Output:** | | |
-| Beer | 4.400 t | — |
+| Beer | 4.600 t | — |
 | BSG (dried) | 0.160 t | — |
 | Malt sprouts | 0.040 t | — |
-| **Total output** | **4.600 t** | |
-| **Net water addition** | **3.663 t** | 5.000 added (steeping + brewing) − 1.337 lost (malting respiration + CO₂ + kilning water removal) |
+| **Total output** | **4.800 t** | |
+| **Net water addition** | **3.800 t** | 5.200 added (steeping + brewing) − 1.400 lost (malting respiration + CO₂ + kilning water removal) |
 
-> **Note:** The as-is mass balance is complex because water is added at multiple stages (steeping, mashing) and removed at others (kilning, evaporation during boiling). The net water addition of ~3.66 t is consistent with the beer output of 4.40 t (which is primarily water). Small discrepancies arise from rounding and from unmeasured evaporation losses during boiling and cooling.
+> **Note:** The as-is balance is complex because water is added at two stages (steeping, mashing) and removed at two others (kilning, evaporation during the boil). With the kilning and evaporation term included the rows now sum to the stated output: 1.000 + 0.400 + 4.800 − 0.094 − 0.172 − 1.134 = 4.800 t. That term is the residual of the table rather than an independent measurement, so it absorbs any rounding in the other rows. The net water addition of ~3.80 t is consistent with a beer output of 4.60 t, which is predominantly water.
 
 ---
 
@@ -402,15 +439,15 @@ For this document, we report both methods and recommend the **cascade method** a
 
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t barley) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t barley) | Revenue (USD/t barley) | Econ Alloc — Cascade (%) | Econ Alloc — Direct (%) | Mass Alloc — Cascade (%) | Mass Alloc — Direct (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|-------------------|-------------|---------------|-------------|--------|----------------------|----------------------|------------------------|------------------------|------------------------|------------------------|
-| Barley | Barley malting/brewing | 2 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Beer | 4.40 | 4.0–5.2 | 380 | 300–500 | 8.5 | 0.374 | 1672.00 | 95.2 | 97.8 | 68.6 | 67.2 |
-| Barley | Barley malting/brewing | 2 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Brewers spent grain (dried) | 0.16 | 0.14–0.18 | 180 | 150–220 | 91.0 | 0.146 | 28.80 | 1.6 | 1.7 | 26.7 | 26.1 |
-| Barley | Barley malting/brewing | 2 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Malt sprouts | 0.04 | 0.03–0.05 | 200 | 150–250 | 93.0 | 0.037 | 8.00 | 3.2 | 0.5 | 4.7 | 6.7 |
+| Barley | Barley malting/brewing | 2 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Beer | 4.60 | 4.0–5.2 | 400 | 300–500 | 8.5 | 0.391 | 1840.00 | 96.0 | 98.0 | 69.6 | 68.1 |
+| Barley | Barley malting/brewing | 2 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Brewers spent grain (dried) | 0.16 | 0.14–0.18 | 185 | 150–220 | 91.0 | 0.146 | 29.60 | 1.5 | 1.6 | 25.9 | 25.4 |
+| Barley | Barley malting/brewing | 2 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Malt sprouts | 0.04 | 0.03–0.05 | 200 | 150–250 | 93.0 | 0.037 | 8.00 | 2.5 | 0.4 | 4.5 | 6.5 |
 
 ### 8.2 Intermediate Product (for cascade calculation reference only)
 
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t barley) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t barley) | Revenue (USD/t barley) | Stage 1 Econ Alloc (%) | Stage 1 Mass Alloc (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|-------------------|-------------|---------------|-------------|--------|----------------------|----------------------|------------------------|------------------------|
-| Barley | Barley malting | 1 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Malt (intermediate) | 0.80 | 0.78–0.90 | 300 | 250–500 | 95.0 | 0.760 | 240.00 | 96.8 | 95.3 |
+| Barley | Barley malting | 1 | 48 lb/bushel at 12% moisture | 12% | 1 t barley at 12% moisture | Malt (intermediate) | 0.84 | 0.78–0.90 | 375 | 250–500 | 95.0 | 0.798 | 315.00 | 97.5 | 95.5 |
 
 ---
 
@@ -420,31 +457,31 @@ For this document, we report both methods and recommend the **cascade method** a
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Malt yield (0.80 t/t barley) | **High** | Brewers Association [^2^]; Briggs et al. [^3^] |
+| Malt yield (0.84 t/t barley) | **High** | Brewers Association [^2^]; Briggs et al. [^3^] |
 | Malt sprouts yield (0.04 t/t barley) | **High** | Briggs et al. [^3^] |
 | DM contents (malt 95%, sprouts 93%, BSG 91%) | **High** | Industry specifications; peer-reviewed literature [^3^][^4^] |
-| Malt price ($300/t) | **High** | USDA FAS [^7^]; IndexBox [^5^] |
+| Malt price ($375/t) | **High** | USDA FAS [^7^]; IndexBox [^5^] |
 | Barley grain prices | **High** | USDA FAS [^7^] |
 
 ### 9.2 Medium-Confidence Data
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Beer yield (5.50 t/t malt) | **Medium** | Varies by beer style; derived from extract yield and specific gravity [^10^] |
+| Beer yield (5.48 t/t malt) | **Medium** | Varies by beer style; derived from extract yield and specific gravity [^10^] |
 | Beer DM% (8.5%) | **Medium** | Varies with ABV and residual extract; range 8–9% at 5% ABV [^10^] |
-| Beer price ($380/t) | **Medium** | Brewery-gate bulk liquid price; highly variable by type (commodity vs. craft) and distribution level |
-| BSG yield dried (0.20 t/t malt) | **Medium** | Depends on malt analysis and brewhouse efficiency [^4^] |
-| BSG price dried ($180/t) | **Medium** | Regional market with limited price transparency [^8^] |
+| Beer price ($400/t) | **Medium** | Brewery-gate bulk liquid price; highly variable by type (commodity vs. craft) and distribution level |
+| BSG yield dried (0.19 t/t malt) | **Medium** | Depends on malt analysis and brewhouse efficiency [^4^] |
+| BSG price dried ($185/t) | **Medium** | Regional market with limited price transparency [^8^] |
 
 ### 9.3 Known Limitations
 
-1. **Cascade vs. direct allocation:** The two methods give different results (mass: 68.6% vs. 67.2% for beer; economic: 95.2% vs. 97.8%). The cascade method is recommended as the primary allocation per ISO 14044's per-unit-process requirement, but the direct method is shown for comparison.
+1. **Cascade vs. direct allocation:** The two methods give different results (mass: 69.6% vs. 68.1% for beer; economic: 96.0% vs. 98.0%). The cascade method is recommended as the primary allocation per ISO 14044's per-unit-process requirement, but the direct method is shown for comparison.
 
-2. **Economic allocation sensitivity:** The economic allocation is very sensitive to the beer price. If beer is priced at $300/t instead of $380/t, beer's economic allocation drops from 95.2% to ~92%, and sprouts and BSG each gain ~1–2 percentage points.
+2. **Economic allocation sensitivity:** Under the cascade the Stage 1 split is driven by the malt price, not the beer price, so beer's final allocation is comparatively insensitive to the beer price: at $300/t instead of $400/t, beer's cascaded economic allocation falls only from 96.0% to ~95.5%. The Stage 1 split is more sensitive: at a malt price of $250/t instead of $375/t, malt sprouts rise from 2.5% to ~3.7%.
 
-3. **Water addition in brewing:** The brewing process adds ~4.6 t of water per t of malt. This water becomes part of the beer product. The as-is mass balance reflects this large water input, which dominates the total mass flow but does not affect DM-based allocation.
+3. **Water addition in brewing:** The brewing process adds ~4.8 t of water per t of barley. This water becomes part of the beer product. The as-is mass balance reflects this large water input, which dominates the total mass flow but does not affect DM-based allocation.
 
-4. **DM reconciliation gap in brewing:** The independently-sourced beer and BSG yields create a ~0.076 t DM gap per t barley (8.6% of input). This gap is explainable by yeast biomass, evaporation losses, trub, and minor yield parameter inconsistencies. It is documented in Section 7.2 and does not materially affect allocation results because the relative DM proportions are robust.
+4. **DM reconciliation gap in brewing:** The independently-sourced beer and BSG yields create a ~0.089 t DM gap per t barley (10.1% of input). This gap is explainable by yeast biomass, evaporation losses, trub, and minor yield parameter inconsistencies. It is documented in Section 7.2 and does not materially affect allocation results because the relative DM proportions are robust.
 
 5. **Wet vs. dried BSG:** This table uses dried BSG (91% DM, 0.16 t/t barley). Many breweries sell wet BSG (20–28% DM, ~0.96 t/t barley) directly to nearby farms. The choice of wet vs. dried BSG affects the as-is yield and price but not the DM-based allocation (same DM mass either way).
 

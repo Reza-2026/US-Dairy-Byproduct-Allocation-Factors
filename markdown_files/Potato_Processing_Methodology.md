@@ -34,7 +34,11 @@
 | **Cwt equivalent** | 22.05 cwt/t | 1,000 kg ÷ 45.359 kg/cwt (100 lb) |
 | **Typical starch content** | ~13–18% (fresh weight basis) | USDA nutritional data [^1^]; Wiley (Bertoft & Blennow, 2016); Springer reviews. Typical for processing-grade Russet Burbank: ~15–17%. |
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Point values are given to the precision the underlying sources support and are not intended to imply plant-level accuracy. Derived quantities (DM outputs, revenues, allocation percentages) are carried at four decimals internally and reported to one decimal place.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -62,17 +66,16 @@
 | [^4^] | USDA NASS (2025). *Potato Statistics* | Government (USDA) | https://www.nass.usda.gov/ |
 | [^5^] | IndexBox (2024). *World - Potato - Market Analysis, Forecast, Size, Trends and Insights* | Industry/Market | https://www.indexbox.io/ |
 | [^6^] | Lisińska & Leszczyński (1989). *Potato Science and Technology* | Academic | — |
-| [^7^] | Beukema & van der Zaag (1990). *Introduction to Potato Production* | Academic | — |
-| [^8^] | Feedipedia. *Potato by-products* (INRAE-CIRAD-AFZ feed encyclopedia) | Academic/Reference | https://www.feedipedia.org/ |
-| [^9^] | OECD-FAO (2025). *OECD-FAO Agricultural Outlook 2025-2034*, Chapter 10 ("Other products"), Section 10.1 ("Roots and tubers") | International Organization | https://www.oecd.org/ |
+| [^7^] | Feedipedia. *Potato by-products* (INRAE-CIRAD-AFZ feed encyclopedia) | Academic/Reference | https://www.feedipedia.org/ |
+| [^8^] | OECD-FAO (2025). *OECD-FAO Agricultural Outlook 2025-2034*, Chapter 10 ("Other products"), Section 10.1 ("Roots and tubers") | International Organization | https://www.oecd.org/ |
 
 ### 2.2 How Sources Were Used
 
 - **Yield data:** FAO [^2^] and Lisińska & Leszczyński [^6^] provided potato processing yield data. The ranges reflect variation across peeling methods (steam, abrasive, lye), potato quality, and product specifications. USDA ERS [^3^] and USDA NASS [^4^] provided production and farm-level price statistics.
 - **Price data (products):** IndexBox [^5^] provided processed potato product prices. USDA ERS [^3^] provided raw potato farm-gate prices. Prices reflect peeled/cut potatoes for foodservice and further processing.
-- **Price data (waste):** Feedipedia [^8^] and industry estimates provided potato waste prices for animal feed markets. Waste price data is inherently uncertain due to the non-commodity nature of potato processing waste.
-- **DM contents:** USDA FoodData Central [^1^] provided nutritional composition data. Feedipedia [^8^] provided potato by-product composition data including peel DM%. FAO [^2^] provided processing waste composition data.
-- **Production and trade outlook:** OECD-FAO [^9^] provides global production and trade projections for roots and tubers, including potatoes, contextualizing the methodology within broader market trends.
+- **Price data (waste):** Feedipedia [^7^] and industry estimates provided potato waste prices for animal feed markets. Waste price data is inherently uncertain due to the non-commodity nature of potato processing waste.
+- **DM contents:** USDA FoodData Central [^1^] provided nutritional composition data. Feedipedia [^7^] provided potato by-product composition data including peel DM%. FAO [^2^] provided processing waste composition data.
+- **Market context:** OECD-FAO [^8^] provided global production and consumption projections for roots and tubers, used to check that the price levels adopted here are consistent with the direction of the wider potato market.
 
 ---
 
@@ -118,7 +121,7 @@ Potato processing for the fresh-cut market involves the following steps:
 TWO CO-PRODUCTS from 1 t fresh potatoes:
   Processed potato products:  0.84 t as-is,  0.1764 t DM
   Potato processing waste:    0.16 t as-is,  0.0320 t DM
-  Total:                                   0.2084 t DM  (from 0.210 t input; ~0.002 t losses)
+  Total:                                   0.2084 t DM  (from 0.210 t input; 0.0016 t deficit)
 ```
 
 ---
@@ -129,17 +132,17 @@ TWO CO-PRODUCTS from 1 t fresh potatoes:
 
 | Co-product | Yield (t/t potatoes) | Range | Source & Calculation |
 |------------|---------------------|-------|---------------------|
-| **Processed potato products** | 0.84 | 0.80–0.88 | Midpoint of range. Industry average for peeling, trimming, and sorting operations [^2^][^6^]. The 0.84 value is the mathematical midpoint of the stated range. Yields vary with peeling method (steam peeling achieves ~85–88% recovery vs. abrasive peeling at ~80–83%), potato size and quality, and product specifications. |
-| **Potato processing waste** | 0.16 | 0.12–0.20 | Complement to product yield. Includes peels (~5–12% of input), trimmings and defects (~2–5%), and other solid waste. The 0.16 value is the mathematical midpoint of the stated range. Range is inversely related to product yield: higher product recovery means less waste. |
+| **Processed potato products** | 0.84 | 0.80–0.88 | Industry average for peeling, trimming, and sorting operations [^2^][^6^]. Yields vary with peeling method (steam peeling recovers ~85–88% vs. abrasive peeling at ~80–83%), potato size and quality, and product specifications. |
+| **Potato processing waste** | 0.16 | 0.12–0.20 | Set as the complement of the product yield (1.00 − 0.84). Comprises peels (~5–12% of input), trimmings and defects (~2–5%), and other solid rejects, which together bracket the adopted value. The range is the inverse of the product yield range: higher product recovery means less waste. |
 
-> **Note on yield relationship:** Product and waste yields are inversely related. When more product is recovered (higher product yield), less waste is generated. The values in this table (0.84 product, 0.16 waste) sum to 1.00 t/t, indicating that all as-is mass is accounted for. The DM losses of ~0.76% represent dissolved solids in wastewater that are not captured in either co-product stream.
+> **Note on yield relationship:** Product and waste yields are inversely related: when more product is recovered, less waste is generated. The waste yield in this table is set as the complement of the product yield (0.16 = 1.00 − 0.84), so the two sum to 1.00 t/t **by construction rather than by measurement**. Real plants also discharge a wash and process water stream carrying dissolved solids, which this two-stream model does not track; its dry matter appears as the 0.76% deficit in Section 7.2.
 
 ### 4.2 Dry Matter Contents
 
 | Co-product | DM (%) | Basis |
 |------------|--------|-------|
 | Processed potato products | 21.0% | Same as fresh potato input. Basic processing (peeling, cutting, sorting) does not significantly change moisture content. Peeled potato flesh has similar DM% to whole potatoes (~20–22%) [^1^]. Washing may add trace surface water, but this is negligible in the overall mass balance. |
-| Potato processing waste | 20.0% | Slightly lower than whole potatoes. Processing waste includes peels (~16–22% DM; Feedipedia reports avg 20.1%, range 14.3–24.7%) and trimmings (similar DM to flesh, ~20–22%). The weighted average is slightly below whole-potato DM% because peels at the lower end of their range constitute the majority of the waste stream [^6^][^8^]. |
+| Potato processing waste | 20.0% | Peels dominate the waste stream, and Feedipedia [^7^] reports potato peel at 20.1% DM on average (range 14.3–24.7%). Trimmings are close to flesh DM (~20–22%). The adopted 20% follows the Feedipedia peel average and sits just below whole-potato DM% [^6^][^7^]. |
 
 ### 4.3 DM Output per Tonne of Potatoes
 
@@ -157,8 +160,8 @@ TWO CO-PRODUCTS from 1 t fresh potatoes:
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Processed potato products** | 1,000 | 700–1,300 | IndexBox [^5^]; USDA ERS [^3^] | 2024–2025 average for peeled/cut potatoes for foodservice and further processing. Price reflects value added through peeling, cutting, and packaging. Raw potatoes typically sell for $200–350/t at farm level [^3^][^4^]; processing adds significant value through labor, equipment, and quality assurance. Midpoint of range: ($700 + $1,300) / 2 = $1,000. |
-| **Potato processing waste** | 35 | 20–50 | Feedipedia [^8^]; industry estimates | 2024–2025 average for potato waste used as animal feed (primarily cattle). Price varies with waste composition, moisture content, starch content, and proximity to livestock operations. Peel/trim waste typically fetches $15–40/t; cull whole potatoes (higher DM, more feed value) command $30–75/t. The $20–50/t range reflects the mixed composition of the waste stream (predominantly peels and trimmings). Some facilities pay for disposal rather than sell waste, effectively giving it a negative value. Midpoint of range: ($20 + $50) / 2 = $35. |
+| **Processed potato products** | 1,000 | 700–1,300 | IndexBox [^5^]; USDA ERS [^3^] | 2024–2025 average for peeled/cut potatoes for foodservice and further processing. Price reflects value added through peeling, cutting, and packaging. Raw potatoes typically sell for $200–350/t at farm level [^3^][^4^]; processing adds significant value through labor, equipment, and quality assurance. |
+| **Potato processing waste** | 35 | 20–50 | Feedipedia [^7^]; industry estimates | 2024–2025 average for potato waste used as animal feed (primarily cattle). Price varies with waste composition, moisture content, starch content, and proximity to livestock operations. Peel/trim waste typically fetches $15–40/t; cull whole potatoes (higher DM, more feed value) command $30–75/t. The $20–50/t range reflects the mixed composition of the waste stream (predominantly peels and trimmings). Some facilities pay for disposal rather than sell waste, effectively giving it a negative value. |
 
 ### 5.2 Price Verification
 
@@ -169,9 +172,7 @@ USDA ERS (2025): raw potato farm prices ~$250-350/t (season average)
 IndexBox (2024): peeled/cut potatoes for foodservice ~$700-1,300/t
 Processing adds ~$400-800/t in value
 
-Selected midpoint: $1,000/t
-Mathematical midpoint of range ($700-1,300): $1,000/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $1,000/t, the midpoint of the $700–1,300 range
 ```
 
 **Potato processing waste:**
@@ -182,9 +183,7 @@ Cull whole potatoes (if present in waste stream): ~$30-75/t
 Industry estimates for mixed waste: ~$20-50/t
 Disposal cost (if not sold): ~$20-50/t (negative revenue)
 
-Selected midpoint: $35/t
-Mathematical midpoint of range ($20-50): $35/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $35/t, the midpoint of the $20–50 range
 ```
 
 ### 5.3 Revenue per Tonne of Potatoes
@@ -248,7 +247,7 @@ where:
 | Processed potato products | 99.3% | 84.6% | +14.7 pp |
 | Potato processing waste | 0.7% | 15.4% | −14.7 pp |
 
-The large difference reflects the extreme value disparity between processed potato products ($1,000/t) and waste ($35/t), a 28.6:1 price ratio. Processed products command 99.3% of revenue but contain only 84.6% of the dry matter. This is among the most extreme economic-vs-mass divergences in the crops reviewed, driven by the very low price of potato waste (primarily animal feed) relative to the high added value of processed potato products. The choice of allocation method has a very large impact on LCA results for potato processing — a 14.7 percentage-point difference in the product allocation.
+The difference reflects the value disparity between processed potato products ($1,000/t) and waste ($35/t), a ratio of about 29:1. Processed products command 99.3% of revenue but carry 84.6% of the dry matter. It is worth separating the two figures: the **price ratio** is one of the widest in this work, but the resulting **allocation divergence**, 14.7 pp, is one of the narrower ones — smaller than almond, sweet corn, citrus, safflower, peanut, sunflower, wheat, flaxseed, sugarbeet, canola, corn or oat milling. The reason is that the waste stream is small in dry matter terms, so even assigning it nothing on an economic basis moves the product share by only about 15 points. A wide price ratio does not by itself produce a wide divergence between methods.
 
 ---
 
@@ -263,11 +262,11 @@ The large difference reflects the extreme value disparity between processed pota
 | Input DM | 0.210 t | — |
 | Output: Products (as-is) | 0.840 t | ✓ |
 | Output: Waste (as-is) | 0.160 t | ✓ |
-| Total as-is output | 1.000 t | 100.0% of input ✓ |
-| Processing losses (as-is) | 0.000 t | 0.0% of input |
+| Total as-is output | 1.000 t | 100.0% of input, by construction |
+| Untracked as-is loss | 0.000 t | Zero by definition, not by measurement |
 | Output DM: Products | 0.1764 t | ✓ |
 | Output DM: Waste | 0.0320 t | ✓ |
-| Total DM output | 0.2084 t | 99.2% of input DM ✓ |
+| Total DM output | 0.2084 t | 99.2% of input DM — the informative check |
 
 ### 7.2 DM Balance Detail
 
@@ -291,10 +290,12 @@ The large difference reflects the extreme value disparity between processed pota
 | Processed potato products | 0.840 t | — |
 | Potato processing waste | 0.160 t | — |
 | **Total output** | **1.000 t** | |
-| **Processing losses** | **0.000 t** | All as-is mass accounted for |
-| **Balance** | **1.000 t** | ✓ Exact |
+| **Untracked as-is loss** | **0.000 t** | Not measured — the waste yield is set as 1.00 − 0.84, so this term is zero by definition |
+| **Balance** | **1.000 t** | Closes by construction (see note below) |
 
-> **Note on as-is vs. DM balance:** While the as-is mass balance closes exactly (0.840 + 0.160 = 1.000), there is a 0.76% DM deficit. This apparent discrepancy occurs because the waste stream has slightly lower DM% (20%) than the input potatoes (21%), meaning some water is redistributed from products to waste (through washing), and a small amount of DM (dissolved starch) is lost to wastewater that is not tracked as a co-product. This is physically realistic for potato processing and consistent with industry data showing ~0.5–2% DM losses to wastewater [^6^].
+> **Note on as-is vs. DM balance:** The as-is balance closes at exactly 1.000 t because the waste yield is defined as the complement of the product yield, not because the two streams were measured independently. The check that carries information is the dry matter balance, which does not close: 0.2084 t out against 0.2100 t in, a deficit of 0.0016 t (0.76%).
+>
+> Read as a water balance, the model implies 0.840 × 79% + 0.160 × 80% = 0.7916 t of water leaving against 0.790 t entering — a 0.0016 t gain, exactly offsetting the dry matter deficit. In a real plant these are two separate physical facts: potatoes pick up some wash water, and some starch and soluble solids leave in the process water. Because the wastewater stream is not modelled as a third output, the two effects are compressed into a single residual. The magnitude, under 1% of input DM, is consistent with reported losses of ~0.5–2% to wastewater [^6^], but it should be read as a residual rather than as a measured loss.
 
 ---
 
@@ -317,18 +318,17 @@ The large difference reflects the extreme value disparity between processed pota
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Product yield (0.84 t/t) | **High** | Midpoint of well-documented range [^2^][^6^] |
-| Waste yield (0.16 t/t) | **High** | Complement of product yield; within documented range |
+| Product yield (0.84 t/t) | **High** | Peeling and trimming recoveries are well documented [^2^][^6^] |
 | Product DM% (21%) | **High** | Same as raw potato DM%; consistent with no-dehydration processing [^1^] |
-| DM balance (0.76% gap) | **High** | Well within acceptable range; physically realistic |
-| Product price ($1,000/t) | **Medium-High** | Reasonable for peeled/cut potatoes; true midpoint of stated range |
+| Waste yield (0.16 t/t) | **Medium-High** | Defined as the complement of the product yield rather than measured; consistent with the reported peel and trim fractions |
+| Product price ($1,000/t) | **Medium-High** | Reasonable for peeled/cut potatoes; wide range reflects product mix and contract terms |
 
 ### 9.2 Medium-Confidence Data
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Waste DM% (20%) | **Medium** | Weighted average of peels and trimmings; Feedipedia reports avg peel DM of 20.1%; actual composition varies by facility [^8^] |
-| Waste price ($35/t) | **Medium** | Limited market data; varies significantly by region, waste composition, and end use; $60/t achievable only for cull whole potatoes, not peel/trim waste |
+| Waste DM% (20%) | **Medium** | Weighted average of peels and trimmings; Feedipedia reports avg peel DM of 20.1%; actual composition varies by facility [^7^] |
+| Waste price ($35/t) | **Medium** | Limited market data; varies with region, waste composition, and end use. Prices above ~$40/t are reached only where the stream carries cull whole potatoes, not for peel and trim waste alone |
 | Product yield range (0.80–0.88) | **Medium** | Varies significantly with peeling method and potato quality |
 | Waste yield range (0.12–0.20) | **Medium** | Inverse of product yield range; actual waste composition varies |
 | Price ranges | **Medium** | Potato product prices are less standardized than grain prices |
@@ -342,11 +342,11 @@ The large difference reflects the extreme value disparity between processed pota
 
 3. **Waste composition varies:** Potato processing waste is a heterogeneous stream that can include peels, trimmings, reject potatoes, and (in some configurations) wastewater sludge. The DM% and price of waste depend heavily on its composition. If a facility generates wastewater sludge as a separate stream, the waste DM% would be much lower (~5–15%) and the yield would be different. Facilities that separate peel waste from trim waste may have two distinct co-product streams with different DM% and prices.
 
-4. **Extreme economic-vs-mass allocation divergence:** The 28.6:1 price ratio between products ($1,000/t) and waste ($35/t) creates an extreme divergence between economic allocation (99.3% products) and mass allocation (84.6% products). This means the choice of allocation method has a very large impact on LCA results for potato processing — a 14.7 percentage-point difference. LCA practitioners should be aware that economic allocation assigns nearly all environmental burden to products, while mass allocation assigns a meaningful fraction (15.4%) to waste.
+4. **Economic-vs-mass allocation divergence:** The ~29:1 price ratio between products ($1,000/t) and waste ($35/t) means economic allocation assigns almost the whole burden to products (99.3%), while mass allocation assigns a meaningful share to waste (15.4%). The gap of 14.7 pp is moderate by comparison with the other crops in this work (see Section 6.3), because the waste stream carries only about a sixth of the dry matter. Practitioners should nonetheless state which method they use, since the waste stream's burden differs by more than a factor of twenty between them.
 
 5. **Waste price uncertainty:** Potato waste may have a negative value (disposal cost) at some facilities or a positive value (animal feed) at others, depending on proximity to livestock operations and local regulations. The $35/t average hides this bimodal distribution. At some facilities, waste is given away or the facility pays for disposal, which would make the economic allocation to products even more extreme (approaching 100%). The upper bound of the $20–50/t range reflects mixed waste that includes some cull whole potatoes; pure peel/trim waste typically does not exceed $40/t.
 
-6. **Scope limited to basic processing:** This table does not cover processes involving significant dehydration or frying. Frozen french fry production would have:
+6. **Scope limited to basic processing:** This table does not cover processes involving significant dehydration or frying. Note when reading the figures below that fried products **gain dry matter from absorbed frying oil**, which is a purchased non-potato input: at ~0.60 t/t and ~37% DM, frozen fries carry roughly 0.225 t DM against 0.210 t of potato DM input, and potato chips more still. Any allocation model for those systems must treat the frying oil as an input rather than as recovered potato mass. Frozen french fry production would have:
    - Product yield: ~0.55–0.65 t/t
    - Product DM%: ~35–40%
    - Additional co-product: used frying oil

@@ -36,7 +36,11 @@
 | **Bushel weight** | 45.0 lb (20.412 kg) | USDA standard test weight for rough rice (No. 1 minimum: 45 lb/bu for long grain) [^1^] |
 | **Typical whole-grain yield** | ~45–60% (head rice, as-is from rough rice) | Industry average for well-milled long-grain rice [^2^]. Pure head rice yield (HRY) is 45–60% for long-grain; total milled rice yield (MRY, including brokens) is 65–72%. |
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Because rice milling is a two-stage system, the treatment of the intermediate product (brown rice) also has to be stated explicitly; Section 6.1 does that and sets out the alternative. Cumulative allocations are computed from unrounded stage values and then rounded once, as described in Section 6.5.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -162,12 +166,12 @@ FOUR FINAL CO-PRODUCTS from 1 t rough rice:
 | Co-product | Stage | Yield (t/t rough rice) | Range | Source & Calculation |
 |------------|-------|----------------------|-------|---------------------|
 | **Brown rice** | 1 (intermediate) | 0.80 | 0.78–0.82 | Industry standard hulling yield [^4^][^7^]. Rough rice yields ~78–82% brown rice after hull removal. The 0.80 midpoint represents long-grain rice. |
-| **Rice hulls** | 1 (final) | 0.20 | 0.18–0.22 | Industry standard [^4^][^8^]. Hulls represent 18–22% of rough rice weight for long-grain varieties. The 0.20 midpoint is at the 50th percentile. |
-| **White rice (head rice + large brokens)** | 2 (final) | 0.65 | 0.58–0.72 | Industry standard for well-milled long-grain rice [^2^][^7^]. This yield includes head rice plus large brokens graded as whole-kernel equivalent. Pure head rice yield (HRY, whole kernels only) from rough rice is 45–60% for long-grain; total milled rice yield (MRY, including all brokens) is 65–72%. The 0.65 value represents the common industry practice of combining head rice with large brokens. Midpoint of range: (0.58 + 0.72) / 2 = 0.65 ✓ |
-| **Rice bran** | 2 (final) | 0.08 | 0.06–0.10 | Industry standard [^4^][^8^]. Bran represents 6–10% of rough rice weight (including polish and germ fractions; bran alone without polish is 6–8%). IRRI and academic sources consistently report ~8% for well-milled rice. The 0.08 midpoint is at the 50th percentile. Midpoint of range: (0.06 + 0.10) / 2 = 0.08 ✓ |
-| **Rice mill feed (brokens + fines)** | 2 (final) | 0.05 | 0.03–0.07 | Industry standard [^7^]. Mill feed includes small brokens, brewer's rice, and fines. The 0.05 midpoint is at the 50th percentile. Note: "mill feed" here excludes bran and hulls. |
+| **Rice hulls** | 1 (final) | 0.20 | 0.18–0.22 | Industry standard [^4^][^8^]. Hulls represent 18–22% of rough rice weight for long-grain varieties. The adopted 0.20 is the midpoint of the stated range. |
+| **White rice (head rice + large brokens)** | 2 (final) | 0.65 | 0.58–0.72 | Industry standard for well-milled long-grain rice [^2^][^7^]. This yield includes head rice plus large brokens graded as whole-kernel equivalent. Pure head rice yield (HRY, whole kernels only) from rough rice is 45–60% for long-grain; total milled rice yield (MRY, including all brokens) is 65–72%. The 0.65 value represents the common industry practice of combining head rice with large brokens. |
+| **Rice bran** | 2 (final) | 0.08 | 0.06–0.10 | Industry standard [^4^][^8^]. Bran represents 6–10% of rough rice weight (including polish and germ fractions; bran alone without polish is 6–8%). IRRI and academic sources consistently report ~8% for well-milled rice. The adopted 0.08 is the midpoint of the stated range. |
+| **Rice mill feed (brokens + fines)** | 2 (final) | 0.05 | 0.03–0.07 | Industry standard [^7^]. Mill feed includes small brokens, brewer's rice, and fines. The adopted 0.05 is the midpoint of the stated range. Note: "mill feed" here excludes bran and hulls. |
 
-> **Note on yield relationships:** The Stage 2 yields from brown rice are: white rice 0.65/0.80 = 81.25%, bran 0.08/0.80 = 10.0%, mill feed 0.05/0.80 = 6.25%. These sum to 97.5%, consistent with ~2.5% milling losses (polishing dust, residual bran, and moisture adjustment).
+> **Note on yield relationships:** The Stage 2 yields from brown rice are white rice 0.65/0.80 = 81.25%, bran 0.08/0.80 = 10.0% and mill feed 0.05/0.80 = 6.25%, summing to 97.5% — an apparent 2.5% milling loss on an as-is basis. Almost all of that is water, not dry matter. Brown rice enters at 14% moisture and the three products leave at 11–12%, so of the 0.020 t as-is loss, **0.0197 t is water and only 0.0003 t is dry matter** (0.04% of the brown rice DM, Section 7.2). The as-is and dry matter views of Stage 2 look very different for that reason and are not in conflict.
 
 #### Total Recovery and Losses
 
@@ -180,7 +184,7 @@ The as-is yields sum to 0.98 t/t rough rice (0.65 + 0.08 + 0.20 + 0.05), which i
 
 | Co-product | DM (%) | Basis |
 |------------|--------|-------|
-| Brown rice (intermediate) | 86.0% | Brown rice at 14% moisture [^8^]. Brown rice retains more moisture than white rice because the bran layer is hygroscopic. The 14% moisture is typical for brown rice entering the whitener. |
+| Brown rice (intermediate) | 86.0% | Brown rice at 14% moisture [^8^], typical for brown rice entering the whitener. This is slightly wetter than the rough rice it came from (13%), which is correct rather than anomalous: hulls are the driest fraction of the grain, so removing them concentrates the remaining water in the kernel. The water balance confirms it — see the check below the DM output table in Section 4.3. |
 | White rice (head rice + large brokens) | 88.0% | Commercial standard for milled rice: typically 12% moisture = 88% DM. USDA sample grade threshold is 15% moisture; well-milled rice is typically traded at 11–13% moisture [^1^]. |
 | Rice bran | 89.0% | Rice bran typically at 10–12% moisture [^8^]. Stabilized rice bran (heat-treated) is at 10–11% moisture. |
 | Rice hulls | 90.0% | Rice hulls at 8–12% moisture [^8^]. Hulls are the driest fraction; their high silica content limits moisture absorption. |
@@ -201,17 +205,21 @@ The as-is yields sum to 0.98 t/t rough rice (0.65 + 0.08 + 0.20 + 0.05), which i
 
 ---
 
+> **Water balance check on Stage 1:** The brown rice moisture used in this table is not an independent assumption — it follows from the rough rice and hull moistures. One tonne of rough rice at 13% moisture carries 0.130 t of water. Hulls, at 90% DM, take 0.20 × 0.10 = 0.020 t of it, leaving 0.110 t in 0.80 t of brown rice, or **13.75% moisture**. The adopted 14% (86% DM) follows directly, and the small residual is the 0.002 t of Stage 1 DM loss shown in Section 7.2.
+
+---
+
 ## 5. Prices
 
 ### 5.1 Price Table
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Brown rice** (intermediate) | 480 | 380–580 | USDA ERS [^2^]; IndexBox [^6^] | Brown rice intermediate for Stage 1 allocation. Priced between rough rice (~$250–350/t) and milled rice (~$400–700/t). Midpoint of range: ($380 + $580) / 2 = $480 ✓ |
-| **White rice (head rice + large brokens)** | 550 | 400–700 | USDA ERS [^2^]; WASDE [^3^]; IndexMundi [^5^] | 2024–2025 average for US long-grain milled rice. Prices vary by grade, variety, and crop year. Midpoint of range: ($400 + $700) / 2 = $550 ✓ |
-| **Rice bran** | 220 | 140–300 | USDA ERS [^2^]; Tridge [^9^]; IndexBox [^6^] | 2024–2025 average for stabilized rice bran. Raw bran: ~$90–170/t (USDA AMS Weekly Rice Summary reports domestic bulk at $85–120/short ton ≈ $94–132/t); stabilized: $180–320/t. Midpoint of range: ($140 + $300) / 2 = $220 ✓ |
-| **Rice hulls** | 40 | 20–60 | Industry estimates | 2024–2025 average. Rice hulls are a low-value byproduct used as animal feed roughage, mulch, bedding, or industrial filler. Market data is limited; hulls are often consumed on-site. Midpoint of range: ($20 + $60) / 2 = $40 ✓ |
-| **Rice mill feed (brokens + fines)** | 160 | 100–220 | USDA ERS [^2^]; industry estimates | 2024–2025 average. Brokens and brewer's rice sold as animal feed or for brewing. Priced well below head rice. Midpoint of range: ($100 + $220) / 2 = $160 ✓ |
+| **Brown rice** (intermediate) | 480 | 380–580 | USDA ERS [^2^]; IndexBox [^6^] | Brown rice intermediate for Stage 1 allocation. Priced between rough rice (~$250–350/t) and milled rice (~$400–700/t). |
+| **White rice (head rice + large brokens)** | 550 | 400–700 | USDA ERS [^2^]; WASDE [^3^]; IndexMundi [^5^] | 2024–2025 average for US long-grain milled rice. Prices vary by grade, variety, and crop year. |
+| **Rice bran** | 220 | 140–300 | USDA ERS [^2^]; Tridge [^9^]; IndexBox [^6^] | 2024–2025 average for stabilized rice bran. Raw bran: ~$90–170/t (USDA AMS Weekly Rice Summary reports domestic bulk at $85–120/short ton ≈ $94–132/t); stabilized: $180–320/t. |
+| **Rice hulls** | 40 | 20–60 | Industry estimates | 2024–2025 average. Rice hulls are a low-value byproduct used as animal feed roughage, mulch, bedding, or industrial filler. Market data is limited; hulls are often consumed on-site. |
+| **Rice mill feed (brokens + fines)** | 160 | 100–220 | USDA ERS [^2^]; industry estimates | 2024–2025 average. Brokens and brewer's rice sold as animal feed or for brewing. Priced well below head rice. |
 
 ### 5.2 Price Verification
 
@@ -223,9 +231,7 @@ IndexMundi (2025 avg): ~$530/t
 WASDE (Feb 2026): 12-14 ¢/lb = $265-309/t (rough rice, not milled)
 Milled rice premium over rough rice: typically 2.0-2.5× rough rice price
 
-Selected midpoint: $550/t
-Mathematical midpoint of range ($400-700): $550/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $550/t, the midpoint of the stated range
 ```
 
 **Rice bran:**
@@ -236,9 +242,7 @@ Tridge: ~$200-260/t (stabilized)
 IndexBox: ~$180-300/t
 Raw bran: ~$90-170/t; stabilized: $180-320/t
 
-Selected midpoint: $220/t
-Mathematical midpoint of range ($140-300): $220/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $220/t, the midpoint of the stated range
 ```
 
 **Rice hulls:**
@@ -248,9 +252,7 @@ Industry estimates: ~$30-50/t (bulk, loose)
 Pelleted hulls: ~$60-100/t
 Boiler fuel value: ~$20-40/t (energy content basis)
 
-Selected midpoint: $40/t
-Mathematical midpoint of range ($20-60): $40/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $40/t, the midpoint of the stated range
 ```
 
 **Rice mill feed:**
@@ -260,9 +262,7 @@ USDA ERS (2025): ~$140-180/t (brokens, feed grade)
 Brewer's rice: ~$160-220/t
 Second heads (large brokens): ~$200-300/t
 
-Selected midpoint: $160/t
-Mathematical midpoint of range ($100-220): $160/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $160/t, the midpoint of the stated range
 ```
 
 ### 5.3 Revenue per Tonne of Rough Rice
@@ -281,7 +281,34 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 
 ## 6. Two-Stage Allocation
 
-### 6.1 Allocation Approach
+### 6.1 Treatment of the Intermediate Product
+
+Rice milling has an intermediate — brown rice — that is sold between the two stages, so Stage 1 cannot be allocated without deciding what brown rice is worth. Two conventions are possible.
+
+**Market-price cascade (used here).** Brown rice is valued at the price it transacts at between huller and miller ($480/t, Section 5.1). Stage 1 divides the rough rice burden between brown rice and hulls on that basis; Stage 2 divides brown rice's burden among white rice, bran and mill feed; the two stage allocations are then multiplied along each product's path.
+
+**Derived valuation (not used here).** Brown rice is instead valued at the total revenue of the products it becomes ($383.10/t rough rice).
+
+These are not two options plus a third. **Valuing the intermediate at its derived value makes the cascade collapse algebraically to the direct end-of-chain calculation**, because the derived value cancels out of the multiplication:
+
+```
+Stage 1 brown rice share x Stage 2 white rice share
+  = D / (D + hulls)  x  white / D
+  = white / (D + hulls)
+  = white / (white + bran + mill feed + hulls)   <- the direct calculation
+```
+
+So the choice is between the market-price cascade and the direct end-of-chain calculation, and Section 6.6 reports the direct result. For rice the two agree to within 0.01 percentage point (Section 6.7), so the choice is immaterial here — but it is stated explicitly because it is not immaterial in every two-stage system.
+
+**Why the market-price cascade is used for rice:**
+
+1. **Brown rice is not a final co-product in this work.** It is not a dairy feed; within this system it exists only as the input to whitening. The four co-products this document reports are white rice, rice bran, rice hulls and rice mill feed.
+2. **The brown rice price is an arms-length transfer price into Stage 2.** It is what a miller pays for the same stream that enters whitening, so it is the observable value at the point of separation, which is what applying allocation at each unit process requires.
+3. **It keeps the split of the field burden independent of downstream value-add.** Whitening adds relatively little value in rice, which is why the two calculations converge; the convention nonetheless holds the Stage 1 split to the transaction that actually occurs there.
+
+**Where this convention does not apply.** A different treatment is warranted where the intermediate is itself a marketed final co-product of the system being studied — that is, where the study needs allocation factors for both the intermediate and the products it becomes, because both are genuine outputs. In that case the intermediate's quoted price is the price in a competing end use rather than a transfer price into the next stage, and the direct end-of-chain treatment is used so that all final products sit on one denominator. That situation does not arise for rice: brown rice sold as a retail food product leaves the system as a final product in its own right and is outside the scope of this table, which models the whitening pathway.
+
+### 6.2 Allocation Approach
 
 Because rice milling has two sequential stages, the allocation is performed in two steps:
 
@@ -297,7 +324,7 @@ Rice hulls:   Stage 1 hulls alloc (no Stage 2)
 Rice mill feed: Stage 1 brown rice alloc × Stage 2 mill feed alloc
 ```
 
-### 6.2 Stage 1: Hulling Allocation
+### 6.3 Stage 1: Hulling Allocation
 
 **Mass allocation:**
 
@@ -315,7 +342,7 @@ Rice mill feed: Stage 1 brown rice alloc × Stage 2 mill feed alloc
 
 > **Stage 1 revenue:** Brown rice: 0.80 × $480 = $384.00; Rice hulls: 0.20 × $40 = $8.00; Total: $392.00.
 
-### 6.3 Stage 2: Milling Allocation
+### 6.4 Stage 2: Milling Allocation
 
 **Mass allocation:**
 
@@ -337,7 +364,7 @@ Rice mill feed: Stage 1 brown rice alloc × Stage 2 mill feed alloc
 
 > **Rounding note:** Raw calculations yield 93.32%, 4.59%, and 2.09%. These are rounded to 93.3%, 4.6%, and 2.1% so that the sum is exactly 100.0%.
 
-### 6.4 Final Cumulative Allocation
+### 6.5 Final Cumulative Allocation
 
 The final allocation of rough rice's environmental burden to each of the four final co-products is calculated by cascading the two stages:
 
@@ -345,23 +372,27 @@ The final allocation of rough rice's environmental burden to each of the four fi
 
 | Co-product | Calculation | Final Allocation |
 |------------|-------------|-----------------|
-| **White rice** | 79.3% × 83.2% | **66.0%** |
-| **Rice bran** | 79.3% × 10.3% | **8.2%** |
-| **Rice hulls** | 20.7% (Stage 1 only) | **20.7%** |
-| **Rice mill feed** | 79.3% × 6.5% | **5.2%** |
-| **Total** | | **100.1% ≈ 100%** |
+| **White rice** | 79.263% × 83.176% | **65.9%** |
+| **Rice bran** | 79.263% × 10.353% | **8.2%** |
+| **Rice hulls** | 20.737% (Stage 1 only) | **20.7%** |
+| **Rice mill feed** | 79.263% × 6.471% | **5.2%** |
+| **Total** | | **100.0%** |
+
+> **Rounding note:** The cumulative values are computed from the **unrounded** stage allocations, not from the one-decimal figures displayed in Sections 6.3 and 6.4. Multiplying rounded percentages inflates the result: 79.3% × 83.2% gives 65.98%, whereas the unrounded product is 65.93%. The unrounded cumulative values are 65.927%, 8.206%, 20.737% and 5.129%, which sum to exactly 100%. Rounded to one decimal place they give 65.9, 8.2, 20.7 and 5.1, summing to 99.9%; rice mill feed carries the +0.1 pp adjustment, being the stream whose value sits closest to the next decimal. Rice hulls is not adjusted because its cumulative allocation is its Stage 1 allocation by construction.
 
 **Economic allocation (cumulative):**
 
 | Co-product | Calculation | Final Allocation |
 |------------|-------------|-----------------|
-| **White rice** | 98.0% × 93.3% | **91.4%** |
-| **Rice bran** | 98.0% × 4.6% | **4.5%** |
-| **Rice hulls** | 2.0% (Stage 1 only) | **2.0%** |
-| **Rice mill feed** | 98.0% × 2.1% | **2.1%** |
+| **White rice** | 97.959% × 93.317% | **91.4%** |
+| **Rice bran** | 97.959% × 4.594% | **4.5%** |
+| **Rice hulls** | 2.041% (Stage 1 only) | **2.0%** |
+| **Rice mill feed** | 97.959% × 2.088% | **2.1%** |
 | **Total** | | **100.0%** |
 
-### 6.5 Verification: Direct Calculation
+> **Rounding note:** As above, computed from the unrounded stage allocations. The unrounded cumulative values are 91.413%, 4.500%, 2.041% and 2.046%, summing to exactly 100%; rice mill feed carries the +0.1 pp adjustment.
+
+### 6.6 Verification: Direct Calculation
 
 The cumulative allocation can be verified by calculating directly from the four final co-products' DM and revenue values per tonne of rough rice, bypassing the intermediate brown rice stage:
 
@@ -372,8 +403,10 @@ The cumulative allocation can be verified by calculating directly from the four 
 | White rice | 0.5720 | (0.5720 ÷ 0.8677) × 100 | **65.9%** |
 | Rice bran | 0.0712 | (0.0712 ÷ 0.8677) × 100 | **8.2%** |
 | Rice hulls | 0.1800 | (0.1800 ÷ 0.8677) × 100 | **20.7%** |
-| Rice mill feed | 0.0445 | (0.0445 ÷ 0.8677) × 100 | **5.1%** |
-| **Total** | **0.8677** | | **99.9% ≈ 100%** |
+| Rice mill feed | 0.0445 | (0.0445 ÷ 0.8677) × 100 | **5.2%** |
+| **Total** | **0.8677** | | **100.0%** |
+
+> **Rounding note:** Unrounded values are 65.921%, 8.206%, 20.744% and 5.129%. Rounded independently they sum to 99.9%, so rice mill feed carries the +0.1 pp adjustment, as in Section 6.5.
 
 **Direct economic allocation:**
 
@@ -382,38 +415,42 @@ The cumulative allocation can be verified by calculating directly from the four 
 | White rice | $357.50 | (357.50 ÷ 391.10) × 100 | **91.4%** |
 | Rice bran | $17.60 | (17.60 ÷ 391.10) × 100 | **4.5%** |
 | Rice hulls | $8.00 | (8.00 ÷ 391.10) × 100 | **2.0%** |
-| Rice mill feed | $8.00 | (8.00 ÷ 391.10) × 100 | **2.0%** |
-| **Total** | **$391.10** | | **99.9% ≈ 100%** |
+| Rice mill feed | $8.00 | (8.00 ÷ 391.10) × 100 | **2.1%** |
+| **Total** | **$391.10** | | **100.0%** |
 
-### 6.6 Reconciliation: Cascade vs. Direct
+> **Rounding note:** Rice hulls and rice mill feed both earn $8.00/t rough rice, so their unrounded allocations are identical at 2.046%. Rounded independently the four values sum to 99.9%; rice mill feed carries the +0.1 pp adjustment, matching the treatment in Section 6.5.
+
+### 6.7 Reconciliation: Cascade vs. Direct
 
 The cascade and direct methods give very similar results for rice milling:
 
 | Co-product | Mass (cascade) | Mass (direct) | Econ (cascade) | Econ (direct) |
 |------------|---------------|---------------|----------------|---------------|
-| White rice | 66.0% | 65.9% | 91.4% | 91.4% |
+| White rice | 65.9% | 65.9% | 91.4% | 91.4% |
 | Rice bran | 8.2% | 8.2% | 4.5% | 4.5% |
 | Rice hulls | 20.7% | 20.7% | 2.0% | 2.0% |
-| Rice mill feed | 5.2% | 5.1% | 2.1% | 2.0% |
+| Rice mill feed | 5.2% | 5.2% | 2.1% | 2.1% |
 
-**Why the differences are small:** The brown rice intermediate is priced at $480/t and its products (white rice $550/t, bran $220/t, mill feed $160/t) are in a similar value range. The intermediate price is close to the weighted average of its products, so the cascade and direct methods converge.
+**Why the two agree so closely:** For rice milling the cascade and direct calculations agree to within 0.01 percentage point on every stream — closer than the displayed precision — so they are identical once rounded. Two reasons. On the mass side, the processing losses are very small (0.26% of input DM in total), so the cascade denominators and the direct denominator are nearly the same pool. On the economic side, the brown rice intermediate is priced at $480/t while its products run $550/t (white rice), $220/t (bran) and $160/t (mill feed); the intermediate price is close to the revenue-weighted average of what it becomes ($383.10 of revenue from 0.80 t of brown rice is $479/t), so valuing the intermediate at its own price and valuing it at its derived value give nearly the same Stage 1 split.
+
+This convergence is a property of rice milling, not a general result. Where a downstream stage adds a large multiple of value, the two calculations diverge substantially.
 
 **Which method to use:**
 
-- The **cascade method** is required by ISO 14044 when a unit process has intermediate products that cross system boundaries (i.e., brown rice could be sold independently as a food product). It reflects the economic reality at each processing stage.
-- The **direct method** is simpler and more transparent, but it obscures the two-stage nature of the process.
+- The **cascade method** applies allocation at each unit process separately, which is appropriate when the intermediate crosses a system boundary and is independently traded, as brown rice is. It reflects the transaction that actually occurs at each stage. Note that ISO 14044 requires allocation to be applied at each unit process; it does not define or mandate a "cascade", which is a practitioner's term and should not be confused with ISO's stepwise allocation *hierarchy* (avoid → physical → economic).
+- The **direct calculation** uses a single end-of-chain denominator. It is simpler, but it collapses the two-stage structure and lets value added in Stage 2 govern the Stage 1 split.
 
-For this document, we report both methods and recommend the **cascade method** as the primary allocation for LCA purposes, consistent with ISO 14044.
+Both are reported. The **cascade is the primary allocation** for this document, for the reasons in Section 6.1. For rice the two agree to within 0.01 pp, so the choice does not affect the published factors.
 
-### 6.7 Recommended Final Allocation
+### 6.8 Recommended Final Allocation
 
 | Co-product | Mass Allocation | Economic Allocation |
 |------------|----------------|-------------------|
-| **White rice** | **66.0%** | **91.4%** |
+| **White rice** | **65.9%** | **91.4%** |
 | **Rice bran** | **8.2%** | **4.5%** |
 | **Rice hulls** | **20.7%** | **2.0%** |
 | **Rice mill feed** | **5.2%** | **2.1%** |
-| **Total** | **100.1%** | **100.0%** |
+| **Total** | **100.0%** | **100.0%** |
 
 ---
 
@@ -468,8 +505,8 @@ For this document, we report both methods and recommend the **cascade method** a
 | Rice hulls | 0.200 t | — |
 | Rice mill feed | 0.050 t | — |
 | **Total output** | **0.980 t** | |
-| **Processing losses** | **0.020 t** | 2.0%: dust, fines, moisture adjustment |
-| **Balance** | **1.000 t** | ✓ Exact |
+| **Processing losses** | **0.020 t** | 2.0%: chiefly moisture removed during whitening and polishing (see Section 4.1), plus dust and fines — the residual of the balance, not an independent measurement |
+| **Balance** | **1.000 t** | Closes by construction, since the loss term is the residual |
 
 ---
 
@@ -479,10 +516,10 @@ For this document, we report both methods and recommend the **cascade method** a
 
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t rough rice) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t rough rice) | Revenue (USD/t rough rice) | Econ Alloc — Cascade (%) | Econ Alloc — Direct (%) | Mass Alloc — Cascade (%) | Mass Alloc — Direct (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|----------------------|-------------|---------------|-------------|--------|--------------------------|--------------------------|------------------------|------------------------|------------------------|------------------------|
-| Rice | Rice milling | 2 | 45 lb/bu min test weight (long grain) | 13% | 1 t rough rice at 13% moisture | White rice (head rice + large brokens) | 0.65 | 0.58–0.72 | 550 | 400–700 | 88.0 | 0.572 | 357.50 | 91.4 | 91.4 | 66.0 | 65.9 |
+| Rice | Rice milling | 2 | 45 lb/bu min test weight (long grain) | 13% | 1 t rough rice at 13% moisture | White rice (head rice + large brokens) | 0.65 | 0.58–0.72 | 550 | 400–700 | 88.0 | 0.572 | 357.50 | 91.4 | 91.4 | 65.9 | 65.9 |
 | Rice | Rice milling | 2 | 45 lb/bu min test weight (long grain) | 13% | 1 t rough rice at 13% moisture | Rice bran | 0.08 | 0.06–0.10 | 220 | 140–300 | 89.0 | 0.071 | 17.60 | 4.5 | 4.5 | 8.2 | 8.2 |
 | Rice | Rice milling | 2 | 45 lb/bu min test weight (long grain) | 13% | 1 t rough rice at 13% moisture | Rice hulls | 0.20 | 0.18–0.22 | 40 | 20–60 | 90.0 | 0.180 | 8.00 | 2.0 | 2.0 | 20.7 | 20.7 |
-| Rice | Rice milling | 2 | 45 lb/bu min test weight (long grain) | 13% | 1 t rough rice at 13% moisture | Rice mill feed | 0.05 | 0.03–0.07 | 160 | 100–220 | 89.0 | 0.045 | 8.00 | 2.1 | 2.0 | 5.2 | 5.1 |
+| Rice | Rice milling | 2 | 45 lb/bu min test weight (long grain) | 13% | 1 t rough rice at 13% moisture | Rice mill feed | 0.05 | 0.03–0.07 | 160 | 100–220 | 89.0 | 0.045 | 8.00 | 2.1 | 2.1 | 5.2 | 5.2 |
 
 ### 8.2 Intermediate Product (for cascade calculation reference only)
 
@@ -502,8 +539,7 @@ For this document, we report both methods and recommend the **cascade method** a
 | Rice bran yield (0.08 t/t) | **High** | Well-established at ~8% of rough rice; IRRI consistently reports ~8% [^8^] |
 | Brown rice yield (0.80 t/t) | **High** | Consistent with 78–82% hulling yield [^4^] |
 | White rice DM% (88%) | **High** | Commercial standard for milled rice; well-milled rice typically 11–13% moisture |
-| White rice price ($550/t) | **High** | USDA ERS [^2^]; true midpoint of stated range |
-| DM balance (0.26% gap) | **High** | Well within acceptable range |
+| White rice price ($550/t) | **High** | USDA ERS [^2^]; IndexMundi [^5^] quote ~$500–600/t and ~$530/t respectively |
 
 ### 9.2 Medium-Confidence Data
 
@@ -525,11 +561,11 @@ For this document, we report both methods and recommend the **cascade method** a
 
 4. **Broken rice classification:** The boundary between "white rice" (head rice + large brokens at $550/t) and "rice mill feed" (small brokens + fines at $160/t) is somewhat arbitrary. Some mills sell second heads (large brokens) at $250–350/t as a separate product. Reclassifying large brokens from mill feed to white rice would increase white rice yield and shift allocations.
 
-5. **Hull value variability:** Rice hulls have limited markets and are sometimes treated as waste (zero value). If hulls are assigned zero revenue, the economic allocation shifts to: White rice 93.2%, Bran 4.6%, Mill feed 2.1%. This is a ~2 pp increase for white rice relative to the $40/t hull price scenario.
+5. **Hull value variability:** Rice hulls have limited markets and are sometimes treated as waste (zero value). If hulls are assigned zero revenue, Stage 1 assigns the whole burden to brown rice and the economic allocation becomes the Stage 2 split: **white rice 93.3%, bran 4.6%, mill feed 2.1%**. That is a 1.9 pp increase for white rice relative to the $40/t hull scenario.
 
 6. **Rough rice moisture:** The 13% moisture used here is a typical trade and storage target for long-grain rough rice, not a USDA FGIS grade standard. Medium- and short-grain rough rice is typically stored at ~14% moisture. The DM input changes from 0.870 (13% moisture) to 0.860 (14% moisture), which would slightly affect mass allocation proportions. The choice of moisture target should match the grain type being modeled.
 
-7. **Brown rice intermediate price:** The Stage 1 economic allocation depends on the brown rice price ($480/t), which is less well-established than white rice prices. The cascade vs. direct comparison (Section 6.6) shows that this dependency has minimal practical impact because the results converge, but it is a theoretical limitation of the cascade method.
+7. **Brown rice intermediate price:** The Stage 1 economic allocation depends on the brown rice price ($480/t), which is less well established than the white rice price. In this system that dependency turns out not to matter: $480/t is close to the revenue-weighted value of what brown rice becomes ($383.10 of revenue from 0.80 t of brown rice is $479/t), so the cascade and direct calculations agree to within 0.01 pp (Section 6.7). The brown rice price would matter materially only if it diverged substantially from the value of its products, which is not the case here.
 
 8. **Stabilized vs. raw rice bran:** The $220/t price assumes stabilized rice bran (heat-treated to deactivate lipase, extending shelf life from days to months). Raw rice bran sells for ~$90–170/t but deteriorates rapidly. The choice affects bran's economic allocation share.
 

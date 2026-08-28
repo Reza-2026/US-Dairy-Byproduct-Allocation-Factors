@@ -20,7 +20,7 @@
 | --- | --- | --- |
 | Parent crop | Canola (*Brassica napus*, low-erucic acid rapeseed) | — |
 | Input quantity | 1 metric ton (1,000 kg) | — |
-| Moisture content | 8.5% | Canadian Grain Commission (CGC) constant moisture basis for reporting oil and protein content [^1^]. Note: CGC grading thresholds are: straight (<10% moisture), tough (10–12.5%), damp (>12.5%). Canola Council recommends ≤8% for safe long-term storage. The 8.5% moisture basis is the CGC's analytical reporting convention, not a trading standard. |
+| Moisture content | 8.5% | Canadian Grain Commission (CGC) constant moisture basis for reporting oil and protein content [^1^]. This is an analytical reporting convention, not a trading standard; see the note below. |
 | Dry matter (DM) input | 0.915 t DM/t canola | Calculated: 1.000 × (1 − 0.085) = 0.915 |
 | Bushel equivalent | 44.09 bushels/t | 1,000 kg ÷ 22.68 kg/bu (50 lb at standard moisture) |
 | Bushel weight | 50.0 lb (22.68 kg) | USDA/CGC standard for No. 1 Canada canola [^1^] |
@@ -85,6 +85,8 @@ Canola seed typically contains 40–44% oil on an as-is basis at 8.5% moisture (
 - Extraction rate: 98%
 - Oil recovered (as-is): 0.436 × 0.98 = 0.427 t/t
 
+Three independent estimates of the oil yield are therefore available: 0.427 t/t from the composition-and-extraction route above, 0.422 t/t from COPA's reported Canadian crush data [^2^], and 0.420 t/t as the midpoint of the 0.40–0.44 range. All three fall within the stated range and differ by less than 2%. This document adopts **0.420 t/t**, the range midpoint, for consistency with the treatment of every other parameter in the database; the two higher estimates indicate that this is a marginally conservative choice for oil and correspondingly generous for meal.
+
 *Meal yield (derived from mass balance):*
 - Input: 1.000 t canola seed
 - Oil output: 0.420 t
@@ -101,13 +103,13 @@ The 2% process loss accounts for:
 | Co-product | DM (%) | Basis |
 | --- | --- | --- |
 | Canola oil (crude) | 100.0% | Crude canola oil contains ~0.3% moisture and volatile matter per COPA trading specifications. For allocation purposes and strict mass balance modeling, 100% DM is used as a standard approximation for vegetable oils. |
-| Canola meal (dried) | 88.0% | Standard specification for traded canola meal requires a maximum of 12% moisture (minimum 88% DM) for safe storage and transport [^4^]. While some plant gate samples may test at 90% DM, utilizing the 88% DM (12% moisture) trading boundary ensures strict thermodynamic closure of the water and DM mass balances without generating physical paradoxes in the process loss stream. |
+| Canola meal (dried) | 88.0% | Standard specification for traded canola meal requires a maximum of 12% moisture (minimum 88% DM) for safe storage and transport [^4^]. While some plant-gate samples test at 90% DM, the 88% DM (12% moisture) trading boundary is used here because it is the specification traded against and because a higher figure cannot be reconciled with the process loss stream (see Section 7.3). |
 
 ### 3.4 Prices
 | Co-product | Price (USD/t) | Range | Source | Notes |
 | --- | --- | --- | --- | --- |
 | Canola oil (crude) | 950 | 800–1100 | USDA FAS [^6^]; IndexBox [^5^] | Crude canola oil FOB: $800–1100/t (2024–2025). RBD canola oil: $1000–1300/t. The $950/t midpoint is the mathematical midpoint of the stated range ($800 + $1100) / 2 = $950. Prices are volatile and influenced by global vegetable oil markets (palm, soy, sunflower). |
-| Canola meal | 310 | 250–370 | USDA ERS [^3^]; Tridge [^7^] | Canola meal (34–36% protein): $250–370/t (2024–2025). Prices vary by region, protein content, and proximity to livestock operations. Midpoint $310/t is the mathematical midpoint of the stated range ($250 + $370) / 2 = $310. |
+| Canola meal | 310 | 250–370 | USDA ERS [^3^]; Tridge [^7^] | Canola meal (34–36% protein [^8^]): $250–370/t (2024–2025). Prices vary by region, protein content, and proximity to livestock operations. Midpoint $310/t is the mathematical midpoint of the stated range ($250 + $370) / 2 = $310. |
 
 ### 3.5 Revenue and Allocation Calculations
 
@@ -152,23 +154,7 @@ The 2% process loss accounts for:
 *Rounding note:* The raw calculations yield 46.01% (oil) and 53.99% (meal). These are rounded to 46.0% and 54.0% so that the sum is exactly 100.0%.
 
 ### 3.6 Mass Balance Check
-| Check | Value | Status |
-| --- | --- | --- |
-| Input As-Is | 1.000 t/t | — |
-| Input DM (8.5% moisture) | 0.915 t/t | — |
-| Input Water | 0.085 t/t | — |
-| Output As-Is (oil + meal) | 0.980 t/t | — |
-| Output DM (oil + meal) | 0.9128 t/t | — |
-| Process loss (As-Is) | 0.020 t/t | 2.0% of input |
-| As-is balance | 0.980 + 0.020 = 1.000 t | ✓ Closes Exactly |
-
-**Thermodynamic Closure Verification:**
-To prove physical conservation of mass, we must verify the water and DM content of the 0.020 t process loss stream:
--   **Water Balance:** Input Water (0.085 t) = Oil Water (0.000 t) + Meal Water (0.56 × 0.12 = 0.0672 t) + Loss Water. 
-    *Loss Water = 0.085 − 0.0672 = 0.0178 t.*
--   **Loss DM:** Loss As-Is (0.020 t) − Loss Water (0.0178 t) = *0.0022 t DM.*
--   **DM Balance Verification:** Oil DM (0.4200) + Meal DM (0.4928) + Loss DM (0.0022) = **0.9150 t DM**. 
-    *This matches the Input DM (0.915 t) exactly. The mass balance is physically flawless with no "ghost" dry matter created.*
+The as-is, dry-matter and water balances all close against the 1.000 t input. The full reconciliation, including the derivation of the dry-matter and water content of the process loss stream, is given in Section 5.
 
 ## 4. Allocation Methodology
 
@@ -205,6 +191,8 @@ Oil is worth 2.70× more per kg DM than meal, so economic allocation strongly fa
 | Process loss DM | 0.0022 t/t | Derived from water balance closure |
 | Process loss Water | 0.0178 t/t | Derived from water balance closure |
 
+The dry-matter and water content of the process loss stream are not measured; they are derived from the water balance. Input water (0.085 t) less the water leaving in the meal (0.56 × 0.12 = 0.0672 t) leaves 0.0178 t of water in the loss stream, so the loss carries 0.020 − 0.0178 = 0.0022 t of dry matter, an 11% DM stream consistent with a mixture of evaporated moisture and dry fines.
+
 ### 5.2 Input-Output Reconciliation
 **As-is balance:**
   Input:       1.0000 t
@@ -230,8 +218,8 @@ Oil is worth 2.70× more per kg DM than meal, so economic allocation strongly fa
 ## 6. Complete Data Table
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t) | Revenue (USD/t) | Econ Alloc (%) | Mass Alloc (%) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Canola | Canola crushing | Single | 50 lb/bushel at 8.5% moisture | 8.5% | 1 t canola seed at 8.5% moisture | Canola oil (crude) | 0.42 | 0.40–0.44 | 950 | 800–1100 | 100.0 | 0.4200 | 399.00 | 69.7 | 46.0 |
-| Canola | Canola crushing | Single | 50 lb/bushel at 8.5% moisture | 8.5% | 1 t canola seed at 8.5% moisture | Canola meal | 0.56 | 0.54–0.58 | 310 | 250–370 | 88.0 | 0.4928 | 173.60 | 30.3 | 54.0 |
+| Canola | Canola crushing | Single | CGC No. 1 Canada, 50 lb/bushel | 8.5% (CGC analytical basis) | 1 t canola seed at 8.5% moisture | Canola oil (crude) | 0.42 | 0.40–0.44 | 950 | 800–1100 | 100.0 | 0.4200 | 399.00 | 69.7 | 46.0 |
+| Canola | Canola crushing | Single | CGC No. 1 Canada, 50 lb/bushel | 8.5% (CGC analytical basis) | 1 t canola seed at 8.5% moisture | Canola meal | 0.56 | 0.54–0.58 | 310 | 250–370 | 88.0 | 0.4928 | 173.60 | 30.3 | 54.0 |
 
 ## 7. Data Quality and Limitations
 
@@ -240,9 +228,8 @@ Oil is worth 2.70× more per kg DM than meal, so economic allocation strongly fa
 | --- | --- | --- |
 | Oil yield (0.42 t/t) | High | COPA [^2^] (calculated from crush data: 0.422 t/t); Canola Council [^4^] |
 | Meal yield (0.56 t/t) | High | Derived from mass balance; consistent with COPA [^2^] and Canola Council [^4^] |
-| DM contents (oil 100%, meal 88%) | High | Industry specifications [^4^]; COPA trading rules. 88% DM represents the standard maximum 12% moisture trading threshold, ensuring strict thermodynamic mass balance closure. |
-| Canola seed prices | High | USDA FAS [^6^]; CGC [^1^] |
-| Bushel weight (50 lb) | High | USDA FSA; CGC conversion tables |
+| DM contents (oil 100%, meal 88%) | High | Industry specifications [^4^]; COPA trading rules. 88% DM is the standard maximum 12% moisture trading threshold. |
+| Bushel weight (50 lb) | High | CGC [^1^] conversion tables |
 
 ### 7.2 Medium-Confidence Data
 | Data Point | Confidence | Source |

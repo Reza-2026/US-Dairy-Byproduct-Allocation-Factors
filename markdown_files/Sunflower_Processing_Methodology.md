@@ -1,6 +1,6 @@
 # Sunflower Crushing: Co-Product Allocation Methodology, Data Sources, and Calculations
 
-**Document Version:** 1   
+**Document Version:** 1.0   
 **Date:** June 2026  
 **Basis:** 1 metric ton (t) of sunflower seed at 9% moisture  
 **Price Period:** 2024–2025 average (unless otherwise noted)  
@@ -28,13 +28,17 @@
 |-----------|-------|--------|
 | **Parent crop** | Sunflower (*Helianthus annuus*, oil-type) | — |
 | **Input quantity** | 1 metric ton (1,000 kg) | — |
-| **Moisture content** | 9.0% | The USDA standard moisture for sunflower is 10% for marketing and crop insurance; 9–10% is recommended for storage [^1^]. The 9% basis is at the low end of the standard range. |
+| **Moisture content** | 9.0% | Moisture is **not** a grade-determining factor in the U.S. Standards for Sunflower Seed [^1^], which grade on test weight, damaged kernels and dehulled seed. USDA RMA uses 10.0% as the crop-insurance baseline, adjusting production above that level. Seed is typically delivered to crush plants at 9–10% moisture, and 9.0% is adopted here as a representative delivered value; Section 7.2 notes the effect of using the 10% baseline instead. |
 | **Dry matter (DM) input** | 0.910 t DM/t sunflower seed | Calculated: 1.000 × (1 − 0.09) = 0.910 |
 | **Bushel equivalent** | 73.5 bushels/t | 1,000 kg ÷ 13.608 kg/bu (30 lb at standard moisture) |
 | **Bushel weight** | 30 lb (13.608 kg) | Typical test weight for oil-type sunflower at 9% moisture. USDA No. 1 minimum test weight: 25 lb/bu per 7 CFR 810.1804. Typical commercial test weights range from 28–32 lb/bu (NSA 2025 Crop Quality Report: average 30.2 lb/bu). [^1^] |
 | **Typical oil content** | ~42% (as-is basis at 9% moisture), equivalent to ~46% (dry matter basis) | Industry average for oil-type sunflower. As-is basis: NSA reports average 42.7% at ~10% moisture. DM basis: typical 44–50% depending on variety and environment. [^2^] |
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Point values are given to the precision the underlying sources support. Derived quantities (DM outputs, revenues, allocation percentages) are carried at four decimals internally and reported to one decimal place. This document is self-contained: all reconciliations are internal to sunflower crushing and no comparison is made to other crop processing systems.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -65,7 +69,6 @@
 | [^7^] | National Sunflower Association. *All About Sunflower: Oil and Whole Seed/Meal* | Industry Association | https://www.sunflowernsa.com/oil/ and https://www.sunflowernsa.com/wholeseed/ |
 | [^8^] | Feedipedia. *Sunflower Meal and Hulls* (animal feed database, INRAE/CIRAD/FAO) | Academic/Database | https://www.feedipedia.org/node/732 |
 | [^9^] | Tridge. *Sunflower Seed Meal Market Insights (United States)* | Industry/Market | https://dir.tridge.com/market-insights/product-country/sunflower-seed-meal-united-states |
-| [^10^] | OECD-FAO (2025). *Agricultural Outlook 2025–2034: Oilseeds and Oilseed Products* (Chapter 3) | International Organization | https://www.oecd.org/ |
 
 ### 2.2 How Sources Were Used
 
@@ -85,7 +88,7 @@
 Sunflower crushing (also called "sunflower seed processing") involves the following steps:
 
 1. **Cleaning:** Foreign material (dirt, stones, weed seeds) is removed.
-2. **Dehulling:** Sunflower seeds have fibrous hulls representing 20–30% of seed weight. Hulls are cracked off using impact or abrasion dehullers and separated by aspiration. This is a critical step unique to sunflower processing — unlike soybeans, sunflower hulls are typically removed before oil extraction.
+2. **Dehulling:** Sunflower seeds have fibrous hulls representing 20–30% of seed weight. Hulls are cracked off using impact or abrasion dehullers and separated by aspiration. Dehulling before extraction is standard practice for oil-type sunflower and is what makes hulls a separate marketed stream.
 3. **Conditioning:** Dehulled kernels (meats) are heated to improve oil extractability and reduce meal moisture.
 4. **Flaking:** Kernels are rolled into thin flakes to rupture cell walls and increase surface area.
 5. **Pressing (optional):** Some facilities use a mechanical screw press (expeller) to remove ~50–70% of the oil before solvent extraction. Others go directly to solvent extraction after flaking.
@@ -100,7 +103,7 @@ Sunflower crushing (also called "sunflower seed processing") involves the follow
 - **Sunflower meal:** The primary high-volume co-product (animal feed, protein source for ruminants).
 - **Sunflower hulls:** A fibrous byproduct used in ruminant feed or as boiler fuel.
 
-> **Why hulls must be included:** Unlike soybeans (where hulls are ~8% of seed weight and are often blended back into meal), sunflower hulls represent 20–30% of seed weight. When hulls are removed, the meal yield drops from ~0.55 t/t (non-dehulled) to ~0.38 t/t (dehulled), and hulls become a significant co-product that must be allocated. Omitting hulls creates a massive DM balance gap (18.5% in the V1.0 table).
+> **Why hulls are reported as a separate co-product:** Sunflower hulls represent 20–30% of seed weight, and dehulling before extraction is standard practice. Removing them drops the meal yield from ~0.55 t/t (non-dehulled) to ~0.38 t/t (dehulled), so the hulls carry a substantial share of the seed's dry matter and must be allocated rather than ignored. Treating dehulled meal as the only solid co-product would leave roughly a fifth of the seed's dry matter unaccounted for.
 
 ### 3.2 Process Flow
 
@@ -110,23 +113,23 @@ Sunflower crushing (also called "sunflower seed processing") involves the follow
         ▼
   ┌─ SUNFLOWER CRUSHING ──────────────────────────┐
   │                                                 │
-  │  Dehulling: ~0.187 t hulls separated           │
-  │  Processing losses: ~0.033 t as-is (~3.3%)     │
+  │  Dehulling: ~0.200 t hulls separated           │
+  │  Processing losses: ~0.020 t as-is (~2.0%)     │
   │  (handling, residual solvent, moisture loss)    │
   │                                                 │
   │  Sunflower oil: 0.40 t as-is (0.400 t DM)   ◄── co-product
   │                                                 │
   │  Sunflower meal: 0.38 t as-is (0.342 t DM)  ◄── co-product
   │                                                 │
-  │  Sunflower hulls: 0.187 t as-is (0.168 t DM)◄── co-product
+  │  Sunflower hulls: 0.200 t as-is (0.180 t DM)◄── co-product
   │                                                 │
   └─────────────────────────────────────────────────┘
 
 THREE CO-PRODUCTS from 1 t sunflower seed:
   Sunflower oil:  0.40 t as-is,  0.400 t DM
   Sunflower meal: 0.38 t as-is,  0.342 t DM
-  Sunflower hulls: 0.187 t as-is, 0.168 t DM
-  Total:                        0.910 t DM  (from 0.910 t input; ~0.033 t losses)
+  Sunflower hulls: 0.200 t as-is, 0.180 t DM
+  Total:                        0.922 t DM  (from 0.910 t input; see DM balance note in Section 7.2)
 ```
 
 ---
@@ -139,13 +142,22 @@ THREE CO-PRODUCTS from 1 t sunflower seed:
 |------------|----------------------|-------|---------------------|
 | **Sunflower oil** | 0.40 | 0.35–0.45 | Industry standard for solvent extraction of oil-type sunflower [^2^][^3^][^7^]. The 0.40 value is the exact mathematical midpoint of the range: (0.35 + 0.45) / 2 = 0.40. Yields vary with oil content (40–50% as-is basis), extraction efficiency, and whether expeller or solvent extraction is used. Expeller-only yields are ~0.30–0.35 t/t; solvent extraction achieves ~0.38–0.45 t/t. |
 | **Sunflower meal (dehulled)** | 0.38 | 0.34–0.42 | Industry standard for dehulled, solvent-extracted meal [^2^][^7^]. The 0.38 value is the exact mathematical midpoint of the range: (0.34 + 0.42) / 2 = 0.38. Meal yield is inversely related to oil yield: higher oil extraction means less meal. Partially dehulled meal has ~34–38% protein (DM basis 35–39%); fully dehulled meal can exceed 40%. Non-dehulled meal has ~28–32% protein as-fed (DM basis 29–33%). |
-| **Sunflower hulls** | 0.187 | 0.15–0.25 | Independently derived from hull content and dehulling efficiency: oil-type sunflower has ~25% hull content (midpoint of 20–30% range), and commercial dehulling removes ~75% of hulls, yielding 0.25 × 0.75 = 0.1875 ≈ 0.187 t/t. The hull fraction for oil-type sunflower is 20–30% of seed weight [^7^][^8^]; the 0.187 value reflects partial dehulling typical of commercial operations. Full dehulling would yield ~0.22–0.25 t/t hulls but is rarely achieved in practice. Note: this value is not at the midpoint of its range (0.20); it reflects the independently derived hull content and dehulling efficiency. |
+| **Sunflower hulls** | 0.200 | 0.15–0.25 | Midpoint of the reported range. Oil-type sunflower carries 20–30% hull by seed weight [^7^][^8^], and commercial dehulling recovers roughly 75% of it into the hull stream, the remainder staying with the meal. Full dehulling would give ~0.22–0.25 t/t but is rarely achieved in practice. See the reconciliation note below for how the adopted value compares with the composition route. |
 
-> **Note on yield relationships:** The three yields are interdependent. When more oil is extracted (higher oil yield), less meal is produced (lower meal yield). When more hulls are removed (higher hull yield), meal protein content increases but meal yield decreases. The values in this table (0.40 oil, 0.38 meal, 0.187 hulls) are mutually consistent and close the DM balance.
+*Reconciling the hulls yield with seed composition:* The hulls yield can also be derived from the seed itself: at ~25% hull content (the midpoint of the reported 20–30% band) and ~75% dehulling recovery, 1 t of seed gives 0.25 × 0.75 = **0.1875 ≈ 0.187 t/t**. The adopted value, **0.200 t/t**, is the midpoint of the reported yield range and sits about 7% above the composition estimate. The two are used differently:
+
+| Hulls yield | Total DM output | Against 0.910 t DM input | Economic (oil/meal/hulls) | Mass (oil/meal/hulls) |
+|---|---|---|---|---|
+| 0.187 (composition route) | 0.9103 t | +0.03% | 77.9 / 19.2 / 2.9 | 43.9 / 37.6 / 18.5 |
+| **0.200 (adopted, range midpoint)** | **0.9220 t** | **+1.32%** | **77.7 / 19.2 / 3.1** | **43.4 / 37.1 / 19.5** |
+
+The composition route closes the dry matter balance almost exactly, while the adopted midpoint leaves the small surplus reported in Section 7.2. The adopted value is retained for consistency with the treatment of every other parameter in this document; the difference on any allocation factor is one percentage point or less, which is immaterial at the level this table is used. Users who require a closed dry matter balance should substitute 0.187 t/t and the factors on the first row.
+
+> **Note on yield relationships:** The three yields are interdependent. When more oil is extracted, less meal is produced. When more hulls are removed, meal protein rises but meal yield falls.
 
 #### Total Recovery and Losses
 
-The as-is yields sum to 0.967 t/t sunflower seed (0.40 + 0.38 + 0.187), which is less than the 1.0 t input. The ~3.3% shortfall represents real processing losses:
+The as-is yields sum to 0.980 t/t sunflower seed (0.40 + 0.38 + 0.200), which is less than the 1.0 t input. The ~2.0% shortfall represents real processing losses:
 
 1. **Handling and spillage:** ~0.5–1.0% lost during transport, transfer, and cleaning.
 2. **Residual solvent in meal:** Trace hexane (regulated to <500 ppm) adds negligible mass.
@@ -158,8 +170,8 @@ The as-is yields sum to 0.967 t/t sunflower seed (0.40 + 0.38 + 0.187), which is
 | Co-product | DM (%) | Basis |
 |------------|--------|-------|
 | Sunflower oil | 100.0% | Crude and refined sunflower oil are essentially pure lipid (triglycerides) with negligible moisture (<0.1%). |
-| Sunflower meal (dehulled) | 90.0% | Standard trading specification: maximum 10–12% moisture = minimum 88–90% DM [^8^]. Feedipedia reports average 89.0% DM (n=14,806); dehulled meals average 89.8% DM. The 90% DM value is the midpoint of the typical range. |
-| Sunflower hulls | 91.0% | Dried hulls are typically 89–93% DM [^8^]. Feedipedia reports average 90.7% DM (range 88.7–93.1%, n=24). Hulls are dried during processing to prevent spoilage. The 91.0% DM value is the midpoint of the observed range. |
+| Sunflower meal (dehulled) | 90.0% | Standard trading specification: maximum 10–12% moisture, i.e. 88–90% DM [^8^]. Feedipedia reports an average of 89.0% DM across all sunflower meals (n=14,806), with dehulled meals averaging 89.8% DM. The adopted 90.0% follows the dehulled-meal figure and the top of the trading specification, rather than the midpoint of the wider band. |
+| Sunflower hulls | 90.0% | Dried hulls are typically 89–93% DM [^8^]. Feedipedia reports an average of 90.7% DM (range 88.7–93.1%, n=24). The adopted 90.0% is the round industry figure and sits just below that average; hulls are dried during processing to prevent spoilage. |
 
 ### 4.3 DM Output per Tonne of Sunflower Seed
 
@@ -167,8 +179,8 @@ The as-is yields sum to 0.967 t/t sunflower seed (0.40 + 0.38 + 0.187), which is
 |------------|-------------|--------------------------|
 | **Sunflower oil** | 0.40 × 1.00 | **0.4000** |
 | **Sunflower meal** | 0.38 × 0.90 | **0.3420** |
-| **Sunflower hulls** | 0.187 × 0.91 | **0.1702** |
-| **Total** | | **0.9122** |
+| **Sunflower hulls** | 0.200 × 0.90 | **0.1800** |
+| **Total** | | **0.9220** |
 
 ---
 
@@ -178,9 +190,9 @@ The as-is yields sum to 0.967 t/t sunflower seed (0.40 + 0.38 + 0.187), which is
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Sunflower oil** | 1,000 | 750–1,250 | USDA ERS [^3^]; WASDE [^4^]; IndexMundi [^5^] | 2024–2025 average for crude sunflower oil. Global prices averaged $1,000–1,500/t during this period (FRED/IMF data: 2024 avg $1,270/t, 2025 avg $1,526/t). The $1,000/t midpoint reflects a weighted average of crude FOB and domestic benchmarks. Midpoint of range: ($750 + $1,250) / 2 = $1,000. |
-| **Sunflower meal (dehulled)** | 260 | 200–320 | USDA ERS [^3^]; Tridge [^9^]; IndexBox [^6^] | 2024–2025 average for dehulled, solvent-extracted meal (~34–38% protein as-fed, 35–39% DM). Dehulled meal commands a premium over non-dehulled meal. Midpoint of range: ($200 + $320) / 2 = $260. |
-| **Sunflower hulls** | 80 | 50–110 | National Sunflower Association [^7] | 2024–2025 average. Hulls are a low-value byproduct used as animal feed roughage (ruminant diet filler) or boiler fuel at crushing plants. Prices vary with regional demand and whether hulls are pelleted (pelleted: $100–140/t). Midpoint of range: ($50 + $110) / 2 = $80. |
+| **Sunflower oil** | 1,000 | 750–1,250 | USDA ERS [^3^]; WASDE [^4^]; IndexMundi [^5^] | 2024–2025 average for crude sunflower oil. Global prices averaged $1,000–1,500/t during this period (FRED/IMF data: 2024 avg $1,270/t, 2025 avg $1,526/t). The $1,000/t midpoint reflects a weighted average of crude FOB and domestic benchmarks. |
+| **Sunflower meal (dehulled)** | 260 | 200–320 | USDA ERS [^3^]; Tridge [^9^]; IndexBox [^6^] | 2024–2025 average for dehulled, solvent-extracted meal (~34–38% protein as-fed, 35–39% DM). Dehulled meal commands a premium over non-dehulled meal. |
+| **Sunflower hulls** | 80 | 50–110 | National Sunflower Association [^7^] | 2024–2025 average. Hulls are a low-value byproduct used as animal feed roughage (ruminant diet filler) or boiler fuel at crushing plants. Prices vary with regional demand and whether hulls are pelleted (pelleted: $100–140/t). |
 
 ### 5.2 Price Verification
 
@@ -192,9 +204,7 @@ IndexMundi (2025 avg): ~$1,207-1,225/t (global crude benchmark)
 FRED/IMF global price: 2024 avg $1,270/t; 2025 avg $1,526/t
 Black Sea FOB crude: ~$790-900/t at certain points in 2024
 
-Selected midpoint: $1,000/t
-Mathematical midpoint of range ($750-1,250): $1,000/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $1,000/t, the midpoint of the $750-1,250 range
 
 ```
 
@@ -208,9 +218,7 @@ Black Sea FOB standard meal: ~$190-210/t (likely non-dehulled)
 Non-dehulled meal baseline: ~$180-240/t
 Dehulling premium: +$30-60/t
 
-Selected midpoint: $260/t
-Mathematical midpoint of range ($200-320): $260/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $260/t, the midpoint of the $200-320 range
 ```
 
 **Sunflower hulls:**
@@ -220,9 +228,7 @@ National Sunflower Association: ~$60-90/t (loose, bulk)
 Pelleted hulls: ~$100-140/t
 Boiler fuel value: ~$40-70/t (energy content basis)
 
-Selected midpoint: $80/t
-Mathematical midpoint of range ($50-110): $80/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $80/t, the midpoint of the $50-110 range
 ```
 
 ### 5.3 Revenue per Tonne of Sunflower Seed
@@ -231,8 +237,8 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 |------------|-------------|--------------------------|
 | **Sunflower oil** | 0.40 × 1,000 | **$400.00** |
 | **Sunflower meal** | 0.38 × 260 | **$98.80** |
-| **Sunflower hulls** | 0.187 × 80 | **$14.96** |
-| **Total** | | **$513.76** |
+| **Sunflower hulls** | 0.200 × 80 | **$16.00** |
+| **Total** | | **$514.80** |
 
 ---
 
@@ -253,12 +259,12 @@ where:
 
 | Co-product | Calculation | Allocation |
 |------------|-------------|------------|
-| Sunflower oil | (400.00 ÷ 513.76) × 100 | **77.9%** |
-| Sunflower meal | (98.80 ÷ 513.76) × 100 | **19.2%** |
-| Sunflower hulls | (14.96 ÷ 513.76) × 100 | **2.9%** |
+| Sunflower oil | (400.00 ÷ 514.80) × 100 | **77.7%** |
+| Sunflower meal | (98.80 ÷ 514.80) × 100 | **19.2%** |
+| Sunflower hulls | (16.00 ÷ 514.80) × 100 | **3.1%** |
 | **Total** | | **100.0%** |
 
-> **Rounding note:** The raw calculations yield 77.86% (oil), 19.23% (meal), and 2.91% (hulls). These are rounded to 77.9%, 19.2%, and 2.9% so that the sum is exactly 100.0%.
+> **Rounding note:** The raw calculations yield 77.70% (oil), 19.19% (meal), and 3.11% (hulls). These are rounded to 77.7%, 19.2%, and 3.1% so that the sum is exactly 100.0%.
 
 ### 6.2 Mass Allocation
 
@@ -275,22 +281,22 @@ where:
 
 | Co-product | Calculation | Allocation |
 |------------|-------------|------------|
-| Sunflower oil | (0.4000 ÷ 0.9122) × 100 | **43.9%** |
-| Sunflower meal | (0.3420 ÷ 0.9122) × 100 | **37.5%** |
-| Sunflower hulls | (0.1702 ÷ 0.9122) × 100 | **18.6%** |
+| Sunflower oil | (0.4000 ÷ 0.9220) × 100 | **43.4%** |
+| Sunflower meal | (0.3420 ÷ 0.9220) × 100 | **37.1%** |
+| Sunflower hulls | (0.1800 ÷ 0.9220) × 100 | **19.5%** |
 | **Total** | | **100.0%** |
 
-> **Rounding note:** The raw calculations yield 43.85% (oil), 37.49% (meal), and 18.66% (hulls). These are rounded to 43.9%, 37.5%, and 18.6% so that the sum is exactly 100.0%.
+> **Rounding note:** The raw calculations yield 43.38% (oil), 37.09% (meal), and 19.52% (hulls). These are rounded to 43.4%, 37.1%, and 19.5% so that the sum is exactly 100.0%.
 
 ### 6.3 Comparison: Economic vs. Mass Allocation
 
 | Co-product | Economic Allocation | Mass Allocation | Difference |
 |------------|-------------------|----------------|------------|
-| Sunflower oil | 77.9% | 43.9% | +34.0 pp |
-| Sunflower meal | 19.2% | 37.5% | −18.3 pp |
-| Sunflower hulls | 2.9% | 18.6% | −15.7 pp |
+| Sunflower oil | 77.7% | 43.4% | +34.3 pp |
+| Sunflower meal | 19.2% | 37.1% | −17.9 pp |
+| Sunflower hulls | 3.1% | 19.5% | −16.4 pp |
 
-The very large difference for oil reflects its high value-to-mass ratio. Oil commands $1,000/t (3.85× the meal price and 12.5× the hulls price) but contains only 43.9% of the DM. Hulls, by contrast, carry 18.6% of the DM but only 2.9% of the revenue, reflecting their low market value. This pattern — high-value, low-mass oil and low-value, high-mass hulls — is characteristic of oilseed crushing where the hull fraction is large.
+The large difference for oil reflects its high value-to-mass ratio: oil commands $1,000/t — 3.85× the meal price and 12.5× the hulls price — but carries 43.4% of the co-product dry matter. Hulls run the other way, carrying 19.5% of the dry matter but only 3.1% of the revenue. The choice of allocation method therefore matters most for the hulls stream, whose share of the burden differs by more than a factor of six between the two methods.
 
 ---
 
@@ -305,13 +311,13 @@ The very large difference for oil reflects its high value-to-mass ratio. Oil com
 | Input DM | 0.910 t | — |
 | Output: Sunflower oil (as-is) | 0.400 t | ✓ |
 | Output: Sunflower meal (as-is) | 0.380 t | ✓ |
-| Output: Sunflower hulls (as-is) | 0.187 t | ✓ |
-| Total as-is output | 0.967 t | 96.7% of input |
-| Processing losses (as-is) | 0.033 t | 3.3% of input ✓ |
+| Output: Sunflower hulls (as-is) | 0.200 t | ✓ |
+| Total as-is output | 0.980 t | 98.0% of input |
+| Processing losses (as-is) | 0.020 t | 2.0% of input ✓ |
 | Output DM: Oil | 0.400 t | ✓ |
 | Output DM: Meal | 0.342 t | ✓ |
-| Output DM: Hulls | 0.170 t | ✓ |
-| Total DM output | 0.912 t | 100.2% of input DM ✓ |
+| Output DM: Hulls | 0.180 t | ✓ |
+| Total DM output | 0.922 t | 101.3% of input DM |
 
 ### 7.2 DM Balance Detail
 
@@ -321,11 +327,15 @@ The very large difference for oil reflects its high value-to-mass ratio. Oil com
 | **Output DM — co-products:** | | |
 | Sunflower oil | 0.4000 t | 0.40 t × 100% DM |
 | Sunflower meal | 0.3420 t | 0.38 t × 90% DM |
-| Sunflower hulls | 0.1702 t | 0.187 t × 91% DM |
-| Total co-product DM | **0.9122 t** | |
-| DM balance gap | +0.0022 t | +0.24% of input DM |
+| Sunflower hulls | 0.1800 t | 0.200 t × 90% DM |
+| Total co-product DM | **0.9220 t** | |
+| DM balance gap | +0.0120 t | +1.32% of input DM |
 
-> **Balance assessment:** The DM output exceeds input by 0.0022 t (0.24%). This small surplus is within rounding tolerance and reflects the updated hulls DM%.
+> **Balance assessment:** The DM output exceeds the DM input by 0.0120 t (1.32%). Dry matter is not created in crushing, so this is an accounting result: the three yields are each taken as the midpoint of its own reported range and are not mutually reconciled to a closed unit-process balance. The surplus is small relative to the spread of those ranges (oil 0.35–0.45, meal 0.34–0.42, hulls 0.15–0.25).
+>
+> **The reconciliation is available.** As set out in Section 4.1, deriving the hulls yield from seed composition instead — 25% hull content at ~75% dehulling recovery — gives 0.187 t/t and a DM output of 0.9103 t, which closes against the 0.910 t input to within 0.03%. Substituting that value moves the economic allocation to 77.9 / 19.2 / 2.9 and the mass allocation to 43.9 / 37.6 / 18.5, a change of one percentage point or less on any stream. The adopted values are retained for consistency of treatment; the surplus is reported rather than removed so that users can see it and substitute if a closed balance is required.
+>
+> **Note on the moisture basis.** The 1.32% figure is calculated on the 9% moisture basis used throughout this document. Sunflower has no USDA grade-determining moisture (Section 1.1), and the crop-insurance standard is 10%. On a 10% basis the input DM would be 0.900 t and the same outputs would show a 2.44% surplus. The 9% basis reflects typical delivered moisture at crush plants, but users working to the 10% standard should expect the larger figure.
 
 ### 7.3 As-Is Mass Balance
 
@@ -335,10 +345,10 @@ The very large difference for oil reflects its high value-to-mass ratio. Oil com
 | **Output:** | | |
 | Sunflower oil | 0.400 t | — |
 | Sunflower meal | 0.380 t | — |
-| Sunflower hulls | 0.187 t | — |
-| **Total output** | **0.967 t** | |
-| **Processing losses** | **0.033 t** | 3.3%: handling, moisture loss, fines |
-| **Balance** | **1.000 t** | ✓ Exact |
+| Sunflower hulls | 0.200 t | — |
+| **Total output** | **0.980 t** | |
+| **Processing losses** | **0.020 t** | 2.0%: handling, moisture loss, fines — the residual of the balance, not an independent measurement |
+| **Balance** | **1.000 t** | Closes by construction, since the loss term is the residual |
 
 ---
 
@@ -346,11 +356,11 @@ The very large difference for oil reflects its high value-to-mass ratio. Oil com
 
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t) | Revenue (USD/t) | Econ Alloc (%) | Mass Alloc (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|-------------|-------------|---------------|-------------|--------|-----------------|-----------------|----------------|----------------|
-| Sunflower | Sunflower crushing | Single | 25 lb/bu min test weight (7 CFR 810.1804) | 9% | 1 t sunflower seed at 9% moisture | Sunflower oil | 0.40 | 0.35–0.45 | 1,000 | 750–1,250 | 100.0 | 0.400 | 400.00 | 77.9 | 43.9 |
-| Sunflower | Sunflower crushing | Single | 25 lb/bu min test weight (7 CFR 810.1804) | 9% | 1 t sunflower seed at 9% moisture | Sunflower meal (dehulled) | 0.38 | 0.34–0.42 | 260 | 200–320 | 90.0 | 0.342 | 98.80 | 19.2 | 37.5 |
-| Sunflower | Sunflower crushing | Single | 25 lb/bu min test weight (7 CFR 810.1804) | 9% | 1 t sunflower seed at 9% moisture | Sunflower hulls | 0.187 | 0.15–0.25 | 80 | 50–110 | 91.0 | 0.170 | 14.96 | 2.9 | 18.6 |
+| Sunflower | Sunflower crushing | Single | 25 lb/bu min test weight (7 CFR 810.1804) | 9% | 1 t sunflower seed at 9% moisture | Sunflower oil | 0.40 | 0.35–0.45 | 1,000 | 750–1,250 | 100.0 | 0.400 | 400.00 | 77.7 | 43.4 |
+| Sunflower | Sunflower crushing | Single | 25 lb/bu min test weight (7 CFR 810.1804) | 9% | 1 t sunflower seed at 9% moisture | Sunflower meal (dehulled) | 0.38 | 0.34–0.42 | 260 | 200–320 | 90.0 | 0.342 | 98.80 | 19.2 | 37.1 |
+| Sunflower | Sunflower crushing | Single | 25 lb/bu min test weight (7 CFR 810.1804) | 9% | 1 t sunflower seed at 9% moisture | Sunflower hulls | 0.200 | 0.15–0.25 | 80 | 50–110 | 90.0 | 0.180 | 16.00 | 3.1 | 19.5 |
 
-> **Note on allocation rounding:** Raw economic allocations are 77.86% (oil), 19.23% (meal), and 2.91% (hulls), rounded to 77.9%, 19.2%, and 2.9% to sum to exactly 100.0%. Raw mass allocations are 43.85% (oil), 37.49% (meal), and 18.66% (hulls), rounded to 43.9%, 37.5%, and 18.6% to sum to exactly 100.0%.
+> **Note on allocation rounding:** Raw economic allocations are 77.70% (oil), 19.19% (meal), and 3.11% (hulls), rounded to 77.7%, 19.2%, and 3.1% to sum to exactly 100.0%. Raw mass allocations are 43.38% (oil), 37.09% (meal), and 19.52% (hulls), rounded to 43.4%, 37.1%, and 19.5% to sum to exactly 100.0%.
 
 ---
 ## 9. Data Quality and Limitations
@@ -359,27 +369,26 @@ The very large difference for oil reflects its high value-to-mass ratio. Oil com
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Oil yield (0.40 t/t) | **High** | Industry standard for solvent extraction; exact midpoint of verified range [^2^][^3^][^7^] |
-| Meal yield (0.38 t/t, dehulled) | **High** | Consistent with dehulled meal production; exact midpoint of range [^7^] |
+| Oil yield (0.40 t/t) | **High** | Midpoint of the reported crush range for solvent extraction [^2^][^3^][^7^] |
+| Meal yield (0.38 t/t, dehulled) | **High** | Midpoint of the reported range for dehulled, solvent-extracted meal [^7^] |
 | Oil DM% (100%) | **High** | Pure lipid with negligible moisture |
-| Meal DM% (90%) | **High** | Industry trading specification; Feedipedia average 89.0% |
+| Meal DM% (90%) | **Medium-High** | Trading specification 88–90% DM; Feedipedia [^8^] average 89.0% overall and 89.8% for dehulled meals, so 90.0% sits at the top of the evidence |
 | Oil price ($1,000/t) | **High** | Consistent with 2024-2025 global crude benchmarks |
 | Meal price ($260/t) | **High** | Consistent with dehulled meal pricing |
-| DM balance (0.24% gap) | **High** | Well within acceptable range |
 
 ### 9.2 Medium-Confidence Data
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Hulls yield (0.187 t/t) | **Medium** | Independently derived from hull content (25%) × dehulling efficiency (75%); consistent with industry range (0.15–0.25 t/t). Not at the midpoint of range (0.20) but reflects independently sourced parameters. |
-| Hulls DM% (91%) | **Medium** | Based on Feedipedia average 90.7%; actual range 89–93% |
+| Hulls yield (0.200 t/t) | **Medium** | Midpoint of the reported range (0.15–0.25 t/t). The composition route — 25% hull content at ~75% dehulling recovery — gives 0.187 t/t; see Sections 4.1 and 7.2 |
+| Hulls DM% (90%) | **Medium** | Based on Feedipedia average 90.7%; actual range 89–93% |
 | Hulls price ($80/t) | **Medium** | Limited market data; hulls are often consumed on-site as boiler fuel rather than sold. When used as fuel, the economic allocation may treat them as waste (zero value). |
 | Price ranges | **Medium** | Based on historical volatility; actual prices may exceed ranges during market shocks |
-| Processing losses (3.3%) | **Medium** | Consistent with French study (3.2% oil crushing loss); not directly measured |
+| Processing losses (2.0%) | **Medium** | Residual of the as-is balance rather than a measured quantity; consistent with the 2–3% range typical of solvent extraction plants |
 
 ### 9.3 Known Limitations
 
-1. **Hulls yield independently derived but not at range midpoint:** The hulls yield of 0.187 t/t is derived from hull content (25% midpoint of 20–30%) × dehulling efficiency (~75%), yielding 0.1875 t/t. While this falls within the industry range (0.15–0.25 t/t), it is below the range midpoint (0.20). This is because commercial operations typically achieve partial (not complete) dehulling. An alternative approach using the midpoint (0.20 t/t hulls) would require adjusting meal yield accordingly. The DM balance gap of +0.24% confirms the values are physically consistent.
+1. **Hulls yield and the dry matter balance:** The adopted 0.200 t/t is the midpoint of the reported range (0.15–0.25 t/t). Deriving the yield from seed composition instead — 25% hull content at ~75% dehulling recovery — gives 0.187 t/t, about 7% lower, and closes the dry matter balance to within 0.03%. Both values sit well inside the reported range and the difference on any allocation factor is one percentage point or less. Sections 4.1 and 7.2 give both sets of factors so that a user can adopt whichever suits their purpose.
 
 2. **Hulls economic value is low and variable:** Sunflower hulls have limited markets. Many crushing plants burn hulls on-site for energy rather than selling them, in which case they have zero market value. If hulls are treated as waste (zero revenue), the economic allocation would be: Oil 80.2%, Meal 19.8%. The choice of whether to assign hulls a market value significantly affects the economic allocation.
 
@@ -389,8 +398,6 @@ The very large difference for oil reflects its high value-to-mass ratio. Oil com
 
 5. **Regional price variation:** Sunflower oil and meal prices vary significantly by region. Black Sea region (Ukraine, Russia) prices are typically lower than North American or European prices due to proximity to major production areas.
 
-6. **Allocation sensitivity:** The economic allocation is moderately sensitive to the oil price. If oil drops from $1,000 to $750/t, oil's economic allocation drops from 77.9% to 73.3%. If hulls are assigned zero value (waste), oil's economic allocation rises from 77.9% to 80.2%.
-
-7. **Sunflower vs. safflower distinction:** Safflower (*Carthamus tinctorius*) is sometimes confused with sunflower (*Helianthus annuus*). They are different crops with different oil contents (safflower: ~30–40% oil; sunflower: ~40–50% oil), meal yields (safflower non-dehulled: ~0.50–0.60 t/t; sunflower dehulled: ~0.34–0.42 t/t), and hull fractions. Notably, safflower has **thicker** hulls (30–50% of seed weight) than oil-type sunflower (20–30% of seed weight), which is the opposite of what some sources claim. This table is for sunflower only.
+6. **Allocation sensitivity:** The economic allocation is moderately sensitive to the oil price. If oil drops from $1,000 to $750/t, oil's economic allocation drops from 77.7% to 72.3%. If hulls are assigned zero value (waste), oil's economic allocation rises from 77.7% to 80.2%.
 
 ---

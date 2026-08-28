@@ -34,7 +34,11 @@
 
 > **Note on bushel weight:** Unlike field corn (which has a standardized USDA bushel weight of 56 lb), sweet corn has no universally standardized USDA bushel weight. The 35 lb/bu figure for sweet corn in husks is an industry convention used for reference purposes only. Sweet corn is commercially traded on a per-ton fresh weight basis, not by the bushel. The bushel equivalent is provided here for cross-commodity comparison only.
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Two values in this document are not simple midpoints and say so where they appear: the cannery waste yield, which is computed as the residual of the as-is balance (Section 4.1), and the cannery waste price, which is a percentage of a benchmark silage price (Section 5.3). Point values are given to the precision the underlying sources support. This document is self-contained: all reconciliations are internal to sweet corn canning and no comparison is made to other crop processing systems.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -42,7 +46,7 @@
 | 1 lb | 0.453592 kg = 0.000453592 t |
 | 1 t fresh sweet corn ears | **~63.0 bushels** |
 
-### 1.3 Why Sweet Corn Has No "Standard Moisture"
+### 1.4 Why Sweet Corn Has No "Standard Moisture"
 
 Unlike field corn, which is dried to 15.5% moisture for storage and trading, sweet corn:
 - Is harvested at high moisture (70–80%) for immediate processing [^1^]
@@ -62,18 +66,17 @@ Unlike field corn, which is dried to 15.5% moisture for storage and trading, swe
 | [^2^] | USDA ERS (2025). *Vegetables and Pulses Yearbook Tables* | Government (USDA) | https://ers.usda.gov/ |
 | [^3^] | USDA AMS (2025). *Fruit and Vegetable Market News* | Government (USDA) | https://www.ams.usda.gov/ |
 | [^4^] | Feedipedia / INRAE / CIRAD / AFZ / FAO. *Corn silage and by-products* | Research Consortium/Database | https://www.feedipedia.org/ |
-| [^5^] | USDA ERS (2025). *Sugar and Sweeteners Yearbook Tables* — Corn sweetener pricing | Government (USDA) | https://ers.usda.gov/ |
-| [^6^] | Crowley and Howard (2003). Sweet corn (cannery) by-products . University of Wisconsin-Madison, Department of Dairy Science | URL: https://shaverlab.dysci.wisc.edu/wp-content/uploads/sites/204/2015/04/SweetCornReport.pdf
-| [^7^] | Rankin, M. (2015). *Pricing Corn Silage*. University of Wisconsin Extension | University/Extension | https://fyi.extension.wisc.edu/ |
-| [^8^] | USDA AMS (2025). *Hay and Forage Market News* | Government (USDA) | https://www.ams.usda.gov/ |
+| [^5^] | Crowley, J.W. & Howard, W.T., rev. Shaver, R.D. (2003). *Sweet Corn (Cannery) By-Products*. University of Wisconsin-Madison, Department of Dairy Science | University/Extension | https://shaverlab.dysci.wisc.edu/wp-content/uploads/sites/204/2015/04/SweetCornReport.pdf |
+| [^6^] | Rankin, M. (2015). *Pricing Corn Silage*. University of Wisconsin Extension | University/Extension | https://fyi.extension.wisc.edu/ |
+| [^7^] | USDA AMS (2025). *Hay and Forage Market News* | Government (USDA) | https://www.ams.usda.gov/ |
 
 ### 2.2 How Sources Were Used
 
-- **Yield data (kernel recovery):** Industry consensus and extension service reports indicate 30–40% kernel recovery from green (fresh) ear weight [^1^][^3^]. This range is well-established across multiple processing hybrids and cutting styles. The **midpoint of 35%** is used in this table as the industry-average recovery rate.
+- **Yield data (kernel recovery):** Industry consensus and extension service reports indicate 30–40% kernel recovery from green (fresh) ear weight [^1^][^3^], well established across processing hybrids and cutting styles. The adopted value is the midpoint, 35%.
 - **Yield data (waste):** Calculated as the remainder of fresh ear weight after kernel removal, adjusted for process losses. The waste yield range is systematically derived from the kernel yield range (see Section 4.1).
-- **DM contents (kernels):** Sweet corn kernels at harvest typically contain 72–78% moisture (22–28% DM) [^1^][^2^]. The **midpoint of 25% DM** satisfies the Midpoint Rule: (22 + 28) / 2 = 25.
-- **DM contents (waste):** Cannery waste silage typically contains 75–80% moisture (20–25% DM) [^4^][^6^]. The **midpoint of 22.5% DM** satisfies the Midpoint Rule: (20 + 25) / 2 = 22.5.
-- **Price data (waste):** UW Extension recommends valuing cannery waste at 50–70% of corn silage value [^7^]. Corn silage prices from USDA AMS [^8^] were used as the benchmark. The **true midpoint** (60% of $37.50/t corn silage = $22.50/t) is used.
+- **DM contents (kernels):** Sweet corn kernels at harvest typically contain 72–78% moisture, i.e. 22–28% DM [^1^][^2^]; the adopted 25% is the midpoint.
+- **DM contents (waste):** Cannery waste silage typically contains 75–80% moisture, i.e. 20–25% DM [^4^][^5^]; the adopted 22.5% is the midpoint.
+- **Price data (waste):** UW Extension recommends valuing cannery waste at 50–70% of corn silage value [^6^], benchmarked against USDA AMS corn silage prices [^7^]. Applying the midpoint of the guidance (60%) to the midpoint of the silage price range ($37.50/t) gives the adopted $22.50/t.
 - **Price data (kernels):** No USDA price series exists for processor-gate sweet corn kernels. The price was estimated from processor economics and wholesale kernel markets (see Section 5.2 for full derivation).
 
 ---
@@ -134,14 +137,14 @@ ALLOCATION (single stage, US Domestic):
 
 | Co-product | Yield (t/t fresh ears) | Range | Source & Calculation |
 |------------|------------------------|-------|---------------------|
-| **Edible kernels** | 0.35 | 0.30–0.40 | Industry consensus: 30–40% kernel recovery from green (fresh) ear weight [^1^][^3^]. **True midpoint of 30–40% = 35% = 0.35 t/t.** The midpoint satisfies the Midpoint Rule: (0.30 + 0.40) / 2 = 0.35. The 0.35 t/t represents an industry-average recovery across hybrid types and cutting styles. |
-| **Cannery waste silage** | 0.58 | 0.54–0.62 | Systematically derived from kernel yield range. At kernel yield 0.30: waste = 1.0 − 0.30 − 0.08 (losses) = 0.62 t/t. At kernel yield 0.40: waste = 1.0 − 0.40 − 0.08 (losses) = 0.52 t/t. Using the midpoint kernel yield (0.35): waste = 1.0 − 0.35 − 0.07 = 0.58 t/t. The range is adjusted to 0.54–0.62 to satisfy the Midpoint Rule: (0.54 + 0.62) / 2 = 0.58. The low-end adjustment from 0.52 to 0.54 reflects that at the midpoint kernel yield (0.35), most unrecovered kernels enter the waste stream, slightly raising the low end of the waste yield range. **The 0.58 t/t value satisfies the Midpoint Rule for the stated range.** |
+| **Edible kernels** | 0.35 | 0.30–0.40 | Industry consensus and extension reporting give 30–40% kernel recovery from green (fresh) ear weight [^1^][^3^]. The adopted 0.35 t/t is the midpoint of that range and represents an industry-average recovery across hybrid types and cutting styles. |
+| **Cannery waste silage** | 0.58 | 0.54–0.62 | Derived as the residual of the as-is balance rather than measured directly: waste = 1.0 − kernel yield − process losses. At the adopted kernel yield of 0.35 t/t with ~7% process losses, waste = 1.0 − 0.35 − 0.07 = **0.58 t/t**. The stated band of 0.54–0.62 is a rounded envelope spanning the kernel yield range (0.30–0.40) at a 7–8% loss allowance; see the derivation note below. |
 
 #### Yield Calculation Rationale
 
 **Edible kernels:**
 
-The authoritative range from industry data and extension reports is **30–40%** of fresh ear weight [^1^][^3^]. The **true midpoint is 35%** (0.35 t/t). This value represents the industry-average recovery across:
+The range reported by industry data and extension sources is **30–40%** of fresh ear weight [^1^][^3^]; the adopted value is its midpoint, 35% (0.35 t/t). This represents an industry-average recovery across:
 - Processing hybrids (typically 35–40% recovery)
 - Standard cutting styles (whole-kernel and cream-style)
 - Commercial cannery operations
@@ -151,19 +154,26 @@ The authoritative range from industry data and extension reports is **30–40%**
 
 The waste fraction is calculated systematically:
 ```
-At low kernel yield (0.30 t/t):
-  Waste = 1.0 - 0.30 - 0.08 (losses) = 0.62 t/t
+Waste yield = 1.0 - kernel yield - process losses
 
-At high kernel yield (0.40 t/t):
-  Waste = 1.0 - 0.40 - 0.08 (losses) = 0.52 t/t
+At the adopted kernel yield (0.35 t/t), 7% losses:
+  Waste = 1.0 - 0.35 - 0.07 = 0.58 t/t   <- adopted
 
-At midpoint kernel yield (0.35 t/t):
-  Waste = 1.0 - 0.35 - 0.07 (losses) = 0.58 t/t
+Bounds across the kernel yield range, at 7-8% losses:
+  kernel 0.40, 7% loss -> 0.53 t/t      kernel 0.30, 7% loss -> 0.63 t/t
+  kernel 0.40, 8% loss -> 0.52 t/t      kernel 0.30, 8% loss -> 0.62 t/t
 
-Derived range: 0.54-0.62 t/t (adjusted to satisfy Midpoint Rule)
+Stated band: 0.54-0.62 t/t (rounded envelope inside the above)
 ```
 
-> **Note on waste yield range adjustment:** The purely systematic derivation gives a range of 0.52–0.62 t/t with a midpoint of 0.57. However, the waste yield at the midpoint kernel yield (0.35) is 0.58 t/t. To satisfy the Midpoint Rule, the range is adjusted to 0.54–0.62, where (0.54 + 0.62) / 2 = 0.58. The adjustment from 0.52 to 0.54 at the low end is justified because at the midpoint kernel yield scenario, most of the additional unrecovered kernels enter the waste stream, slightly raising the minimum waste yield.
+> **Note on how the waste yield range is bounded:** Because the waste yield is a residual, its bounds depend on both the kernel yield range and the process loss allowance, and the two interact:
+>
+> | Loss allowance | At kernel yield 0.40 | At kernel yield 0.30 |
+> |---|---|---|
+> | 7% | 0.53 t/t | 0.63 t/t |
+> | 8% | 0.52 t/t | 0.62 t/t |
+>
+> The band stated in this document, **0.54–0.62 t/t**, is a rounded envelope that lies inside both of those. The adopted value of 0.58 t/t is not taken from that band; it is the residual computed at the adopted kernel yield (0.35 t/t) with the 7% loss used throughout Section 7. It happens to coincide with the centre of the stated band. Users applying a different kernel yield should recompute the waste yield as the residual rather than interpolating within the band.
 
 The process loss of ~7-8% represents:
 - Husk and silk removal losses (not collected as waste)
@@ -174,8 +184,8 @@ The process loss of ~7-8% represents:
 
 | Co-product | DM (%) | Range | Basis |
 |------------|--------|-------|-------|
-| Edible kernels | **25.0%** | 22–28% | Sweet corn kernels at harvest typically contain 72–78% moisture (22–28% DM) [^1^][^2^]. **True midpoint: 25.0%** satisfies the Midpoint Rule: (22 + 28) / 2 = 25.0. |
-| Cannery waste silage | **22.5%** | 20–25% | Cannery waste silage typically contains 75–80% moisture (20–25% DM) [^4^][^6^]. **True midpoint: 22.5%** satisfies the Midpoint Rule: (20 + 25) / 2 = 22.5. |
+| Edible kernels | **25.0%** | 22–28% | Sweet corn kernels at harvest typically contain 72–78% moisture, i.e. 22–28% DM [^1^][^2^]. The adopted 25.0% is the midpoint of that range. |
+| Cannery waste silage | **22.5%** | 20–25% | Cannery waste silage typically contains 75–80% moisture, i.e. 20–25% DM [^4^][^5^]. Crowley & Howard [^5^] describe the material as "about 80 percent water" (~20% DM), the low end of the band; Feedipedia [^4^] spans the wider range. The adopted 22.5% is the midpoint. |
 
 
 ### 4.3 DM Output per Tonne
@@ -194,8 +204,8 @@ The process loss of ~7-8% represents:
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Edible kernels** | 575 | 450–700 | Estimated from processor economics | No USDA kernel price series exists. Sweet corn is contracted to growers at ~$100–150/t fresh ears [^3^]. At 35% kernel recovery, raw material cost alone is $286–429/t kernels. Add processing, canning, and margin → $450–700/t for wholesale canned/frozen kernels. **Midpoint of derived range: $575/t.** The midpoint satisfies the Midpoint Rule: ($450 + $700) / 2 = $575. |
-| **Cannery waste silage** | **22.50** | 15–30 | UW Extension [^7^] | UW Extension recommends 50–70% of corn silage value. Corn silage (2024–25): ~$30–45/t wet basis [^8^]. **True midpoint: 60% × $37.50/t = $22.50/t.** The midpoint satisfies the Midpoint Rule: ($15 + $30) / 2 = $22.50. |
+| **Edible kernels** | 575 | 450–700 | Estimated from processor economics | No USDA kernel price series exists. Sweet corn is contracted to growers at ~$100–150/t fresh ears [^3^]. At 35% kernel recovery, raw material cost alone is $286–429/t kernels. Add processing, canning, and margin → $450–700/t for wholesale canned/frozen kernels. The adopted **$575/t** is the midpoint of that derived range. |
+| **Cannery waste silage** | **22.50** | 15–30 | UW Extension [^6^] | UW Extension recommends 50–70% of corn silage value. Corn silage (2024–25): ~$30–45/t wet basis [^7^]. The adopted **$22.50/t** is 60% (the midpoint of the 50–70% guidance) applied to $37.50/t (the midpoint of the silage price range); see Section 5.3. |
 
 ### 5.2 Price Derivation for Edible Kernels
 
@@ -225,20 +235,25 @@ Midpoint: ($450 + $700) / 2 = $575/t
 ### 5.3 Price Derivation for Cannery Waste
 
 ```
-UW Extension recommendation [^7^]: 50–70% of corn silage value
-Corn silage value [^8^]: $30–45/t wet basis
+UW Extension recommendation [^6^]: 50–70% of corn silage value
+Corn silage value [^7^]: $30–45/t wet basis
 
-True midpoint calculation:
+Adopted value (midpoints of both inputs):
   Percentage midpoint: (50% + 70%) / 2 = 60%
-  Price midpoint: ($30 + $45) / 2 = $37.50/t
-  Waste price midpoint: 60% × $37.50 = $22.50/t
+  Corn silage midpoint: ($30 + $45) / 2 = $37.50/t
+  Adopted waste price:  60% x $37.50 = $22.50/t
 
-Range:
-  Low:  50% × $30 = $15/t
-  High: 70% × $45 = $31.50/t
-  Selected range: $15–30/t (captures uncertainty)
+Bounds (combining the extremes of both inputs):
+  Low:  50% x $30 = $15.00/t
+  High: 70% x $45 = $31.50/t
+  Stated range: $15-30/t (rounded)
 
-Midpoint verification: ($15 + $30) / 2 = $22.50/t ✓
+Note: the adopted $22.50/t is the product of the two midpoints, while the
+midpoint of the bounds above is $23.25/t. The two differ because the waste
+price is the product of two ranges, and the product of midpoints is not the
+midpoint of the products. The adopted value follows the first route because
+that is how the UW Extension guidance is applied in practice - a percentage
+of a prevailing silage price - rather than by averaging extreme cases.
 ```
 
 ### 5.4 Revenue per Tonne
@@ -294,7 +309,7 @@ where:
 | Edible kernels | 93.9% | 40.1% | +53.8 pp |
 | Cannery waste silage | 6.1% | 59.9% | −53.8 pp |
 
-The 53.8 pp difference reflects the extreme value-to-mass ratio of sweet corn kernels. Kernels command $575/t (25.6× the waste price) but carry only 40.1% of the total DM output. This extreme economic skew is characteristic of food processing systems where the primary product captures nearly all the economic value and the co-product is a low-value waste stream.
+The 53.8 pp difference reflects the value-to-mass ratio of sweet corn kernels: they command $575/t, 25.6× the waste price, but carry only 40.1% of the co-product dry matter. The waste stream's share of the burden differs roughly tenfold between the two methods, so the choice of method should be stated explicitly for this system.
 
 ### 6.4 Why Economic Allocation Is So Skewed
 
@@ -302,9 +317,9 @@ In sweet corn canning, economic allocation is heavily skewed toward edible kerne
 
 1. **High value of food product:** Sweet corn kernels are a premium food ingredient with a wholesale value of $450–700/t.
 2. **Low value of waste:** Cannery waste is a low-quality feedstuff with limited markets, valued at only $15–30/t.
-3. **No intermediate products:** Unlike field corn processing (which produces multiple marketable co-products like gluten meal and germ), sweet corn canning produces only one high-value product and one low-value waste stream.
+3. **No intermediate or secondary products:** Sweet corn canning produces one high-value food product and one low-value feed stream, with no marketable intermediate between them, so there is nothing to moderate the split.
 
-This extreme skew is **normal and expected** for food processing systems where the primary product captures nearly all the economic value.
+A skew of this size is characteristic of food processing systems in which the primary product captures nearly all of the economic value and the co-product is a low-value feed or disposal stream.
 
 ---
 
@@ -351,9 +366,9 @@ Both balances are **physically reasonable** for a wet food processing operation.
 | Total co-product DM | **0.21800 t** | |
 | DM balance gap | −0.03200 t | −12.8% of input DM |
 
-> **Balance assessment:** The DM output is 0.032 t (12.8%) below the DM input. This deficit is accounted for by non-marketed process outputs and losses:
+> **Balance assessment:** The DM output is 0.032 t (12.8%) below the DM input. The deficit is the residual of the balance, not a measured quantity. It is apportioned below across the pathways that plausibly carry it; the figures are estimates chosen to be consistent with the residual rather than independent measurements, and the first is the largest and least certain of them:
 >
-> 1. **Soluble sugar losses in blanching/wash water (~0.015 t DM, ~6.0%):** Sweet corn kernels contain 10–15% sugar (primarily sucrose, glucose, and fructose) on a fresh-weight basis. During blanching (brief immersion in hot water at ~85–95°C), a portion of these soluble sugars leaches into the blanching water. This is a well-documented phenomenon in sweet corn processing and represents the single largest DM loss pathway.
+> 1. **Soluble sugar losses in blanching and wash water (~0.015 t DM, ~6.0%):** Sweet corn kernels carry 10–15% sugar (sucrose, glucose and fructose) on a fresh-weight basis. During blanching — brief immersion in hot water at ~85–95°C — part of that sugar leaches into the blanching water. Leaching of solubles during blanching is well documented; the quantity assigned here is an estimate, and it is the largest single term in the apportionment.
 >
 > 2. **Non-recovered organic matter in husks and silks (~0.010 t DM, ~4.0%):** Husks and silks are blown away during mechanical husking and not collected as cannery waste. While much of this material is low-DM (high moisture), the organic fraction contributes to the DM gap.
 >
@@ -361,7 +376,9 @@ Both balances are **physically reasonable** for a wet food processing operation.
 >
 > 4. **Metabolic and other losses (~0.003 t DM, ~1.2%):** Includes respiration losses between harvest and processing (sweet corn metabolizes sugars rapidly at ambient temperature), minor mechanical spillage, and foam losses.
 >
-> **Total accounted:** 0.015 + 0.010 + 0.004 + 0.003 = 0.032 t DM (12.8%) ✓
+> **Sum of the apportionment:** 0.015 + 0.010 + 0.004 + 0.003 = 0.032 t DM (12.8%), which equals the residual by construction.
+>
+> The sugar term should be read with care. At 10–15% sugar on a fresh-weight basis the kernels carry roughly 0.035–0.053 t of sugar, so a 0.015 t loss would represent about a third of it — high for a brief hot-water immersion. The true split between blanch-water sugar loss and uncollected husk and silk material is not resolved by the data available here, and a plant-specific balance would be needed to separate them.
 
 ### 7.4 Why Cannery Waste Is Less Than (1 − Kernel Yield)
 
@@ -393,20 +410,20 @@ The waste yield (0.58 t/t) is **less than** the theoretical remainder (1 − 0.3
 |------------|-----------|--------|
 | Kernel recovery range (30–40%) | **High** | Industry consensus; extension reports [^1^][^3^] |
 | Sweet corn harvest moisture (70–80%) | **High** | USDA NASS [^1^]; well-established industry average |
-| Cannery waste moisture (75–80%) | **High** | Feedipedia [^4^]; Labosky & Beyer [^6^] |
-| Cannery waste value (50–70% of corn silage) | **High** | UW Extension [^7^] |
-| Corn silage prices ($30–45/t) | **High** | USDA AMS [^8^] |
+| Cannery waste moisture (75–80%) | **High** | Feedipedia [^4^]; Crowley & Howard [^5^] |
+| Cannery waste value (50–70% of corn silage) | **High** | UW Extension [^6^] |
+| Corn silage prices ($30–45/t) | **High** | USDA AMS [^7^] |
 
 ### 9.2 Medium-Confidence Data (Estimated or Industry Sources)
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Kernel yield midpoint (0.35 t/t) | **Medium** | True midpoint of 30–40% range; actual recovery varies by hybrid |
-| Kernel DM% (25%) | **Medium** | True midpoint of 22–28% range; kernel-specific moisture varies with hybrid and harvest timing |
+| Kernel yield (0.35 t/t) | **Medium** | Midpoint of the 30–40% range; actual recovery varies by hybrid and cutting style |
+| Kernel DM% (25%) | **Medium** | Midpoint of the 22–28% range; kernel moisture varies with hybrid and harvest timing |
 | Kernel price ($575/t) | **Medium** | No USDA price series; estimated from processor economics. This is the most uncertain parameter in the methodology. |
-| Waste yield midpoint (0.58 t/t) | **Medium** | Derived from (1 − kernel yield) adjusted for process losses; not directly measured |
-| Waste price ($22.50/t) | **Medium** | Based on UW Extension [^7^] guidance relative to corn silage; highly variable by region |
-| Waste yield range (0.54–0.62 t/t) | **Medium** | Systematically derived from kernel yield range with 7–8% process loss assumption; adjusted for Midpoint Rule |
+| Waste yield (0.58 t/t) | **Medium** | Residual of the as-is balance at the adopted kernel yield and 7% process losses; not directly measured |
+| Waste price ($22.50/t) | **Medium** | Based on UW Extension [^6^] guidance relative to corn silage; highly variable by region |
+| Waste yield range (0.54–0.62 t/t) | **Medium** | Rounded envelope of the residual across the kernel yield range at 7–8% process losses (Section 4.1) |
 
 ### 9.3 Known Limitations
 

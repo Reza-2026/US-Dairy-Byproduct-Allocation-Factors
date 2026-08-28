@@ -35,13 +35,17 @@
 | **Standard bushel equivalent** | 68.9 bushels/t | 1,000 kg ÷ 14.515 kg/bu (32 lb standard bushel weight) |
 | **Standard bushel weight** | 32 lb (14.515 kg) | USDA standard bushel weight for oats, used for trading and reporting. Distinct from test weight. |
 | **Typical test weight** | ~34 lb/bu (range 27–40 lb/bu) | Average commodity oat density at 12% moisture. USDA minimum test weight for No. 1 oats: 36 lb/bu; No. 4: 27 lb/bu (7 CFR 810.1004) [^1^]. Actual test weight varies by variety, growing conditions, and hull content. Hulless varieties approach 48 lb/bu but are rarely traded as commodity oats. |
-| **Typical groat content** | ~68–74% of seed weight | Industry average; remainder is hull [^2^] |
+| **Typical groat content** | ~70–78% of seed weight | Complement of the hull fraction (22–30%) [^2^][^6^]. Groat and hull are the two parts of the seed, so the two ranges are stated as complements. |
 
 > **Note on bushel weight vs. test weight:** The standard bushel weight (32 lb) is used for bushel equivalent calculations, as this is the legal definition used in USDA reporting and grain trading. The typical test weight (~34 lb/bu) is reported separately as a descriptive statistic. The standard bushel for oats is 32 lb, compared to 60 lb for wheat, 56 lb for corn, and 48 lb for barley.
 
 > **Note on moisture specification:** USDA oat grading standards (7 CFR 810 Subpart G) grade oats on test weight, heat-damaged kernels, wild oats, and foreign material — moisture is NOT a grade-determining factor. The 12% moisture figure is an industry trading convention and common buyer specification, not a USDA standard. For safe storage, the widely cited maximum is 13–14%.
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Point values are given to the precision the underlying sources support and are not intended to imply plant-level accuracy. Derived quantities (DM outputs, revenues, allocation percentages) are carried at four decimals internally and reported to one decimal place.
+
+### 1.3 Unit Conversions
 
 | Conversion | Factor |
 |------------|--------|
@@ -67,7 +71,6 @@
 | [^6^] | Feedipedia — Oat hulls (INRAE/CIRAD/AFZ/FAO) | Scientific Database | https://www.feedipedia.org/node/707 |
 | [^7^] | Feedipedia — Oat mill feed (INRAE/CIRAD/AFZ/FAO) | Scientific Database | https://www.feedipedia.org/node/708 |
 | [^8^] | University of Minnesota Extension — Feed Ingredient Market Reports | University Extension | https://extension.umn.edu/ |
-| [^9^] | Suttie, J.M. & Reynolds, S.G. (Eds.) (2004). *Fodder Oats: A World Overview*. FAO Plant Production and Protection Series No. 33. | Government (FAO) | https://www.fao.org/ |
 
 ### 2.2 How Sources Were Used
 
@@ -88,7 +91,7 @@
 Oat milling converts raw oats into food-grade oat products and co-products through the following steps:
 
 1. **Cleaning:** Foreign material (dirt, weed seeds, chaff, other grains) is removed using screens, aspirators, and disc separators. This removes ~1–3% of input mass.
-2. **Dehulling:** Oat hulls are removed using impact or stone dehullers. The hull represents 22–30% of the oat seed weight (higher for covered varieties, lower for "naked" varieties). Dehulling efficiency is typically 92–96%, meaning some groats remain with the hulls and some hull fragments remain with the groats.
+2. **Dehulling:** Oat hulls are removed using impact or stone dehullers. The hull represents 22–30% of the oat seed weight (higher for covered varieties, lower for "naked" varieties). Dehulling efficiency is typically 92–96%, meaning some groats remain with the hulls and some hull fragments remain with the groats. The **recovered hull yield per tonne of oats received is therefore lower than the hull fraction of the seed**, because cleaning removes 1–3% of the mass first and part of the hull leaves with the groat stream.
 3. **Kilning (heat treatment):** Groats are heated to develop flavor, inactivate lipase enzymes (which cause rancidity), and reduce moisture. Kilning reduces moisture from ~12% to ~9–11% and is essential for shelf stability. This is a key step that distinguishes oat milling from other grain milling.
 4. **Cutting/flaking/grinding:** Kilned groats are processed into various food products:
    - **Steel-cut oats:** Groats cut into 2–4 pieces
@@ -139,19 +142,27 @@ THREE CO-PRODUCTS from 1 t oats:
 
 | Co-product | Yield (t/t oats) | Range | Source & Calculation |
 |------------|-----------------|-------|---------------------|
-| **Food oats** | 0.60 | 0.58–0.62 | Industry standard oat milling yield [^2^][^4^]. The 0.60 value is the exact midpoint of the range. Represents the fraction of groats (after dehulling) that meet food-grade specifications. Yield varies with oat variety (groat content 68–74%), dehulling efficiency (92–96%), and mill configuration. |
-| **Oat hulls** | 0.25 | 0.22–0.28 | Industry standard [^2^][^6^]. The 0.25 value is the exact midpoint of the range. Represents the hull fraction removed during dehulling. Oat hulls constitute 22–30% of seed weight; the range captures variety and processing variation. |
-| **Oat mill feed** | 0.10 | 0.08–0.12 | Industry standard [^4^][^7^]. The 0.10 value is the exact midpoint of the range. Mill feed consists of bran particles, endosperm fines, and short pieces that don't meet food oat specifications. Yield varies with mill configuration and product mix. |
+| **Food oats** | 0.60 | 0.58–0.62 | Milling literature [^2^][^4^]. The fraction of groats, after dehulling, that meets food-grade specifications. Varies with oat variety (groat content 70–78%), dehulling efficiency (92–96%), and mill configuration. |
+| **Oat hulls** | 0.25 | 0.22–0.28 | Milling literature [^2^][^6^]. Recovered hull stream. Hull is 22–30% of seed weight depending on variety; Feedipedia [^6^] gives "up to 25% of the weight of the grain." The recovered yield is lower than the seed hull fraction — see the reconciliation note below. |
+| **Oat mill feed** | 0.10 | 0.08–0.12 | Milling literature [^4^][^7^]. Bran particles, endosperm fines, and short pieces that do not meet food oat specifications. Varies with mill configuration and product mix. |
 
-> **Note on yield midpoints:** All three yields are exact midpoints of their stated ranges. This is the best-case scenario for LCA transparency — the midpoints are honestly derived and no values are pushed to extremes of their ranges to achieve a desired outcome.
+*Reconciling the hull yield with seed composition:* The hull yield can be derived from seed composition, and doing so reproduces the adopted value. Cleaning removes 1–3% of the delivered mass before dehulling, leaving ~0.98 t of seed; of that, 22–30% is hull; and dehulling recovers 92–96% of it into the hull stream, the balance leaving with the groats.
 
-> **Note on yield relationship:** The three yields are approximately interdependent. Oat seed ≈ groat (68–74%) + hull (22–30%). The food oats yield depends on groat content, dehulling efficiency, and how much groat material is diverted to mill feed. Higher food oat yields mean less mill feed.
+| Hull fraction of cleaned seed | Dehulling recovery | Hull yield (t/t oats) |
+|---|---|---|
+| 26% | 96% | 0.245 |
+| 28% | 92% | 0.252 |
+| 30% | 90% | 0.265 |
+
+The adopted **0.25 t/t** sits within this band and within the reported yield range of 0.22–0.28.
+
+> **Note on yield relationship:** The three yields are interdependent. The seed is groat plus hull; the food oats yield then depends on how much of the groat stream meets food specifications, with the remainder going to mill feed. Higher food oat yields mean less mill feed.
 
 ### 4.2 Dry Matter Contents
 
 | Co-product | DM (%) | Basis |
 |------------|--------|-------|
-| Food oats | 90.0% | Kilned and processed food oats (groats, rolled oats, steel-cut) typically have 9–11% moisture [^2^][^4^]. The kilning process reduces moisture from ~12% to ~9–11%. The 90% DM value (10% moisture) is the true mathematical midpoint of the typical range: midpoint of 9% and 11% moisture = 10% moisture = 90% DM. |
+| Food oats | 90.0% | Kilned and processed food oats (groats, rolled oats, steel-cut) typically have 9–11% moisture [^2^][^4^]; kilning reduces moisture from ~12% to ~9–11%. The adopted 90% DM corresponds to 10% moisture, the midpoint of that range. |
 | Oat hulls | 90.0% | Dried oat hulls are typically 88–93% DM [^6^]. Feedipedia data (88 samples): average 90.3%, range 88.4–92.7%. Hulls are relatively dry after dehulling and may be further dried for storage. The 90% DM value is consistent with the Feedipedia average. |
 | Oat mill feed | 90.0% | Oat mill feed (bran, fines, shorts) is typically 88–93% DM [^7^]. Moisture depends on processing conditions. The 90% DM value is the midpoint of the typical range. |
 
@@ -174,12 +185,12 @@ THREE CO-PRODUCTS from 1 t oats:
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Food oats** | 375 | 300–450 | USDA NASS [^3^]; IndexMundi [^5^] | 2024–2025 average for processed oat groats/rolled oats (wholesale). Raw oat grain: $150–220/t [^3^]. The milling margin adds ~$130–230/t. Range reflects the verified price range for wholesale processed food oats (Section 5.2). Midpoint of range: ($300 + $450) / 2 = $375. |
-| **Oat hulls** | 80 | 50–110 | Feedipedia [^6^]; university extension feed reports [^8^] | 2024–2025 average. Oat hulls are a low-value byproduct used as animal feed roughage, boiler fuel at milling plants, or as a source of oat fiber (after further processing). Loose bulk: $40–70/t; pelleted: $90–120/t. Midpoint of range: ($50 + $110) / 2 = $80. |
-| **Oat mill feed** | 180 | 140–220 | Feedipedia [^7^]; university extension feed reports [^8^] | 2024–2025 average. Oat mill feed is a mid-value byproduct used in animal feed (primarily ruminants). Higher in protein and energy than hulls (~8–13% protein vs. ~3–6% for hulls). Midpoint of range: ($140 + $220) / 2 = $180. |
+| **Food oats** | 375 | 300–450 | USDA NASS [^3^]; IndexMundi [^5^] | 2024–2025 average for processed oat groats/rolled oats (wholesale). Raw oat grain: $150–220/t [^3^]. The milling margin adds ~$130–230/t. Range reflects the verified price range for wholesale processed food oats (Section 5.2). |
+| **Oat hulls** | 80 | 50–110 | Feedipedia [^6^]; university extension feed reports [^8^] | 2024–2025 average. Oat hulls are a low-value byproduct used as animal feed roughage, boiler fuel at milling plants, or as a source of oat fiber (after further processing). Loose bulk: $40–70/t; pelleted: $90–120/t. |
+| **Oat mill feed** | 180 | 140–220 | Feedipedia [^7^]; university extension feed reports [^8^] | 2024–2025 average. Oat mill feed is a mid-value byproduct used in animal feed (primarily ruminants). Higher in protein and energy than hulls (~8–13% protein vs. ~3–6% for hulls). |
 
 
-> **Note on byproduct price transparency:** Oat hulls and oat mill feed are specialized industrial byproducts with limited public price data. We used Feedipedia (which provides composition data and indicative market values) and university extension feed ingredient reports, which are appropriate sources for niche byproduct pricing. However, the price ranges for these byproducts carry significant uncertainty due to limited market transparency.
+> **Note on byproduct price transparency:** Oat hulls and oat mill feed are niche industrial byproducts with limited public price data. The values here come from Feedipedia indicative market values [^6^][^7^] and university extension feed ingredient reports [^8^]. Both price ranges carry more uncertainty than the food oats price, which is reflected in the confidence ratings in Section 9.2.
 
 ### 5.2 Price Verification
 
@@ -191,9 +202,7 @@ Milling margin: ~$130-230/t (includes dehulling, kilning, rolling)
 Processed food oats: $300-450/t (groats, rolled, steel-cut)
 Instant oat products: $500-800/t (retail, with added ingredients)
 
-Selected midpoint: $375/t (wholesale, commodity processed oats)
-Mathematical midpoint of range ($300-450): $375/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $375/t, the midpoint of the $300–450 range (wholesale, commodity processed oats)
 ```
 
 **Oat hulls:**
@@ -204,9 +213,7 @@ Pelleted hulls: ~$90-120/t
 Boiler fuel value: ~$30-50/t (energy content basis)
 Oat fiber (processed from hulls): $200-400/t (after extraction and purification)
 
-Selected midpoint: $80/t (loose/pelleted mix, bulk)
-Mathematical midpoint of range ($50-110): $80/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $80/t, the midpoint of the $50–110 range (loose/pelleted mix, bulk)
 ```
 
 **Oat mill feed:**
@@ -216,9 +223,7 @@ Feedipedia indicative value: ~$140-190/t
 University extension feed reports: ~$150-210/t
 Comparable feed ingredients: wheat middlings ~$140-190/t
 
-Selected midpoint: $180/t
-Mathematical midpoint of range ($140-220): $180/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $180/t, the midpoint of the $140–220 range
 ```
 
 ### 5.3 Revenue per Tonne of Oats
@@ -276,6 +281,8 @@ where:
 | **Total** | | **100.0%** |
 
 > **Rounding note:** The raw calculations yield 63.16% (food oats), 26.32% (hulls), and 10.53% (mill feed). These round to 63.2%, 26.3%, and 10.5%, which sum to exactly 100.0%.
+
+> **Note on the mass allocation for oat milling:** All three streams carry the same dry matter content (90%), so the mass allocation reduces to the as-is yield split (0.60 / 0.25 / 0.10 divided by 0.95). Unlike systems whose co-products differ sharply in moisture — citrus juice against citrus pulp, for example — the mass column here adds no information beyond the yields themselves. Users comparing methods across crops should keep that in mind.
 
 ### 6.3 Comparison: Economic vs. Mass Allocation
 
@@ -367,13 +374,12 @@ Food oats receive a much larger economic allocation than mass allocation because
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Food oats yield (0.60 t/t) | **High** | Industry standard [^2^][^4^]; exact midpoint of range |
-| Oat hulls yield (0.25 t/t) | **High** | Industry standard [^2^][^6^]; exact midpoint of range |
-| Oat mill feed yield (0.10 t/t) | **High** | Industry standard [^4^][^7^]; exact midpoint of range |
-| Food oats DM% (90%) | **High** | Post-kilning food oat specification [^2^]; true mathematical midpoint of 9–11% moisture range |
-| Oat hulls DM% (90%) | **High** | Industry specification; Feedipedia avg 90.3% [^6^] |
-| Oat mill feed DM% (90%) | **High** | Industry specification [^7^] |
-| Price midpoints | **High** | All are true mathematical midpoints of stated ranges |
+| Food oats yield (0.60 t/t) | **High** | Milling literature [^2^][^4^]; consistent with the dehulling reconciliation in Section 4.1 |
+| Oat hulls yield (0.25 t/t) | **High** | Milling literature [^2^][^6^]; reproduced by the dehulling reconciliation in Section 4.1 |
+| Oat hulls DM% (90%) | **High** | Feedipedia [^6^]: 90.3% average across 88 samples, range 88.4–92.7% |
+| Food oats DM% (90%) | **High** | Post-kilning food oat specification, 9–11% moisture [^2^][^4^] |
+| Oat mill feed yield (0.10 t/t) | **Medium-High** | Milling literature [^4^][^7^]; varies with mill configuration and product mix |
+| Oat mill feed DM% (90%) | **Medium-High** | Industry specification [^7^]; typical range 88–93% |
 | USDA test weight grades (36 lb/bu No. 1, 27 lb/bu No. 4) | **High** | Confirmed by 7 CFR 810.1004 [^1^] |
 | Standard bushel weight (32 lb/bu) | **High** | USDA standard for trading and reporting |
 
@@ -402,8 +408,8 @@ Food oats receive a much larger economic allocation than mass allocation because
 
 7. **Seasonal and regional variation:** Oat quality (test weight, groat percentage, moisture) varies significantly by growing region and harvest conditions. Northern-grown oats tend to have higher groat content than southern-grown oats.
 
-8. **Oat hulls protein content:** Feedipedia data (107 samples) shows an average crude protein of 5.2% DM (range 2.5–8.4%). The 3–5% range applies to well-cleaned hulls with minimal endosperm contamination; commercial oat hulls typically contain some adhering endosperm, pushing protein toward 5–6%. 
+8. **Oat hulls protein content:** Feedipedia [^6^] reports an average crude protein of 5.2% DM across 107 samples, range 2.5–8.4%. Well-cleaned hulls sit at the low end; commercial hulls carry some adhering endosperm and typically run 5–6% DM. The ~3–6% figure quoted in Section 5.1 is used to contrast hulls with mill feed on feeding value, not as a specification.
 
-9. **Oat mill feed protein content:** Feedipedia describes oat mill feed as "typically a little richer in protein (8%)" with 25% starch and 22% fiber. The 12–15% range would only be achievable if the mill feed includes significant bran material. The range used in this analysis is **8–13%**, with 8% as the Feedipedia average and 13% representing mill feed with higher bran content.
+9. **Oat mill feed protein content:** Feedipedia [^7^] describes oat mill feed as "typically a little richer in protein (8%)" with 25% starch and 22% fibre. This document uses **8–13% CP (DM basis)**: 8% is the Feedipedia figure and 13% represents mill feed carrying a higher proportion of bran. Mill feed composition depends heavily on how a given mill splits its sifting streams, so this is a wider band than for hulls.
 
 ---

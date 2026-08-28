@@ -30,7 +30,11 @@
 
 *Critical constraint on oil yield:* At 47% oil content (DM basis) and 92% DM for shelled kernels, the total oil present per tonne of kernels (as-is) is 0.47 × 0.920 = 0.4324 t. This is the absolute physical ceiling. Any oil yield claim exceeding 0.4324 t/t implies extraction efficiency >100%, which is physically impossible. At 95–98% solvent extraction recovery, the achievable range is 0.4108–0.4238 t/t at 47% oil content.
 
-### 1.2 Unit Conversions
+### 1.2 Convention for Adopted Values
+
+Every yield, price, and DM% in this document is reported as an adopted point value together with the range it was drawn from. **Unless a row states otherwise, the adopted value is the midpoint of its stated range**, and the range is the parameter that carries the evidence. Two exceptions are stated where they appear: the oil yield is bounded by the physical oil content of the kernel (Sections 1.1 and 4.1), and the treatment of the intermediate product (shelled kernels) is set out in Section 6.1. Cumulative allocations are computed from unrounded stage values and rounded once, as described in Section 6.5.
+
+### 1.3 Unit Conversions
 | Conversion | Factor |
 | --- | --- |
 | 1 bushel in-shell peanuts | 80.0 lb ≈ 36.29 kg (at 10% moisture) |
@@ -41,7 +45,7 @@
 
 *Note on peanut types:* Four main market types are grown in the US: Runner (~80% of production, medium kernel, used for peanut butter), Virginia (~15%, large kernel, used for in-shell roasting), Spanish (~4%, small kernel, high oil content), and Valencia (~1%, sweet flavor, three-plus kernels per pod). Runner peanuts are the reference type for this document. Oil content varies: Spanish (~48–52% oil), Runner (~44–50%), Virginia (~42–48%).
 
-*Note on in-shell vs. shelled basis:* Peanut processing is inherently two-stage. The farmer delivers in-shell peanuts (with hulls), which are first shelled to produce raw kernels, then the kernels are crushed for oil extraction. Yields in Stage 1 are per tonne of in-shell peanuts; yields in Stage 2 are per tonne of shelled kernels. This is analogous to rice (hulling → milling) and barley (malting → brewing).
+*Note on in-shell vs. shelled basis:* Peanut processing is inherently two-stage. The farmer delivers in-shell peanuts, which are first shelled to produce raw kernels, and the kernels are then crushed for oil extraction. **Yields in Stage 1 are per tonne of in-shell peanuts; yields in Stage 2 are per tonne of shelled kernels.** Every figure in this document states which basis it is on, and Section 7.1 shows why the distinction matters when combining stage losses.
 
 ## 2. Data Sources and References
 
@@ -83,7 +87,7 @@ Peanut shelling removes the hull (shell) from in-shell peanuts:
 - **Shelled kernels** (intermediate product — input to Stage 2)
 - **Peanut hulls** (final co-product)
 
-*Note on shelling losses:* Peanut shelling generates 5–8% mass losses from foreign material removal, immature pods, damaged kernels, dust, and fines. These losses are higher than for grain hulling (e.g., rice hulling at ~2%) because farmer-stock peanuts contain more foreign material and a higher fraction of immature pods.
+*Note on shelling losses:* Peanut shelling generates 5–8% mass losses from foreign material removal, immature pods, damaged kernels, dust, and fines. These losses are higher than for cereal-grain hulling because farmer-stock peanuts carry more foreign material and a higher fraction of immature pods.
 
 ### 3.2 Stage 2: Crushing (Oil Extraction)
 Peanut crushing converts shelled kernels into oil and meal:
@@ -99,7 +103,7 @@ Peanut crushing converts shelled kernels into oil and meal:
 - **Peanut oil** (final co-product)
 - **Peanut meal** (final co-product)
 
-*Why solvent extraction is the "highest standard":* Full solvent extraction (expeller pre-press + solvent extraction) recovers 95–98% of the oil in peanut kernels, compared to only 65–75% for expeller-only pressing. Solvent extraction is the standard method for commercial peanut crushing in the US, consistent with soybean and sunflower processing. Expeller-only pressing is used for specialty/organic peanut oil but produces meal with 6–12% residual oil (typically 10–12% for standalone expellers).
+*Why solvent extraction is modelled here:* Full solvent extraction (expeller pre-press followed by solvent extraction) recovers 95–98% of the oil in peanut kernels, against roughly 65–75% for expeller-only pressing, and it is the standard method for commercial peanut crushing in the US. Expeller-only pressing is used for specialty and organic peanut oil but leaves 6–12% residual oil in the meal (typically 10–12% for standalone expellers); Section 9.3 gives the yields and prices for that configuration.
 
 *Physical constraint on oil yield:* At 47% oil content (DM basis) and 92% DM for shelled kernels, the total extractable oil is limited to 0.4324 t per tonne of kernels (as-is) at 100% extraction. Solvent extraction at 95–98% recovery gives an achievable range of approximately 0.41–0.42 t/t at this oil content.
 
@@ -122,7 +126,8 @@ Peanut crushing converts shelled kernels into oil and meal:
                       ▼
       ┌─ STAGE 2: CRUSHING (solvent extraction) ────┐
       │                                               │
-      │  Processing losses: ~0.025 t DM (2.7%)       │
+      │  Processing losses: ~0.018 t DM (1.9% of      │
+      │  in-shell input; 2.7% of kernels crushed)     │
       │  (handling, residual solvent, moisture loss)  │
       │                                               │
       │  Peanut oil: 0.42 t as-is (0.420 t DM)    ◄── final co-product
@@ -142,10 +147,10 @@ Peanut crushing converts shelled kernels into oil and meal:
 ### 4.1 Yields (per tonne of in-shell peanuts and shelled kernels)
 | Co-product | Stage | Yield basis | Yield (t/t) | Range | Source & Calculation |
 | --- | --- | --- | --- | --- | --- |
-| Shelled kernels | 1 (intermediate) | Per t in-shell peanuts | 0.70 | 0.68–0.72 | Industry standard shelling yield for runner peanuts [^4^][^7^]. Kernel yields of 68–75% are typical; the 0.70 midpoint is at the 50th percentile of the narrower range for well-cleaned farmer-stock peanuts. Midpoint: (0.68 + 0.72) / 2 = 0.70 ✓ |
-| Peanut hulls | 1 (final) | Per t in-shell peanuts | 0.23 | 0.20–0.26 | Industry standard [^4^][^7^]. Peanut hulls represent 20–26% of in-shell weight for runner varieties. Midpoint: (0.20 + 0.26) / 2 = 0.23 ✓ |
-| Peanut oil | 2 (final) | Per t shelled kernels | 0.42 | 0.39–0.45 | Physically constrained by oil content. At 47% oil (DM basis) and 92% DM: total oil = 0.4324 t/t. Solvent extraction at 96.5% recovery (midpoint of 95–98%) gives 0.417 t/t ≈ 0.42 t/t. Range spans 44% oil at 95% extraction (0.385) to 50% oil at 98% extraction (0.451), rounded to 0.39–0.45. Midpoint: (0.39 + 0.45) / 2 = 0.42 ✓. |
-| Peanut meal | 2 (final) | Per t shelled kernels | 0.54 | 0.50–0.58 | Independently established from industry data for solvent-extracted, dehulled meal at ~45% protein [^8^][^9^]. NOT derived as an algebraic residual (which would violate ISO 14044). Typical meal yields for solvent-extracted peanut meal range from 0.50 t/t (at higher oil yield) to 0.58 t/t (at lower oil yield). The 0.54 midpoint is consistent with industry reported yields. Midpoint: (0.50 + 0.58) / 2 = 0.54 ✓ |
+| Shelled kernels | 1 (intermediate) | Per t in-shell peanuts | 0.70 | 0.68–0.72 | Industry standard shelling yield for runner peanuts [^4^][^7^]. Kernel yields of 68–75% are typical; the adopted 0.70 is the midpoint of the narrower range typical of well-cleaned farmer-stock peanuts. |
+| Peanut hulls | 1 (final) | Per t in-shell peanuts | 0.23 | 0.20–0.26 | Industry standard [^4^][^7^]. Peanut hulls represent 20–26% of in-shell weight for runner varieties. |
+| Peanut oil | 2 (final) | Per t shelled kernels | 0.42 | 0.39–0.45 | Physically constrained by oil content. At 47% oil (DM basis) and 92% DM: total oil = 0.4324 t/t. Solvent extraction at 96.5% recovery (midpoint of 95–98%) gives 0.417 t/t ≈ 0.42 t/t. Range spans 44% oil at 95% extraction (0.385) to 50% oil at 98% extraction (0.451), rounded to 0.39–0.45.. |
+| Peanut meal | 2 (final) | Per t shelled kernels | 0.54 | 0.50–0.58 | Taken from industry data for solvent-extracted, dehulled meal at ~45% protein [^8^][^9^], **not** derived as the residual of the Stage 2 balance. Deriving it as a residual would not be improper, but sourcing it independently means the Stage 2 dry matter balance is a genuine check rather than an identity: the two yields are set separately and the 2.7% loss falls out of them. Reported meal yields run from 0.50 t/t (at higher oil recovery) to 0.58 t/t (at lower), and the adopted 0.54 is the midpoint. |
 
 *Note on Stage 2 yield relationship:* Oil and meal yields are inversely related, as with all oilseeds. When more oil is extracted (higher oil yield), less meal is produced. The values in this table (0.42 oil, 0.54 meal) are independently established from physical constraints and industry data respectively, and are mutually consistent with the DM balance at ~2.7% processing losses.
 
@@ -165,10 +170,10 @@ Peanut crushing converts shelled kernels into oil and meal:
 ### 4.2 Dry Matter Contents
 | Co-product | DM (%) | Basis |
 | --- | --- | --- |
-| Shelled kernels (intermediate) | 92.0% | Raw shelled peanuts at 7–9% moisture [^8^]. Peanuts are dried to 8–10% moisture for storage; shelled edible peanuts are typically at 7–9%. The 92% DM value (8% moisture) is standard for shelled kernels entering the crusher. Midpoint of 7–9% moisture: (7 + 9) / 2 = 8%, so DM = 92% ✓ |
+| Shelled kernels (intermediate) | 92.0% | Raw shelled peanuts at 7–9% moisture [^8^]. Peanuts are dried to 8–10% moisture for storage; shelled edible peanuts are typically at 7–9%. The 92% DM value (8% moisture) is standard for shelled kernels entering the crusher. The adopted 92% DM corresponds to 8% moisture, the midpoint of that band. |
 | Peanut oil | 100.0% | Crude and refined peanut oil are essentially pure lipid (triglycerides) with negligible moisture (<0.1%). |
 | Peanut meal (solvent-extracted) | 88.0% | Standard trading specification: maximum 12% moisture = minimum 88% DM [^8^][^9^]. Solvent-extracted, toasted meal is typically delivered at 9–12% moisture. The 88% DM value represents the standard trading basis (conservative estimate using maximum moisture). |
-| Peanut hulls | 91.0% | Peanut hulls at 7–11% moisture [^8^]. Hulls are drier than kernels due to their low hygroscopicity and high fiber content. The 91% DM value is the midpoint of the typical range: (89 + 93) / 2 = 91% ✓ (corresponding to 7–11% moisture: midpoint = 9% moisture, DM = 91%). |
+| Peanut hulls | 91.0% | Peanut hulls at 7–11% moisture [^8^]. Hulls are drier than kernels due to their low hygroscopicity and high fiber content. The adopted 91% DM is the midpoint of the 89–93% band, corresponding to 9% moisture. |
 
 ### 4.3 DM Output per Tonne of In-Shell Peanuts
 | Co-product | Calculation | DM Output (t/t in-shell peanuts) |
@@ -193,10 +198,10 @@ Peanut crushing converts shelled kernels into oil and meal:
 ### 5.1 Price Table
 | Co-product | Price (USD/t) | Range | Source | Notes |
 | --- | --- | --- | --- | --- |
-| Shelled kernels (intermediate) | 800 | 600–1,000 | USDA ERS [^2^]; IndexBox [^6^] | Shelled runner peanuts for crushing. Farmer-stock peanuts: $350–500/t; shelling margin: $150–300/t. Midpoint of range: ($600 + $1,000) / 2 = $800 ✓ |
-| Peanut oil | 1,600 | 1,400–1,800 | USDA ERS [^2^]; WASDE [^3^]; IndexMundi [^5^] | 2024–2025 average. Peanut oil is a premium cooking oil with high smoke point and distinctive flavor. Commands 1.5–2× the price of commodity vegetable oils. Range narrowed to match verification data. Midpoint of range: ($1,400 + $1,800) / 2 = $1,600 ✓ |
-| Peanut meal | 250 | 200–300 | USDA ERS [^2^]; Feedipedia [^9^] | 2024–2025 average for solvent-extracted, 45% protein meal. Range narrowed to match verification data. Expeller-pressed meal with higher residual oil: $280–380/t. Midpoint of range: ($200 + $300) / 2 = $250 ✓ |
-| Peanut hulls | 40 | 30–50 | American Peanut Council [^7^] | 2024–2025 average for loose bulk hulls (the primary co-product form from shelling). Pelleted hulls ($60–100/t) are a different product requiring additional processing. Midpoint of range: ($30 + $50) / 2 = $40 ✓ |
+| Shelled kernels (intermediate) | 800 | 600–1,000 | USDA ERS [^2^]; IndexBox [^6^] | Shelled runner peanuts for crushing. Farmer-stock peanuts: $350–500/t; shelling margin: $150–300/t. |
+| Peanut oil | 1,600 | 1,400–1,800 | USDA ERS [^2^]; WASDE [^3^]; IndexMundi [^5^] | 2024–2025 average. Peanut oil is a premium cooking oil with high smoke point and distinctive flavor. Commands 1.5–2× the price of commodity vegetable oils. Range narrowed to match verification data. |
+| Peanut meal | 250 | 200–300 | USDA ERS [^2^]; Feedipedia [^9^] | 2024–2025 average for solvent-extracted, 45% protein meal. Range narrowed to match verification data. Expeller-pressed meal with higher residual oil: $280–380/t. |
+| Peanut hulls | 40 | 30–50 | American Peanut Council [^7^] | 2024–2025 average for loose bulk hulls (the primary co-product form from shelling). Pelleted hulls ($60–100/t) are a different product requiring additional processing. |
 
 ### 5.2 Price Verification
 **Peanut oil:**
@@ -204,23 +209,19 @@ Peanut crushing converts shelled kernels into oil and meal:
 - IndexMundi (2025 avg): ~$1,500-1,650/t
 - Specialty/expeller-pressed: $2,000-3,000/t
 - Commodity vegetable oil baseline (soybean): ~$800-1,000/t
-- *Selected midpoint: $1,600/t*
-- *Mathematical midpoint of range ($1,400-1,800): $1,600/t ✓*
+- *Adopted: $1,600/t, the midpoint of the stated range*
 
 **Peanut meal:**
 - USDA ERS (2025): ~$220-280/t (solvent-extracted, 45% protein)
 - Feedipedia: indicative values $200-300/t (solvent-extracted meal)
-- Comparable feed ingredient: soybean meal ~$280-380/t (44-48% protein)
 - Expeller-pressed peanut meal: ~$280-380/t (higher residual oil)
-- *Selected midpoint: $250/t*
-- *Mathematical midpoint of range ($200-300): $250/t ✓*
+- *Adopted: $250/t, the midpoint of the stated range*
 
 **Peanut hulls:**
 - American Peanut Council: ~$30-50/t (loose, bulk)
 - Pelleted hulls: ~$60-100/t (different product — requires additional processing)
 - Compost/mulch value: ~$20-40/t
-- *Selected midpoint: $40/t (loose bulk hulls only)*
-- *Mathematical midpoint of range ($30-50): $40/t ✓*
+- *Adopted: $40/t, the midpoint of the stated range (loose bulk hulls only)*
 
 ### 5.3 Revenue per Tonne of In-Shell Peanuts
 | Co-product | Calculation | Revenue (USD/t in-shell peanuts) |
@@ -234,7 +235,34 @@ Peanut crushing converts shelled kernels into oil and meal:
 
 ## 6. Two-Stage Allocation
 
-### 6.1 Allocation Approach
+### 6.1 Treatment of the Intermediate Product
+
+Peanut processing has an intermediate — shelled kernels — that is sold between the two stages, so Stage 1 cannot be allocated without deciding what the kernels are worth. Two conventions are possible.
+
+**Market-price cascade (used here).** Kernels are valued at the price they transact at between sheller and crusher ($800/t, Section 5.1). Stage 1 divides the in-shell peanut burden between kernels and hulls on that basis; Stage 2 divides the kernels' burden between oil and meal; the two stage allocations are then multiplied along each product's path.
+
+**Derived valuation (not used here).** Kernels are instead valued at the total revenue of the products they become ($807/t of kernels).
+
+These are not two options plus a third. **Valuing the intermediate at its derived value makes the cascade collapse algebraically to the direct end-of-chain calculation**, because the derived value cancels out of the multiplication:
+
+```
+Stage 1 kernel share x Stage 2 oil share
+  = D / (D + hulls)  x  oil / D
+  = oil / (D + hulls)
+  = oil / (oil + meal + hulls)          <- the direct calculation
+```
+
+So the choice is between the market-price cascade and the direct end-of-chain calculation, and Section 6.6 reports the direct result. For peanuts the two agree to within 0.01 percentage point, because the kernel market price ($800/t) is within one percent of the kernels' derived value ($807/t).
+
+**Why the market-price cascade is used for peanuts:**
+
+1. **Shelled kernels are not a final co-product in this work.** Within this system they exist only as the input to crushing. The three co-products this document reports are peanut oil, peanut meal and peanut hulls.
+2. **The $800/t price is specifically the transfer price into crushing.** This matters more for peanuts than for most crops, because shelled kernels have a much larger competing market: only about 15–20% of US shelled peanuts are crushed, with most going to food uses at $900–1,400/t (Section 9.3). The $800/t adopted here is the **crushing-grade** price — the price of the stream that actually enters Stage 2 — not the edible-grade price. Using the food-market price would value the kernels at a use they did not enter.
+3. **It keeps the split of the in-shell burden independent of downstream value-add.** The Stage 1 split is held to the transaction that occurs at shelling.
+
+**Where this convention does not apply.** A different treatment is warranted where the intermediate is itself a marketed final co-product of the system being studied — that is, where the study needs allocation factors for both the intermediate and the products it becomes, because both are genuine outputs. In that case the intermediate's quoted price is the price in a competing end use rather than a transfer price into the next stage, and the direct end-of-chain treatment is used so that all final products sit on one denominator. That situation does not arise here: edible shelled peanuts leave the system as a final food product and are outside the scope of this table, which models the crushing pathway.
+
+### 6.2 Allocation Approach
 Because peanut processing has two sequential stages, the allocation is performed in two steps:
 1. **Stage 1 (Shelling):** Allocate in-shell peanuts' burden between shelled kernels and peanut hulls.
 2. **Stage 2 (Crushing):** Allocate shelled kernels' burden between peanut oil and peanut meal.
@@ -244,7 +272,7 @@ The final allocation for each co-product is the product of the stage allocations
 - Peanut meal: Stage 1 kernel alloc × Stage 2 meal alloc
 - Peanut hulls: Stage 1 hulls alloc (no Stage 2)
 
-### 6.2 Stage 1: Shelling Allocation
+### 6.3 Stage 1: Shelling Allocation
 **Mass allocation:**
 | Co-product | DM Output | Calculation | Stage 1 Allocation |
 | --- | --- | --- | --- |
@@ -259,7 +287,7 @@ The final allocation for each co-product is the product of the stage allocations
 
 *Stage 1 revenue:* Shelled kernels: 0.70 × $800 = $560.00; Peanut hulls: 0.23 × $40 = $9.20; Total: $569.20.
 
-### 6.3 Stage 2: Crushing Allocation
+### 6.4 Stage 2: Crushing Allocation
 **Mass allocation:**
 | Co-product | DM Output (per t shelled kernels) | Calculation | Stage 2 Allocation |
 | --- | --- | --- | --- |
@@ -274,26 +302,28 @@ The final allocation for each co-product is the product of the stage allocations
 
 *Stage 2 revenue:* Peanut oil: 0.42 × $1,600 = $672.00; Peanut meal: 0.54 × $250 = $135.00; Total: $807.00.
 
-### 6.4 Final Cumulative Allocation
+### 6.5 Final Cumulative Allocation
 The final allocation of in-shell peanuts' environmental burden to each of the three final co-products is calculated by cascading the two stages:
 
 **Mass allocation (cumulative):**
 | Co-product | Calculation | Final Allocation |
 | --- | --- | --- |
-| Peanut oil | 75.5% × 46.9% | 35.4% |
-| Peanut meal | 75.5% × 53.1% | 40.1% |
-| Peanut hulls | 24.5% (Stage 1 only) | 24.5% |
+| Peanut oil | 75.498% × 46.927% | 35.4% |
+| Peanut meal | 75.498% × 53.073% | 40.1% |
+| Peanut hulls | 24.502% (Stage 1 only) | 24.5% |
 | **Total** | | **100.0%** |
 
 **Economic allocation (cumulative):**
 | Co-product | Calculation | Final Allocation |
 | --- | --- | --- |
-| Peanut oil | 98.4% × 83.3% | 82.0% |
-| Peanut meal | 98.4% × 16.7% | 16.4% |
-| Peanut hulls | 1.6% (Stage 1 only) | 1.6% |
+| Peanut oil | 98.384% × 83.271% | 81.9% |
+| Peanut meal | 98.384% × 16.729% | 16.5% |
+| Peanut hulls | 1.616% (Stage 1 only) | 1.6% |
 | **Total** | | **100.0%** |
 
-### 6.5 Verification: Direct Calculation
+> **Rounding note:** Cumulative values are computed from the **unrounded** stage allocations, not from the one-decimal figures shown in Sections 6.3 and 6.4. Multiplying rounded percentages shifts the result: 98.4% × 83.3% gives 81.97%, whereas the unrounded product is 81.93%. The unrounded cumulative values are 81.925%, 16.458% and 1.616%, which sum to exactly 100% and round to 81.9%, 16.5% and 1.6%.
+
+### 6.6 Verification: Direct Calculation
 The cumulative allocation can be verified by calculating directly from the three final co-products' DM and revenue values per tonne of in-shell peanuts, bypassing the intermediate shelled kernels stage:
 
 **Direct mass allocation:**
@@ -312,26 +342,26 @@ The cumulative allocation can be verified by calculating directly from the three
 | Peanut hulls | $9.20 | (9.20 ÷ 574.10) × 100 | 1.6% |
 | **Total** | $574.10 | | **100.0%** |
 
-### 6.6 Reconciliation: Cascade vs. Direct
+### 6.7 Reconciliation: Cascade vs. Direct
 The cascade and direct methods give similar results:
 | Co-product | Mass (cascade) | Mass (direct) | Econ (cascade) | Econ (direct) |
 | --- | --- | --- | --- | --- |
-| Peanut oil | 35.4% | 35.2% | 82.0% | 81.9% |
-| Peanut meal | 40.1% | 39.8% | 16.4% | 16.5% |
+| Peanut oil | 35.4% | 35.2% | 81.9% | 81.9% |
+| Peanut meal | 40.1% | 39.8% | 16.5% | 16.5% |
 | Peanut hulls | 24.5% | 25.0% | 1.6% | 1.6% |
 
 *Why the differences are small:* The shelled kernel price ($800/t) is close to the weighted average of its products ($807/t of kernels: 0.42 × $1,600 + 0.54 × $250 = $672 + $135 = $807), so the cascade and direct methods converge.
 
 *Which method to use:* 
-- The **cascade method** is required by ISO 14044 when a unit process has intermediate products that cross system boundaries (i.e., shelled kernels could be sold independently as edible peanuts). It reflects the economic reality at each processing stage.
-- The **direct method** is simpler and more transparent, but it obscures the two-stage nature of the process.
-- For this document, we report both methods and recommend the cascade method as the primary allocation for LCA purposes, consistent with ISO 14044.
+- The **cascade method** applies allocation at each unit process separately, which is appropriate when the intermediate crosses a system boundary and is independently traded, as shelled kernels are. Note that ISO 14044 requires allocation to be applied at each unit process; it does not define or mandate a "cascade", which is a practitioner's term and should not be confused with ISO's stepwise allocation *hierarchy* (avoid → physical → economic).
+- The **direct calculation** uses a single end-of-chain denominator. It is simpler, but it collapses the two-stage structure and lets value added in Stage 2 govern the Stage 1 split.
+- Both are reported. The **cascade is the primary allocation** for this document, for the reasons in Section 6.1. For peanuts the two agree to within 0.01 pp, so the choice does not affect the published factors.
 
-### 6.7 Recommended Final Allocation
+### 6.8 Recommended Final Allocation
 | Co-product | Mass Allocation | Economic Allocation |
 | --- | --- | --- |
-| Peanut oil | 35.4% | 82.0% |
-| Peanut meal | 40.1% | 16.4% |
+| Peanut oil | 35.4% | 81.9% |
+| Peanut meal | 40.1% | 16.5% |
 | Peanut hulls | 24.5% | 1.6% |
 | **Total** | **100.0%** | **100.0%** |
 
@@ -348,7 +378,7 @@ The cascade and direct methods give similar results:
 | Total co-product DM | 0.836 t | |
 | DM balance gap | −0.064 t | 7.1% of input DM |
 
-*Balance assessment:* The DM output is 0.064 t (7.1%) below the DM input. This is higher than for oilseed crushing alone (~2–4%) because it includes losses from both shelling and crushing stages. Shelling losses are relatively high for peanuts (~5.2% DM) due to foreign material removal, immature pods, and damaged kernels. Crushing losses add ~2.7% DM. The combined 7.1% is consistent with the full two-stage process.
+*Balance assessment:* The DM output is 0.064 t (7.1%) below the DM input, and the two stages contribute unequally. Shelling loses 0.047 t DM — **5.2% of the in-shell input** — which is high for a hulling step because farmer-stock peanuts carry foreign material, immature pods and damaged kernels. Crushing loses 0.025 t DM per tonne of shelled kernels, but only 0.70 t of kernels is produced per tonne of in-shell peanuts, so on the in-shell basis that is 0.0175 t, or **1.9% of the input DM**. The two add to 0.064 t, or 7.1%. Care is needed with the basis: the crushing loss is 2.7% of kernels but 1.9% of in-shell peanuts, and only the latter is additive with the shelling loss.
 
 ### 7.2 Stage-by-Stage Balance
 **Stage 1: Shelling**
@@ -378,16 +408,16 @@ The cascade and direct methods give similar results:
 | Peanut meal | 0.378 t | 0.70 × 0.54 |
 | Peanut hulls | 0.230 t | — |
 | Total output | 0.902 t | |
-| Processing losses | 0.098 t | 9.8%: FM, immature pods, dust, handling, moisture loss |
-| **Balance** | **1.000 t** | **✓ Exact** |
+| Processing losses | 0.098 t | 9.8%: FM, immature pods, dust, handling, moisture loss — the residual of the balance, not an independent measurement |
+| **Balance** | **1.000 t** | Closes by construction, since the loss term is the residual |
 
 ## 8. Complete Data Table
 
 ### 8.1 Final Co-Product Allocation (per 1 t in-shell peanuts at 10% moisture)
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t in-shell) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t in-shell) | Revenue (USD/t in-shell) | Econ Alloc — Cascade (%) | Econ Alloc — Direct (%) | Mass Alloc — Cascade (%) | Mass Alloc — Direct (%) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Peanut | Peanut shelling/crushing | 2 | 80 lb/bu min test weight (runner) | 10% | 1 t in-shell peanuts at 10% moisture | Peanut oil | 0.294 | 0.27–0.32 | 1,600 | 1,400–1,800 | 100.0 | 0.294 | 470.40 | 82.0 | 81.9 | 35.4 | 35.2 |
-| Peanut | Peanut shelling/crushing | 2 | 80 lb/bu min test weight (runner) | 10% | 1 t in-shell peanuts at 10% moisture | Peanut meal | 0.378 | 0.35–0.40 | 250 | 200–300 | 88.0 | 0.333 | 94.50 | 16.4 | 16.5 | 40.1 | 39.8 |
+| Peanut | Peanut shelling/crushing | 2 | 80 lb/bu min test weight (runner) | 10% | 1 t in-shell peanuts at 10% moisture | Peanut oil | 0.294 | 0.27–0.32 | 1,600 | 1,400–1,800 | 100.0 | 0.294 | 470.40 | 81.9 | 81.9 | 35.4 | 35.2 |
+| Peanut | Peanut shelling/crushing | 2 | 80 lb/bu min test weight (runner) | 10% | 1 t in-shell peanuts at 10% moisture | Peanut meal | 0.378 | 0.35–0.40 | 250 | 200–300 | 88.0 | 0.333 | 94.50 | 16.5 | 16.5 | 40.1 | 39.8 |
 | Peanut | Peanut shelling/crushing | 2 | 80 lb/bu min test weight (runner) | 10% | 1 t in-shell peanuts at 10% moisture | Peanut hulls | 0.230 | 0.20–0.26 | 40 | 30–50 | 91.0 | 0.209 | 9.20 | 1.6 | 1.6 | 24.5 | 25.0 |
 
 ### 8.2 Intermediate Product (for cascade calculation reference only)
@@ -406,11 +436,11 @@ The cascade and direct methods give similar results:
 ### 9.1 High-Confidence Data
 | Data Point | Confidence | Source |
 | --- | --- | --- |
-| Kernel yield (0.70 t/t in-shell) | High | Industry standard for runner peanuts [^4^][^7^]. Midpoint of range: (0.68 + 0.72) / 2 = 0.70 ✓ |
+| Kernel yield (0.70 t/t in-shell) | High | Industry standard for runner peanuts [^4^][^7^] |
 | Hull fraction (~23% of in-shell) | High | Well-characterized at 20–26% [^7^] |
 | Peanut oil DM% (100%) | High | Pure lipid with negligible moisture |
 | Peanut meal DM% (88%) | High | Industry trading specification (max 12% moisture) |
-| Oil price ($1,600/t) | Medium-High | USDA ERS [^2^]; true midpoint of stated range |
+| Oil price ($1,600/t) | Medium-High | USDA ERS [^2^] ~$1,400–1,700/t; IndexMundi [^5^] ~$1,500–1,650/t |
 | Oil yield (0.42 t/t) | Medium-High | Physically constrained by oil content; matches extraction calculation at 47% oil / 96.5% recovery |
 
 ### 9.2 Medium-Confidence Data
@@ -427,5 +457,5 @@ The cascade and direct methods give similar results:
 - **Aflatoxin concerns:** Peanuts are susceptible to aflatoxin contamination (*Aspergillus flavus*), which can result in rejection of entire lots. Aflatoxin-contaminated peanuts are diverted to oil crushing (aflatoxin is not oil-soluble and remains in the meal). This can affect the effective kernel price and the proportion of kernels going to food vs. crushing.
 - **Edible vs. crushing grade:** Not all shelled peanuts go to crushing. In the US, ~55–60% of shelled peanuts go to food uses (peanut butter, snacks, confections) and only ~15–20% are crushed for oil. The remaining ~20–25% are used for seed and other purposes. The price of shelled kernels for crushing ($600–1,000/t) is lower than for edible use ($900–1,400/t). The $800/t intermediate price reflects the crushing-grade market.
 - **Hull value variability:** Peanut hulls have limited markets. Many shelling plants burn hulls on-site for energy or give them away for compost. If hulls are assigned zero revenue (waste), the economic allocation shifts to: Oil 83.3%, Meal 16.7%. This is a 1.3 pp increase for oil relative to the $40/t hull price scenario.
-- **Economic allocation sensitivity:** Peanut oil's high price ($1,600/t) and meal's moderate price ($250/t) mean the economic allocation is dominated by oil (82.0%). If oil drops to $1,400/t, oil's economic allocation drops to ~80%. If meal price rises to $300/t, oil's economic allocation drops to ~79%.
+- **Economic allocation sensitivity:** Peanut oil's high price ($1,600/t) and meal's moderate price ($250/t) mean the economic allocation is dominated by oil (81.9%). If oil drops to $1,400/t, oil's economic allocation drops to ~80%. If meal price rises to $300/t, oil's economic allocation drops to ~79%.
 - **Moisture variation:** In-shell peanuts are typically dried to 8–10% moisture for storage. At 8% moisture (DM = 0.920), the DM input is higher, and the mass allocation proportions shift slightly (more DM to allocate). The 10% standard is used for consistency with USDA marketing standards.

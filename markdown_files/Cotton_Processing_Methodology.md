@@ -18,7 +18,7 @@
 7. [Mass Balance Verification](#7-mass-balance-verification)
 8. [Complete Data Table](#8-complete-data-table)
 9. [Data Quality and Limitations](#9-data-quality-and-limitations)
-10. [System Boundary Assumption and Alternative Cascade Approach](#10-system-boundary-assumption-and-alternative-cascade-approach)
+10. [System Boundary Assumption and the Alternative Sequential Treatment](#10-system-boundary-assumption-and-the-alternative-sequential-treatment)
 
 ---
 
@@ -32,8 +32,9 @@
 | **Input quantity** | 1 metric ton (1,000 kg) | — |
 | **Moisture content** | ~10% (90% DM) | Industry average for seed cotton at the gin [^1^]; moisture varies 8–12% depending on harvest conditions and storage |
 | **Dry matter (DM) input** | 0.900 t DM/t seed cotton | Calculated: 1.000 × 0.90 = 0.900 |
-| **Bale equivalent** | ~1.75 bales/t (480-lb gross weight bale) | 1 t seed cotton produces 0.38 t lint; at 480 lb (217.72 kg) per bale, bales per tonne of lint = 1,000 ÷ 217.72 ≈ 4.59. Note: 4.59 is the number of bales per tonne of lint; from 1 t seed cotton producing 0.38 t lint, the result is 0.38 × 4.59 = 1.75 bales. |
-| **Typical lint turnout** | ~36–40% of seed cotton weight | Industry average for US upland cotton [^1^] |
+| **Bale equivalent** | ~1.75 bales/t seed cotton | The 480-lb bale is the statistical unit USDA reports cotton production in; actual net bale weights average ~495 lb [^1^]. At 480 lb (217.72 kg), 1 t of lint = 4.59 bales, so 0.38 t lint per t seed cotton = 1.75 bales. |
+| **Typical lint turnout** | ~36–40% of seed cotton weight | Gin turnout for US upland cotton [^1^][^12^] |
+| **Typical seed turnout** | ~45–51% of seed cotton weight | Ratio of seed to seed cotton at the gin [^11^][^12^]; see Section 4.1 |
 
 ### 1.2 Unit Conversions
 
@@ -62,15 +63,24 @@
 | [^3^] | USDA ERS (2025). *Cotton and Wool Outlook* | Government (USDA) | https://ers.usda.gov/ |
 | [^4^] | USDA NASS (2025). *Cotton Ginning Annual Summary* | Government (USDA) | https://www.nass.usda.gov/ |
 | [^5^] | ICE Futures U.S. — Cotton No. 2 Futures | Exchange/Market | https://www.theice.com/products/254/Cotton-No-2-Futures |
-| [^6^] | Anthony, W.S. and Mayfield, W.D. (Eds.) (1994). *Handbook for Cotton Ginners*. USDA Agricultural Handbook 503 | Academic/Government | — |
+| [^6^] | Anthony, W.S. and Mayfield, W.D. (Eds.) (1994). *Cotton Ginners Handbook*. USDA Agricultural Handbook No. 503 | Academic/Government | https://www.cotton.org/tech/ginners/ |
 | [^7^] | O'Brien, R.D., Jones, L.A., King, C.C., Wakelyn, P.J., and Wan, P.J. (2005). "Cottonseed Oil." Chapter 3 in *Bailey's Industrial Oil and Fat Products*, 6th ed., Vol. 2. Wiley-Interscience. DOI: 10.1002/0471678493.bio026 | Academic | — |
 | [^8^] | Feedipedia — Cottonseed meal and hulls (INRAE/CIRAD/AFZ/FAO) | Research Consortium/Database | https://www.feedipedia.org/ |
 | [^9^] | OECD-FAO (2025). *Agricultural Outlook: Cotton Chapter* | International Organization | https://www.oecd.org/ |
 | [^10^] | National Cottonseed Products Association (2025). *Cottonseed Trading Rules, Bylaws & Charter* | Industry Association | https://www.cottonseed.com/ |
+| [^11^] | USDA NASS. *Crop Production* and *Crop Production Annual Summary* — cotton and cottonseed production tables | Government (USDA) | https://www.nass.usda.gov/ |
+| [^12^] | Texas A&M AgriLife Research and Extension (2025). *Texas High Plains RACE Trial Report* | Academic/Extension | https://varietytesting.tamu.edu/ |
+| [^13^] | Albers, D. (Cotton Incorporated). *Perspectives on Cotton Seed Size in Cotton Varieties* | Industry Research | https://www.cottoninc.com/ |
+| [^14^] | US EPA. *AP-42 Compilation of Air Pollutant Emission Factors*, Section 9.7: Cotton Ginning | Government (EPA) | https://www.epa.gov/air-emissions-factors-and-quantification/ap-42-compilation-air-emissions-factors |
+| [^15^] | National Cotton Council. *Cotton: From Field to Fabric — Cottonseed* | Industry Association | https://www.cotton.org/pubs/cottoncounts/fieldtofabric/cottonseed.cfm |
+| [^16^] | *Cotton Seed Size — What is the "Fuzz" All About?* Journal of Cotton Science 27:81–94 (2023) | Academic (peer-reviewed) | https://www.cotton.org/journal/2023-27/2/upload/JCS27-081.pdf |
+| [^17^] | ICAC. *Report of an Expert Panel on Ginning Methods* | Intergovernmental Organization | https://icac.org/ |
 
 ### 2.2 How Sources Were Used
 
-- **Yield data (Stage 1):** USDA NASS [^4^], Anthony and Mayfield [^6^], and ICAC [^2^] provided cotton ginning yield data. Lint turnout and seed yield ranges reflect variation across cotton varieties, growing conditions, and ginning technology.
+- **Yield data (Stage 1):** USDA NASS [^4^][^11^], Anthony and Mayfield [^6^], and ICAC [^2^] provided cotton ginning yield data. Lint turnout and seed yield ranges reflect variation across cotton varieties, growing conditions, harvest system, and ginning technology.
+- **Seed-to-lint ratio (Stage 1):** The adopted seed yield is set from the ratio of marketed cottonseed to marketed lint. USDA NASS national production [^11^] and measured gin turnouts from the Texas High Plains RACE variety trials [^12^] provide the ratio; Cotton Incorporated [^13^] and the *Journal of Cotton Science* seed-size review [^16^] document the downward trend in that ratio. The National Cotton Council's long-standing figure [^15^] is retained as the sensitivity case (Section 4.1).
+- **Gin trash fraction:** EPA AP-42 Section 9.7 [^14^] and the ICAC ginning panel [^17^] provide foreign-matter and gin-waste quantities by harvest system.
 - **Yield data (Stage 2):** O'Brien et al. [^7^], NCPA [^10^], and ICAC [^2^] provided cottonseed crushing yield data. Ranges reflect variation across extraction methods (expeller vs. solvent) and seed dehulling configurations.
 - **Price data (lint):** USDA ERS [^3^] and ICE Futures U.S. [^5^] provided cotton lint price data from futures and spot markets.
 - **Price data (seed products):** USDA ERS [^3^], Feedipedia [^8^], and NCPA [^10^] provided cottonseed oil, meal, hulls, and linters price data.
@@ -97,6 +107,7 @@ Cotton processing consists of two distinct stages: ginning (Stage 1) and cottons
 
 **Stage 1 co-products:**
 - **Cotton lint:** The primary high-value product — textile fiber.
+- **Gin trash:** Burrs, sticks, leaves, motes, sand and fine debris removed during cleaning and lint cleaning. Gin trash is not treated as a co-product here — it carries no allocation — but it is a substantial mass stream and is accounted for explicitly in the mass balance (Section 7.1).
 - **Whole cottonseed:** The seed with short fibers (linters) still attached. This is a **dual-pathway product**: it can be (a) used directly as cattle feed (high-energy, high-protein supplement for dairy rations) without further processing, OR (b) sent to Stage 2 (cottonseed crushing) to produce oil, meal, hulls, and linters. The allocation depends on which pathway is used (see Section 6).
 
 **Stage 2: Cottonseed Crushing**
@@ -115,13 +126,13 @@ Cotton processing consists of two distinct stages: ginning (Stage 1) and cottons
 - **Cottonseed hulls:** Low-value roughage for cattle feed, mulch.
 - **Cottonseed linters:** Cellulose fiber for chemical cellulose, medical pads, paper, batting.
 
-> **Note on dual pathway for whole cottonseed:** Whole cottonseed is unique among intermediate products in this review because it has a significant market as a standalone final product (cattle feed). In practice, a portion of the cottonseed produced at the gin is sold directly to dairy operations, and the remainder is crushed. This creates two distinct allocation scenarios that must be clearly separated:
-> - **Pathway A (cottonseed used directly):** Stage 1 only. Two final products: lint and whole cottonseed. The allocation is simply the Stage 1 result.
-> - **Pathway B (cottonseed crushed):** Stage 1 + Stage 2. The seed's burden from Stage 1 is cascaded through Stage 2 into 4 final products (oil, meal, hulls, linters). The Stage 2 allocations are expressed as sub-shares of the cottonseed's share, so their sum never exceeds the cottonseed's Stage 1 allocation.
+> **Note on dual pathway for whole cottonseed:** Whole cottonseed is unusual among the intermediate products in this review because it is itself a marketed final product — a high-energy, high-protein dairy feed — as well as the feedstock for crushing. Part of the cottonseed produced at the gin is sold directly to dairy operations and the remainder is crushed. These are two distinct fates, and each requires its own allocation:
+> - **Pathway A (cottonseed used directly):** Stage 1 only. Two final products: cotton lint and whole cottonseed.
+> - **Pathway B (cottonseed crushed):** Stage 1 and Stage 2 together. Five final products: cotton lint, cottonseed oil, meal, hulls and linters, all reported on one seed cotton basis.
 >
-> **Critical distinction between pathways for economic allocation:** In Pathway A, cottonseed is valued at its market price as whole cottonseed ($290/t). In Pathway B, cottonseed is valued at its **derived value** — the sum of its downstream co-product revenues ($373.63/t cottonseed = $224.18/t seed cotton). Because the derived value exceeds the market price (the processing adds value), cottonseed carries a larger share of the total economic burden in Pathway B (26.9%) than in Pathway A (22.3%), and lint's share correspondingly decreases from 77.7% to 73.1%. For mass allocation, DM is conserved, so lint's mass allocation is essentially the same in both pathways (38.5%).
+> A given tonne of cottonseed follows one pathway or the other, never both, so the two sets of factors are alternatives rather than a double count. A study covering a mixed system may weight them by the share of seed crushed in its region.
 >
-> The complete data table (Section 8) and cascade allocation (Section 6) present Pathway B results, with the Stage 2 products' allocations always summing to the whole cottonseed's share (26.9% economic, 61.5% mass).
+> Section 6.1 sets out how the intermediate is valued in Pathway B and why that treatment differs from the market-price cascade used for the other two-stage crops in this review.
 
 ### 3.2 Process Flow
 
@@ -131,72 +142,62 @@ STAGE 1: COTTON GINNING
 1 t seed cotton at 90% DM (0.900 t DM)
         │
         ▼
-  ┌─ COTTON GINNING ──────────────────────────────┐
+  ┌─ COTTON GINNING ────────────────────────────────┐
   │                                                 │
-  │  Gin trash / losses: ~0.02 t as-is (~2%)       │
-  │  (burrs, sticks, motes, fine debris)            │
-  │  DM losses: ~0.012 t DM (1.3%)                 │
+  │  Gin trash: 0.140 t as-is (14.0%)               │
+  │  (burrs, sticks, leaves, motes, sand, fines)    │
+  │  DM in gin trash: 0.121 t DM (13.5% of DM in)   │
   │                                                 │
-  │  Cotton lint: 0.38 t at 90% DM              ◄── co-product (final)
-  │    (0.342 t DM)                                │
+  │  Cotton lint: 0.380 t at 90% DM             ◄── co-product (final)
+  │    (0.342 t DM)                                 │
   │                                                 │
-  │  Whole cottonseed: 0.60 t at 91% DM         ◄── DUAL PATHWAY:
-  │    (0.546 t DM)                                   Pathway A: final product (cattle feed)
-  │                                                    Pathway B: intermediate → Stage 2
+  │  Whole cottonseed: 0.480 t at 91% DM        ◄── DUAL FATE:
+  │    (0.437 t DM)                                   Pathway A: final product (dairy feed)
+  │                                                   Pathway B: feedstock → Stage 2
   └─────────────────────────────────────────────────┘
 
-PATHWAY A: COTTONSEED USED DIRECTLY (as cattle feed)
+PATHWAY A: COTTONSEED USED DIRECTLY (as dairy feed)
   → Two final products: lint + whole cottonseed
-  → Allocation: Lint 77.7%, Seed 22.3% (economic)
-              Lint 38.5%, Seed 61.5% (mass)
+  → Economic: Lint 81.4%, Seed 18.6%
+     Mass:     Lint 43.9%, Seed 56.1%
 
 PATHWAY B: COTTONSEED CRUSHED (Stage 2)
 
-0.60 t whole cottonseed (= 1 t cottonseed at 91% DM = 0.910 t DM)
+0.480 t whole cottonseed (basis below is 1 t cottonseed at 91% DM = 0.910 t DM)
         │
         ▼
-  ┌─ COTTONSEED CRUSHING ─────────────────────────┐
+  ┌─ COTTONSEED CRUSHING ───────────────────────────┐
   │                                                 │
-  │  Processing losses: ~0.01 t as-is (~1%)        │
-  │  (handling, residual solvent, moisture)         │
-  │  DM losses: ~0.009 t DM (0.96%)                │
+  │  Processing losses: ~0.010 t as-is (~1%)        │
+  │  (handling, residual solvent, moisture, fines)  │
+  │  DM losses: ~0.009 t DM (0.96%)                 │
   │                                                 │
-  │  Cottonseed oil: 0.17 t at 100% DM          ◄── co-product (final)
-  │    (0.170 t DM)                                │
-  │                                                 │
-  │  Cottonseed meal: 0.475 t at 88% DM         ◄── co-product (final)
-  │    (0.418 t DM)                                │
-  │                                                 │
-  │  Cottonseed hulls: 0.275 t at 90% DM       ◄── co-product (final)
-  │    (0.2475 t DM)                               │
-  │                                                 │
-  │  Cottonseed linters: 0.07 t at 94% DM      ◄── co-product (final)
-  │    (0.0658 t DM)                               │
+  │  Cottonseed oil:     0.170 t at 100% DM     ◄── co-product (final)
+  │  Cottonseed meal:    0.475 t at  88% DM     ◄── co-product (final)
+  │  Cottonseed hulls:   0.275 t at  90% DM     ◄── co-product (final)
+  │  Cottonseed linters: 0.070 t at  94% DM     ◄── co-product (final)
   │                                                 │
   └─────────────────────────────────────────────────┘
 
-PATHWAY B — CASCADE ALLOCATION (per 1 t seed cotton):
-  All values on seed cotton basis. The 4 Stage 2 products are sub-shares
-  of the cottonseed's Stage 1 allocation. Their allocations always sum to
-  the cottonseed's share.
+PATHWAY B — ALLOCATION OVER ALL FIVE FINAL PRODUCTS
+  (per 1 t seed cotton; Stage 2 streams converted to the seed
+   cotton basis by multiplying by 0.48 t seed/t seed cotton)
 
-  ECONOMIC ALLOCATION:              MASS ALLOCATION:
-  (cottonseed valued at derived     (DM conserved → same as
-   value = $224.18/t seed cotton)    direct allocation)
+  ECONOMIC                          MASS (dry matter)
 
-  Lint:     73.1% (cascade S1)      Lint:     38.5% (same as direct)
-  Oil:      12.2% (26.9%×45.5%)     Oil:      11.6% (61.5%×18.9%)
-  Meal:     11.1% (26.9%×41.3%)     Meal:     28.5% (61.5%×46.4%)
-  Hulls:     1.8% (26.9%×6.6%)      Hulls:    16.9% (61.5%×27.5%)
-  Linters:   1.8% (26.9%×6.6%)      Linters:   4.5% (61.5%×7.3%)
-  ─────────────────                  ─────────────────
-  Total:   100.0%                    Total:   100.0%
-  (Seed-derived: 26.9%)              (Seed-derived: 61.5%)
+  Lint:     77.2%                   Lint:     44.2%
+  Oil:      10.4%                   Oil:      10.5%
+  Meal:      9.4%                   Meal:     25.9%
+  Hulls:     1.5%                   Hulls:    15.3%
+  Linters:   1.5%                   Linters:   4.1%
+  ─────────────────                 ─────────────────
+  Total:   100.0%                   Total:   100.0%
+  (Seed-derived: 22.8%)             (Seed-derived: 55.8%)
 
-  KEY: Lint econ 73.1% ≠ 77.7% (direct) because cottonseed's
-  derived value ($224.18) > market price ($174.00), increasing
-  cottonseed's share of the economic pie.
-  Lint mass 38.5% ≈ 38.5% (direct) because DM is conserved.
+  Lint's economic share is lower in Pathway B (77.2%) than in
+  Pathway A (81.4%) because crushing turns $139.20 of whole
+  cottonseed into $179.34 of oil, meal, hulls and linters, so the
+  seed side of the denominator grows. See Section 6.1.
 ```
 
 ---
@@ -207,23 +208,56 @@ PATHWAY B — CASCADE ALLOCATION (per 1 t seed cotton):
 
 | Co-product | Yield (t/t seed cotton) | Range | Source & Calculation |
 |------------|------------------------|-------|---------------------|
-| **Cotton lint** | 0.38 | 0.36–0.40 | Midpoint of range. Industry average for US upland cotton ginning [^1^][^6^]. The 0.38 value is the mathematical midpoint of the stated range. Lint turnout varies with variety, growing conditions, and gin efficiency. Higher micronaire cotton tends to have higher lint turnout. |
-| **Whole cottonseed** | 0.60 | 0.58–0.62 | Midpoint of range. Complement to lint yield [^1^][^6^]. The 0.60 value is the mathematical midpoint. Seed yield is inversely related to lint turnout. |
+| **Cotton lint** | 0.38 | 0.36–0.40 | Gin turnout for US upland cotton [^1^][^6^][^12^]. Turnout varies with variety, growing conditions, harvest system and gin efficiency; higher-micronaire cotton tends to gin out higher. |
+| **Whole cottonseed** | 0.48 | 0.45–0.51 | Derived as lint yield × the current US seed-to-lint ratio of 1.26 (see note below): 0.38 × 1.26 = 0.479. The range spans the ratio range 1.23–1.29 observed across national production data and measured gin turnouts [^11^][^12^]. |
+| **Gin trash (not allocated)** | 0.14 | 0.10–0.18 | Residual: 1.000 − 0.380 − 0.480. Consistent with measured gin waste for the US crop mix [^14^][^17^]. |
 
-> **Note on yield relationship:** Lint and seed yields are inversely related. The values (0.38 lint, 0.60 seed) sum to 0.98 t/t, leaving 2% for gin trash (burrs, sticks, motes, and fine debris).
+#### Note on the seed-to-lint ratio
+
+This is the single most consequential parameter in Stage 1, because both the mass and the economic allocation depend on the ratio of lint to seed. It is set from current US data rather than from the ratio most often quoted in the cotton literature.
+
+| Basis | Period | Seed : lint |
+|-------|--------|-------------|
+| USDA NASS national production (3,644 thousand t seed / 12,066 thousand bales) [^11^] | 2023 | 1.26 |
+| USDA NASS national production (4,262 thousand t seed / 14,413 thousand bales) [^11^] | 2024 | 1.23 |
+| USDA NASS national production (4,308 thousand t seed / 14,268 thousand bales) [^11^] | 2025 | 1.26 |
+| Texas High Plains RACE trials, measured turnouts (lint ~34.5%, seed ~44.5% of seed cotton) [^12^] | 2025 | 1.29 |
+| National Cotton Council, "about 162 lb of cottonseed per 100 lb of fiber" [^15^] | long-standing figure | 1.62 |
+
+**Adopted: 1.26**, giving 0.48 t whole cottonseed per t seed cotton.
+
+The gap between the current data and the long-standing 1.62 figure is not a measurement disagreement. Breeding has raised lint percent — the lint fraction of lint plus seed — from roughly 38% to roughly 44% across the commercial pipeline, which mechanically lowers the seed-to-lint ratio. Cotton Incorporated documents a 10–15% reduction in cottonseed per bale as lint percent rises [^13^], and the *Journal of Cotton Science* seed-size review states that the seed-to-lint ratio "has been decreasing considerably over the years" [^16^]. A ratio of 1.62 corresponds to a lint percent of 38.2%; the 2023–2025 NASS production data correspond to 44.2–44.8%. Because this document is built on 2024–2025 prices and yields, the current ratio is the consistent choice.
+
+This is *not* a conventional-versus-transgenic distinction. High lint percent is characteristic of the modern commercial pipeline as a whole, including non-transgenic material; "conventional" is used elsewhere in this document (Section 9.3) in its usual sense of non-organic, non-GMO, and carries no implication about lint percent.
+
+#### Sensitivity: the long-standing 1.62 ratio
+
+Studies drawing on older literature, or on the National Cotton Council figure, will use 0.60 t whole cottonseed per t seed cotton. That case is reported here so results on either basis can be reconciled:
+
+| | Adopted (seed 0.48, ratio 1.26) | Legacy (seed 0.60, ratio 1.58) |
+|---|---|---|
+| Pathway A — lint / seed, economic | 81.4% / 18.6% | 77.7% / 22.3% |
+| Pathway A — lint / seed, mass | 43.9% / 56.1% | 38.5% / 61.5% |
+| Pathway B — lint, economic | 77.2% | 73.1% |
+| Pathway B — lint, mass | 44.2% | 38.7% |
+| Implied gin trash | 14.0% | 2.0% |
+
+The legacy case carries a second problem that is easy to miss: holding lint at 0.38 and seed at 0.60 leaves only 2.0% of the seed cotton for gin trash. Measured gin waste is far higher — EPA AP-42 reports roughly 150 lb of trash per 500-lb bale for spindle-picked cotton and about 1,000 lb per bale for stripper-harvested cotton [^14^], and ICAC puts foreign matter in seed cotton at 5–10% for spindle-harvested and 10–30% for stripper-harvested material [^17^]. The three Stage 1 figures sum to 1.000 by construction, so the seed yield and the gin trash fraction cannot be set independently; the adopted values satisfy both the seed-to-lint ratio and the measured trash range.
+
+> **Note on the yield relationship:** Lint and seed yields are inversely related within a variety, but the two ranges in the table above are not independent — a run at the top of the lint range will not also sit at the top of the seed range. Each pairing must leave a physically sensible gin trash residual.
 
 ### 4.2 Stage 2: Cottonseed Crushing Yields
 
 | Co-product | Yield (t/t whole cottonseed) | Range | Source & Calculation |
 |------------|------------------------------|-------|---------------------|
-| **Cottonseed oil** | 0.17 | 0.16–0.18 | Midpoint of range. Industry average for solvent extraction [^7^][^10^]. The 0.17 value is the mathematical midpoint. Expeller-only yields are ~0.13–0.16 t/t; solvent extraction achieves ~0.16–0.18 t/t. |
-| **Cottonseed meal** | 0.475 | 0.45–0.50 | Midpoint of range. Represents 41% protein, solvent-extracted meal with some residual hulls [^7^][^10^]. The 0.475 value is the mathematical midpoint. Meal yield varies with protein specification (41% protein = higher yield with more hulls; 44% protein = lower yield with fewer hulls) and oil extraction efficiency. |
-| **Cottonseed hulls** | 0.275 | 0.25–0.30 | Midpoint of range. Represents separated hulls after partial dehulling [^7^]. The 0.275 value is the mathematical midpoint. Hull yield depends on the degree of dehulling: more complete dehulling produces more separated hulls but reduces meal yield and meal protein content. |
-| **Cottonseed linters** | 0.07 | 0.05–0.09 | Midpoint of range. Represents combined first-cut and second-cut linters [^7^][^10^]. The 0.07 value is the mathematical midpoint. Linters yield varies with delinting method (saw-type vs. abrasive), number of cuts, and seed variety. |
+| **Cottonseed oil** | 0.17 | 0.16–0.18 | Industry average for solvent extraction [^7^][^10^]. Expeller-only yields are ~0.13–0.16 t/t; solvent extraction achieves ~0.16–0.18 t/t. |
+| **Cottonseed meal** | 0.475 | 0.45–0.50 | Represents 41% protein, solvent-extracted meal with some residual hulls [^7^][^10^]. Meal yield varies with protein specification (41% protein = higher yield with more hulls; 44% protein = lower yield with fewer hulls) and oil extraction efficiency. |
+| **Cottonseed hulls** | 0.275 | 0.25–0.30 | Represents separated hulls after partial dehulling [^7^]. Hull yield depends on the degree of dehulling: more complete dehulling produces more separated hulls but reduces meal yield and meal protein content. |
+| **Cottonseed linters** | 0.07 | 0.05–0.09 | Represents combined first-cut and second-cut linters [^7^][^10^]. Linters yield varies with delinting method (saw-type vs. abrasive), number of cuts, and seed variety. |
 
 > **Note on yield relationships:** Oil and meal yields are inversely related (more oil extraction means less meal). Hull yield depends on the degree of dehulling. Linters are removed before dehulling and oil extraction. The four co-products sum to 0.99 t/t (0.17 + 0.475 + 0.275 + 0.07), with ~1% processing losses.
 
-> **Note on basis for Pathway B:** Section 4.2 shows Stage 2 yields per tonne of whole cottonseed (the natural processing basis). For Pathway B calculations (Sections 6.3 and 8), these yields are converted to a seed cotton basis by multiplying by the cottonseed yield (0.60 t seed/t seed cotton): Oil 0.102, Meal 0.285, Hulls 0.165, Linters 0.042 t/t seed cotton. All Pathway B results are presented on this consistent seed cotton basis.
+> **Note on basis for Pathway B:** Section 4.2 shows Stage 2 yields per tonne of whole cottonseed (the natural processing basis). For Pathway B calculations (Sections 6.3 and 8), these yields are converted to a seed cotton basis by multiplying by the cottonseed yield (0.48 t seed/t seed cotton): Oil 0.0816, Meal 0.2280, Hulls 0.1320, Linters 0.0336 t/t seed cotton. All Pathway B results are presented on this consistent seed cotton basis.
 
 ### 4.3 Dry Matter Contents
 
@@ -239,7 +273,7 @@ PATHWAY B — CASCADE ALLOCATION (per 1 t seed cotton):
 | Co-product | DM (%) | Basis |
 |------------|--------|-------|
 | Cottonseed oil | 100.0% | Crude and refined cottonseed oil are essentially pure lipid with negligible moisture (<0.1%). |
-| Cottonseed meal | 88.0% | Standard trading specification: maximum 12% moisture = minimum 88% DM [^10^]. Solvent-extracted, 41% protein meal is typically delivered at 10–12% moisture. Consistent with the 88% DM used for all other oilseed meals in this review (soybean, canola, sunflower, safflower, flaxseed). |
+| Cottonseed meal | 88.0% | Standard trading specification: maximum 12% moisture = minimum 88% DM [^10^]. Solvent-extracted, 41% protein meal is typically delivered at 10–12% moisture. |
 | Cottonseed hulls | 90.0% | Cottonseed hulls are typically 89–91% DM (9–11% moisture). The 90% DM value represents the industry average [^10^]. |
 | Cottonseed linters | 94.0% | Cotton linters are cellulose fibers with low moisture content (5–7% moisture, 93–95% DM). The 94% DM value represents the industry average for mechanically delinted linters [^7^]. |
 
@@ -252,8 +286,9 @@ PATHWAY B — CASCADE ALLOCATION (per 1 t seed cotton):
 | Co-product | Calculation | DM Output (t/t seed cotton) |
 |------------|-------------|----------------------------|
 | **Cotton lint** | 0.38 × 0.90 | **0.3420** |
-| **Whole cottonseed** | 0.60 × 0.91 | **0.5460** |
-| **Total** | | **0.8880** |
+| **Whole cottonseed** | 0.48 × 0.91 | **0.4368** |
+| **Total co-product DM** | | **0.7788** |
+| *Gin trash DM (not a co-product)* | *0.9000 − 0.7788* | *0.1212* |
 
 **Stage 2 (per tonne of whole cottonseed):**
 
@@ -267,20 +302,22 @@ PATHWAY B — CASCADE ALLOCATION (per 1 t seed cotton):
 
 **Pathway B: Cascade DM Output (per tonne of seed cotton):**
 
-All 5 final products on a common seed cotton basis. Stage 2 DM outputs are converted by multiplying by the cottonseed yield (0.60 t seed/t seed cotton).
+**Pathway B: DM Output of the Five Final Products (per tonne of seed cotton):**
+
+All 5 final products on a common seed cotton basis. Stage 2 DM outputs are converted by multiplying by the cottonseed yield (0.48 t seed/t seed cotton).
 
 | Co-product | Calculation | DM Output (t/t seed cotton) |
 |------------|-------------|----------------------------|
 | **Cotton lint** | 0.38 × 0.90 | **0.3420** |
-| **Cottonseed oil** | 0.60 × 0.17 × 1.00 | **0.1020** |
-| **Cottonseed meal** | 0.60 × 0.475 × 0.88 | **0.2508** |
-| **Cottonseed hulls** | 0.60 × 0.275 × 0.90 | **0.1485** |
-| **Cottonseed linters** | 0.60 × 0.07 × 0.94 | **0.0395** |
-| **Total** | | **0.8828** |
+| **Cottonseed oil** | 0.48 × 0.17 × 1.00 | **0.0816** |
+| **Cottonseed meal** | 0.48 × 0.475 × 0.88 | **0.2006** |
+| **Cottonseed hulls** | 0.48 × 0.275 × 0.90 | **0.1188** |
+| **Cottonseed linters** | 0.48 × 0.07 × 0.94 | **0.0316** |
+| **Total co-product DM** | | **0.7746** |
 | *DM input (1 t seed cotton at 90% DM)* | | *0.9000* |
-| *DM balance gap (combined losses)* | | *−0.0172 (1.91%)* |
+| *DM not in a co-product* | | *0.1254 (13.93%)* |
 
-> **Note on DM balance:** The total DM output of 0.8828 t is 1.91% below the 0.9000 t DM input. This combines Stage 1 losses (gin trash, 1.33% of seed cotton DM) and Stage 2 losses (processing, 0.96% of cottonseed DM × 0.60 = 0.58% of seed cotton DM). The total 1.91% gap is well within acceptable limits. Critically, this total is less than 1.0, confirming that DM is properly conserved.
+> **Note on the DM gap:** The 0.1254 t of dry matter that does not leave the system as a co-product is 0.1212 t of gin trash (13.47% of the DM input) plus 0.0042 t of Stage 2 processing losses (0.96% of cottonseed DM × 0.48 = 0.46% of the DM input). Gin trash dominates and is a real, quantified stream rather than an unexplained residual: 0.140 t as-is at about 87% DM. It carries no allocation, so it does not appear in the denominators of Section 6.
 ---
 
 ## 5. Prices
@@ -289,17 +326,17 @@ All 5 final products on a common seed cotton basis. Stage 2 DM outputs are conve
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Cotton lint** | 1,600 | 1,200–2,000 | USDA ERS [^3^]; ICE Futures U.S. [^5^] | 2024–2025 average for US upland cotton (strict low middling 1-1/16" staple). Equivalent to ~$0.73/lb. Prices vary with quality (staple length, micronaire, strength, color grade) and market conditions. Midpoint of range: ($1,200 + $2,000) / 2 = $1,600. |
-| **Whole cottonseed** | 290 | 200–380 | USDA ERS [^3^]; NCPA [^10^]; industry estimates | 2024–2025 average for whole cottonseed at the oil mill or feed lot. Used as cattle feed or sold for crushing. Price depends on proximity to oil mills, dairy demand, and seasonal supply. Midpoint of range: ($200 + $380) / 2 = $290. |
+| **Cotton lint** | 1,600 | 1,200–2,000 | USDA ERS [^3^]; ICE Futures U.S. [^5^] | 2024–2025 average for US upland cotton (strict low middling 1-1/16" staple). Equivalent to ~$0.73/lb. Prices vary with quality (staple length, micronaire, strength, color grade) and market conditions. |
+| **Whole cottonseed** | 290 | 200–380 | USDA ERS [^3^]; NCPA [^10^]; industry estimates | 2024–2025 average for whole cottonseed at the oil mill or feed lot. Used as cattle feed or sold for crushing. Price depends on proximity to oil mills, dairy demand, and seasonal supply. |
 
 ### 5.2 Stage 2 Prices
 
 | Co-product | Price (USD/t) | Range | Source | Notes |
 |------------|--------------|-------|--------|-------|
-| **Cottonseed oil** | 1,000 | 800–1,200 | USDA ERS [^3^] | 2024–2025 average for crude cottonseed oil (FOB). Prices track other vegetable oils but at a discount to soybean oil. Used for cooking oil, shortening, soap, and biodiesel. Midpoint of range: ($800 + $1,200) / 2 = $1,000. |
-| **Cottonseed meal** | 325 | 250–400 | USDA ERS [^3^]; Feedipedia [^8^]; NCPA [^10^] | 2024–2025 average for solvent-extracted, 41% protein meal. Prices vary with protein content and regional demand. 44% protein meal commands ~$30–50/t premium. Midpoint of range: ($250 + $400) / 2 = $325. |
-| **Cottonseed hulls** | 90 | 60–120 | Feedipedia [^8^]; NCPA [^10^]; university extension feed reports | 2024–2025 average for cottonseed hulls used as cattle feed roughage. Low-value product; price varies with proximity to dairy operations. Some markets price hulls at $0 (given away) when transportation costs exceed value. Midpoint of range: ($60 + $120) / 2 = $90. |
-| **Cottonseed linters** | 350 | 200–500 | NCPA [^10^]; O'Brien et al. [^7^]; industry estimates | 2024–2025 average across linter grades and end uses. First-cut linters (longer fibers, chemical cellulose): ~$300–600/t. Second-cut linters (shorter fibers, batting/paper): ~$150–350/t. Blended average: ~$350/t. Midpoint of range: ($200 + $500) / 2 = $350. |
+| **Cottonseed oil** | 1,000 | 800–1,200 | USDA ERS [^3^] | 2024–2025 average for crude cottonseed oil (FOB). Prices track other vegetable oils but at a discount to soybean oil. Used for cooking oil, shortening, soap, and biodiesel. |
+| **Cottonseed meal** | 325 | 250–400 | USDA ERS [^3^]; Feedipedia [^8^]; NCPA [^10^] | 2024–2025 average for solvent-extracted, 41% protein meal. Prices vary with protein content and regional demand. 44% protein meal commands ~$30–50/t premium. |
+| **Cottonseed hulls** | 90 | 60–120 | Feedipedia [^8^]; NCPA [^10^]; university extension feed reports | 2024–2025 average for cottonseed hulls used as cattle feed roughage. Low-value product; price varies with proximity to dairy operations. Some markets price hulls at $0 (given away) when transportation costs exceed value. |
+| **Cottonseed linters** | 350 | 200–500 | NCPA [^10^]; O'Brien et al. [^7^]; industry estimates | 2024–2025 average across linter grades and end uses. First-cut linters (longer fibers, chemical cellulose): ~$300–600/t. Second-cut linters (shorter fibers, batting/paper): ~$150–350/t. Blended average: ~$350/t. |
 
 ### 5.3 Price Verification
 
@@ -310,9 +347,7 @@ ICE Futures U.S. Cotton No. 2 (2025): ~$0.65-0.85/lb = $1,430-1,875/t
 USDA ERS (2025): average spot price ~$0.70-0.80/lb = $1,540-1,765/t
 Historical range (2020-2025): $0.50-1.50/lb = $1,100-3,300/t
 
-Selected midpoint: $1,600/t
-Mathematical midpoint of range ($1,200-2,000): $1,600/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $1,600/t
 ```
 
 **Whole cottonseed:**
@@ -322,9 +357,7 @@ USDA ERS (2025): ~$220-320/t (at the oil mill)
 NCPA (2025): ~$200-350/t
 Feed value premium during drought: up to $380/t
 
-Selected midpoint: $290/t
-Mathematical midpoint of range ($200-380): $290/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $290/t
 ```
 
 **Cottonseed oil:**
@@ -334,9 +367,7 @@ USDA ERS (2025): crude cottonseed oil ~$850-1,050/t
 Feedipedia indicative values: ~$800-1,100/t
 Discount to soybean oil: typically $50-150/t
 
-Selected midpoint: $1,000/t
-Mathematical midpoint of range ($800-1,200): $1,000/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $1,000/t
 ```
 
 **Cottonseed meal:**
@@ -346,9 +377,7 @@ USDA ERS (2025): 41% protein meal ~$280-380/t
 NCPA (2025): ~$250-400/t
 Feedipedia indicative values: comparable to canola meal (~$250-350/t)
 
-Selected midpoint: $325/t
-Mathematical midpoint of range ($250-400): $325/t ✓
-The price midpoint IS the true mathematical midpoint of the stated range.
+Adopted: $325/t
 ```
 
 ### 5.4 Revenue per Tonne
@@ -358,8 +387,8 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 | Co-product | Calculation | Revenue (USD/t seed cotton) |
 |------------|-------------|----------------------------|
 | **Cotton lint** | 0.38 × 1,600 | **$608.00** |
-| **Whole cottonseed** | 0.60 × 290 | **$174.00** |
-| **Total** | | **$782.00** |
+| **Whole cottonseed** | 0.48 × 290 | **$139.20** |
+| **Total** | | **$747.20** |
 
 **Stage 2 (per tonne of whole cottonseed):**
 
@@ -371,189 +400,137 @@ The price midpoint IS the true mathematical midpoint of the stated range.
 | **Cottonseed linters** | 0.07 × 350 | **$24.50** |
 | **Total** | | **$373.63** |
 
-**Pathway B: Cascade Revenue (per tonne of seed cotton):**
+**Pathway B: Revenue of the Five Final Products (per tonne of seed cotton):**
 
-All 5 final products on a common seed cotton basis. Stage 2 revenues are converted by multiplying by the cottonseed yield (0.60 t seed/t seed cotton).
+All 5 final products on a common seed cotton basis. Stage 2 revenues are converted by multiplying by the cottonseed yield (0.48 t seed/t seed cotton).
 
 | Co-product | Calculation | Revenue (USD/t seed cotton) |
 |------------|-------------|----------------------------|
 | **Cotton lint** | 0.38 × 1,600 | **$608.00** |
-| **Cottonseed oil** | 0.102 × 1,000 | **$102.00** |
-| **Cottonseed meal** | 0.285 × 325 | **$92.63** |
-| **Cottonseed hulls** | 0.165 × 90 | **$14.85** |
-| **Cottonseed linters** | 0.042 × 350 | **$14.70** |
-| **Total** | | **$832.18** |
+| **Cottonseed oil** | 0.0816 × 1,000 | **$81.60** |
+| **Cottonseed meal** | 0.2280 × 325 | **$74.10** |
+| **Cottonseed hulls** | 0.1320 × 90 | **$11.88** |
+| **Cottonseed linters** | 0.0336 × 350 | **$11.76** |
+| **Total** | | **$787.34** |
 
-> **Note on intermediate product valuation:** The whole cottonseed market price revenue is $174.00/t seed cotton (0.60 × $290), while the derived value (sum of co-product revenues) is $224.18/t seed cotton (0.60 × $373.63). The derived value exceeds the market price by $50.18/t seed cotton ($83.63/t cottonseed), representing the gross processing margin before deducting crushing costs. In Pathway A, cottonseed is valued at its market price, giving total revenue of $782.00/t seed cotton. In Pathway B, cottonseed is valued at its derived value (the revenue its co-products generate), giving total revenue of $832.18/t seed cotton. This distinction is critical for cascade economic allocation: the larger economic pie in Pathway B reduces lint's economic share from 77.7% to 73.1%, while cottonseed-derived products carry 26.9% (vs. 22.3% in Pathway A).
+> **Note on the value of the intermediate:** Whole cottonseed sold as feed is worth $139.20/t seed cotton (0.48 × $290). The same seed crushed yields co-products worth $179.34/t seed cotton (0.48 × $373.63/t cottonseed), a difference of $40.14/t seed cotton ($83.63/t cottonseed) — the gross processing margin before crushing costs are deducted. Pathway A therefore has a revenue base of $747.20/t seed cotton and Pathway B a base of $787.34/t seed cotton. Because lint's revenue is the same in both, its economic share is lower in Pathway B (77.2%) than in Pathway A (81.4%), and the seed-derived products together carry 22.8% rather than the seed's 18.6%.
 
 ---
 
 ## 6. Allocation Methodology
 
-### 6.1 Dual Pathway Overview
+### 6.1 Treatment of the Intermediate Product
 
-Whole cottonseed has a **dual pathway**: it can be used directly as cattle feed (Pathway A) or crushed into 4 products (Pathway B). The allocation depends on which pathway is used.
+Cotton is a two-stage chain, and whole cottonseed sits between the two stages. How that intermediate is valued determines the whole result, so the convention is stated here before any numbers are calculated.
 
-**Pathway A — Cottonseed used directly (Stage 1 only):**
+**There are two conventions, not three.**
 
-Two final products: cotton lint and whole cottonseed. The allocation is simply the Stage 1 result (Section 6.2). Cottonseed is valued at its market price ($290/t).
+*Market-price cascade.* The intermediate is valued at the price it transacts at between the two stages. Stage 1 divides the parent burden between the final Stage 1 product and the intermediate on that basis; Stage 2 divides the intermediate's burden among its own products; the two stage allocations are multiplied along each path.
 
-**Pathway B — Cottonseed crushed (Stage 1 + Stage 2 cascade):**
+*Direct end-of-chain.* All final products are placed on a single denominator — one revenue total, or one dry matter total — and each takes its own share of it.
 
-The seed's share of Stage 1 burden is cascaded through Stage 2 and distributed among 4 final products (oil, meal, hulls, linters). The Stage 2 products' allocations are **sub-shares of the cottonseed's share** — they always sum to the cottonseed's Stage 1 allocation and never exceed it.
+A third option is sometimes proposed: cascade, but value the intermediate at its **derived value** (the summed revenue of the products it becomes) instead of its market price. That is not a third convention. Writing $L$ for lint revenue and $x_1 \ldots x_4$ for the revenues of the four crush products, with $D = \sum x_i$, the derived-value cascade gives product $i$:
 
-**Critical difference for economic allocation:** In Pathway B, cottonseed is valued at its **derived value** (the sum of its 4 co-product revenues: $224.18/t seed cotton) rather than its market price ($174.00/t seed cotton). Because the derived value is higher, cottonseed carries a larger share of the total economic burden (26.9% vs. 22.3%), and lint's share correspondingly decreases (73.1% vs. 77.7%). This reflects the economic reality that processing cottonseed creates additional value — the co-products are collectively worth more than the raw seed.
+$$\frac{D}{L + D} \times \frac{x_i}{D} \;=\; \frac{x_i}{L + D}$$
 
-**For mass allocation,** DM is conserved regardless of processing pathway, so lint's mass allocation is essentially the same in both pathways (38.5%). The small Stage 2 DM losses (0.96%) do not meaningfully change lint's proportional share.
+which is exactly the direct end-of-chain calculation. The $D$ cancels. Valuing an intermediate at its derived value and cascading is the direct method under another name, and this document reports it as such.
 
-```
-Pathway A (seed at market price):   Pathway B (seed at derived value):
-  Lint:       77.7% (econ)           Lint:       73.1% (econ, cascade S1)
-  Seed:       22.3% (econ)           Oil:        12.2% = 26.9% × 45.5%
-                                     Meal:       11.1% = 26.9% × 41.3%
-                                     Hulls:       1.8% = 26.9% × 6.6%
-                                     Linters:     1.8% = 26.9% × 6.6%
-                                     ─────────────────────────────────
-                                     Seed-derived: 26.9% (= cottonseed's share)
-                                     Total:      100.0%
+**Cotton uses the direct end-of-chain treatment.** Three reasons:
 
-  Lint:       38.5% (mass)           Lint:       38.5% (mass, same as direct)
-  Seed:       61.5% (mass)           Oil:        11.6% = 61.5% × 18.9%
-                                     Meal:       28.5% = 61.5% × 46.4%
-                                     Hulls:      16.9% = 61.5% × 27.5%
-                                     Linters:     4.5% = 61.5% × 7.3%
-                                     ─────────────────────────────────
-                                     Seed-derived: 61.5% (= cottonseed's share)
-                                     Total:      100.0%
-```
+1. **Whole cottonseed is itself a final product of this study, not only an intermediate.** It is a major dairy feed and this document reports an allocation factor for it in its own right (Pathway A, Section 6.2). Its quoted price of $290/t is therefore the price in a *competing end use* — what a dairy pays for the seed — and not a transfer price into the crush. That is the opposite of the situation for the other two-stage crops in this review, where the intermediate's quoted price is what the next stage actually pays and the intermediate leaves no factor of its own.
 
-> **Critical point:** Under Pathway B, the 4 Stage 2 economic allocations (12.2% + 11.1% + 1.8% + 1.8% = 26.9%) always sum exactly to the whole cottonseed's Stage 1 share. The same principle applies to mass allocation: the 4 Stage 2 mass allocations (11.6% + 28.5% + 16.9% + 4.5% = 61.5%) sum to the cottonseed's Stage 1 mass share. This ensures that the crushing products never claim more burden than the cottonseed itself carries.
+2. **Using $290/t as a cascade price would cap the seed's burden regardless of its fate.** It would fix the seed side at 18.6% whether the seed is fed whole or converted into $179.34 of oil, meal, hulls and linters. Under the direct treatment the seed side carries 22.8% when it is crushed, which is what the products it becomes are actually worth.
 
-### 6.2 Pathway A: Cotton Ginning Only (seed used directly)
+3. **The system boundary is a single integrated block.** Section 10 sets out the boundary: seed cotton enters the gin and five marketable co-products leave. Within one block, all final products compete for one denominator.
+
+**Where this convention does not apply.** A study that models the gin and the crusher as two separate unit processes — because it holds distinct emission factors, energy sources and waste streams for each (gin trash versus hexane emissions) — should use the market-price cascade at $290/t instead. Section 10.2 gives that alternative and its result.
+
+**Mass allocation.** For economic allocation the two conventions coincide exactly, as shown above. For mass they do not, because Stage 2 loses 0.96% of the cottonseed's dry matter: the direct method places all five products over the summed dry matter that actually leaves the system (0.7746 t), while a cascade holds lint at its Stage 1 share and splits the seed's share among four products, absorbing the Stage 2 loss inside the seed side. The difference is at most 0.24 percentage points:
+
+| Final co-product | Mass — direct (used here) | Mass — cascade |
+|-----------------|---------------------------|----------------|
+| Cotton lint | 44.2% | 43.9% |
+| Cottonseed oil | 10.5% | 10.6% |
+| Cottonseed meal | 25.9% | 26.0% |
+| Cottonseed hulls | 15.3% | 15.4% |
+| Cottonseed linters | 4.1% | 4.1% |
+
+The direct values are adopted so that one convention governs both the economic and the mass columns of the same table.
+
+### 6.2 Pathway A: Cottonseed Used Directly (Stage 1 only)
+
+Two final products: cotton lint and whole cottonseed, the seed valued at its market price of $290/t. Gin trash carries no allocation and does not appear in either denominator.
 
 **Economic allocation:**
 
 | Co-product | Calculation | Allocation |
 |------------|-------------|------------|
-| Cotton lint | (608.00 ÷ 782.00) × 100 | **77.7%** |
-| Whole cottonseed | (174.00 ÷ 782.00) × 100 | **22.3%** |
+| Cotton lint | (608.00 ÷ 747.20) × 100 | **81.4%** |
+| Whole cottonseed | (139.20 ÷ 747.20) × 100 | **18.6%** |
 | **Total** | | **100.0%** |
 
 **Mass allocation:**
 
 | Co-product | Calculation | Allocation |
 |------------|-------------|------------|
-| Cotton lint | (0.3420 ÷ 0.8880) × 100 | **38.5%** |
-| Whole cottonseed | (0.5460 ÷ 0.8880) × 100 | **61.5%** |
+| Cotton lint | (0.3420 ÷ 0.7788) × 100 | **43.9%** |
+| Whole cottonseed | (0.4368 ÷ 0.7788) × 100 | **56.1%** |
 | **Total** | | **100.0%** |
 
 **Comparison:**
 
 | Co-product | Economic | Mass | Difference |
 |------------|----------|------|------------|
-| Cotton lint | 77.7% | 38.5% | +39.2 pp |
-| Whole cottonseed | 22.3% | 61.5% | −39.2 pp |
+| Cotton lint | 81.4% | 43.9% | +37.5 pp |
+| Whole cottonseed | 18.6% | 56.1% | −37.5 pp |
 
-The 39.2 pp difference reflects lint's high value-to-mass ratio. Lint commands $1,600/t (5.5× the seed price) but carries only 38.5% of the DM.
+The 37.5 pp spread reflects lint's value-to-mass ratio: lint sells for $1,600/t against $290/t for the seed — 5.5 times the price — while carrying 43.9% of the dry matter.
 
-### 6.3 Pathway B: Cascade Allocation (seed crushed)
+### 6.3 Pathway B: Cottonseed Crushed (five final products)
 
-The cascade first assigns burdens in Stage 1 (to lint and seed), then distributes the seed's burden in Stage 2 among 4 final products. All calculations are on a **per-tonne-of-seed-cotton basis**.
+All five final products are placed on one seed cotton basis and one denominator, following Section 6.1. Stage 2 streams are converted to that basis by multiplying by the cottonseed yield (0.48 t seed/t seed cotton).
 
-**Stage 1 of the cascade (economic):**
+**Economic allocation:**
 
-In Pathway B, cottonseed is valued at its **derived value** — the total revenue its downstream co-products generate — rather than its market price as whole cottonseed. This is because when cottonseed is crushed, its economic worth to the system is determined by the value of the products it becomes, not by the price at which it could have been sold as a raw material. The derived value ($224.18/t seed cotton = 0.60 × $373.63/t cottonseed) exceeds the market price ($174.00/t seed cotton = 0.60 × $290/t), reflecting the value added by processing.
+| Final co-product | Revenue (USD/t seed cotton) | Calculation | Allocation |
+|-----------------|----------------------------|-------------|------------|
+| Cotton lint | $608.00 | (608.00 ÷ 787.34) × 100 | **77.2%** |
+| Cottonseed oil | $81.60 | (81.60 ÷ 787.34) × 100 | **10.4%** |
+| Cottonseed meal | $74.10 | (74.10 ÷ 787.34) × 100 | **9.4%** |
+| Cottonseed hulls | $11.88 | (11.88 ÷ 787.34) × 100 | **1.5%** |
+| Cottonseed linters | $11.76 | (11.76 ÷ 787.34) × 100 | **1.5%** |
+| **Total** | **$787.34** | | **100.0%** |
+| *Seed-derived subtotal* | *$179.34* | | *22.8%* |
 
-| Co-product | Revenue (USD/t seed cotton) | Allocation |
-|------------|----------------------------|------------|
-| Cotton lint | $608.00 | (608.00 ÷ 832.18) × 100 = **73.1%** |
-| Cottonseed (at derived value) | $224.18 | (224.18 ÷ 832.18) × 100 = **26.9%** |
-| **Total** | **$832.18** | **100.0%** |
+**Mass allocation:**
 
-> **Why lint's economic share changes:** In Pathway A, the total economic pie is $782.00 (lint $608 + seed at market price $174), and lint gets 77.7%. In Pathway B, the total economic pie is $832.18 (lint $608 + seed at derived value $224.18), and lint gets 73.1%. The pie is larger because cottonseed's derived value ($224.18) exceeds its market price ($174.00) by $50.18 — the gross processing margin. Since lint's revenue is unchanged but the total pie is bigger, lint's share shrinks. This is the correct economic treatment: when cottonseed is further processed, the additional value created by processing increases cottonseed's claim on the total environmental burden.
+| Final co-product | DM Output (t/t seed cotton) | Calculation | Allocation |
+|-----------------|----------------------------|-------------|------------|
+| Cotton lint | 0.3420 | (0.3420 ÷ 0.7746) × 100 | **44.2%** |
+| Cottonseed oil | 0.0816 | (0.0816 ÷ 0.7746) × 100 | **10.5%** |
+| Cottonseed meal | 0.2006 | (0.2006 ÷ 0.7746) × 100 | **25.9%** |
+| Cottonseed hulls | 0.1188 | (0.1188 ÷ 0.7746) × 100 | **15.3%** |
+| Cottonseed linters | 0.0316 | (0.0316 ÷ 0.7746) × 100 | **4.1%** |
+| **Total** | **0.7746** | | **100.0%** |
+| *Seed-derived subtotal* | *0.4326* | | *55.8%* |
 
-**Stage 1 of the cascade (mass):**
+**Comparison:**
 
-Mass allocation is based on DM outputs on a seed cotton basis. Since DM is conserved regardless of downstream processing, the Stage 1 mass split is the same as Pathway A.
+| Final co-product | Economic | Mass | Difference |
+|-----------------|----------|------|------------|
+| Cotton lint | 77.2% | 44.2% | +33.0 pp |
+| Cottonseed oil | 10.4% | 10.5% | −0.1 pp |
+| Cottonseed meal | 9.4% | 25.9% | −16.5 pp |
+| Cottonseed hulls | 1.5% | 15.3% | −13.8 pp |
+| Cottonseed linters | 1.5% | 4.1% | −2.6 pp |
 
-| Co-product | DM Output (t/t seed cotton) | Allocation |
-|------------|----------------------------|------------|
-| Cotton lint | 0.3420 | (0.3420 ÷ 0.8880) × 100 = **38.5%** |
-| Cottonseed | 0.5460 | (0.5460 ÷ 0.8880) × 100 = **61.5%** |
-| **Total** | **0.8880** | **100.0%** |
+**Equivalence check.** The same economic figures arise from a derived-value cascade, confirming the identity in Section 6.1. The seed side takes 22.778% of the Stage 1 revenue; within Stage 2 the oil takes 45.500% of the seed's burden (Section 6.4); 22.778% × 45.500% = 10.364%, which is the direct result for oil to three decimals. The same holds for meal, hulls and linters.
 
-**Stage 2 internal allocation (reference for cascade sub-shares):**
+### 6.4 Stage 2 Internal Allocation (per tonne of whole cottonseed)
 
-These internal allocations show how cottonseed's burden is divided among its 4 products within Stage 2. They are **sub-shares of cottonseed's share**, not shares of the total seed cotton burden. They are calculated per tonne of cottonseed and then applied as proportional subdivisions.
+These are the shares of the *cottonseed's* burden among its four products, on the natural per-cottonseed processing basis. They are reported for transparency and as the input to the equivalence check above; they are not the final allocations, which are given in Section 6.3.
 
-*Economic (internal, per tonne of cottonseed):*
-
-| Co-product | Calculation | Internal Allocation |
-|------------|-------------|-------------------|
-| Cottonseed oil | (170.00 ÷ 373.63) × 100 | **45.5%** |
-| Cottonseed meal | (154.38 ÷ 373.63) × 100 | **41.3%** |
-| Cottonseed hulls | (24.75 ÷ 373.63) × 100 | **6.6%** |
-| Cottonseed linters | (24.50 ÷ 373.63) × 100 | **6.6%** |
-| **Total** | | **100.0%** |
-
-*Mass (internal, per tonne of cottonseed):*
-
-| Co-product | Calculation | Internal Allocation |
-|------------|-------------|-------------------|
-| Cottonseed oil | (0.1700 ÷ 0.9013) × 100 | **18.9%** |
-| Cottonseed meal | (0.4180 ÷ 0.9013) × 100 | **46.4%** |
-| Cottonseed hulls | (0.2475 ÷ 0.9013) × 100 | **27.5%** |
-| Cottonseed linters | (0.0658 ÷ 0.9013) × 100 | **7.3%** |
-| **Total** | | **100.0%** |
-
-**Economic cascade (primary result):**
-
-| Final co-product | Calculation | Allocation | Sub-share of seed's 26.9% |
-|-----------------|-------------|------------|--------------------------|
-| Cotton lint | Direct from Stage 1 | **73.1%** | — |
-| Cottonseed oil | 26.9% × 45.5% | **12.2%** | 45.5% of seed's share |
-| Cottonseed meal | 26.9% × 41.3% | **11.1%** | 41.3% of seed's share |
-| Cottonseed hulls | 26.9% × 6.6% | **1.8%** | 6.6% of seed's share |
-| Cottonseed linters | 26.9% × 6.6% | **1.8%** | 6.6% of seed's share |
-| **Total** | | **100.0%** | |
-| *Seed-derived subtotal* | *12.2 + 11.1 + 1.8 + 1.8* | *26.9%* | *= cottonseed's Stage 1 share* |
-
-**Mass cascade (primary result):**
-
-| Final co-product | Calculation | Allocation | Sub-share of seed's 61.5% |
-|-----------------|-------------|------------|--------------------------|
-| Cotton lint | Direct from Stage 1 | **38.5%** | — |
-| Cottonseed oil | 61.5% × 18.9% | **11.6%** | 18.9% of seed's share |
-| Cottonseed meal | 61.5% × 46.4% | **28.5%** | 46.4% of seed's share |
-| Cottonseed hulls | 61.5% × 27.5% | **16.9%** | 27.5% of seed's share |
-| Cottonseed linters | 61.5% × 7.3% | **4.5%** | 7.3% of seed's share |
-| **Total** | | **100.0%** | |
-| *Seed-derived subtotal* | *11.6 + 28.5 + 16.9 + 4.5* | *61.5%* | *= cottonseed's Stage 1 share* |
-
-**Cascade comparison:**
-
-| Final co-product | Economic (cascade) | Mass (cascade) | Difference |
-|-----------------|-------------------|----------------|------------|
-| Cotton lint | 73.1% | 38.5% | +34.6 pp |
-| Cottonseed oil | 12.2% | 11.6% | +0.6 pp |
-| Cottonseed meal | 11.1% | 28.5% | −17.4 pp |
-| Cottonseed hulls | 1.8% | 16.9% | −15.1 pp |
-| Cottonseed linters | 1.8% | 4.5% | −2.7 pp |
-
-**Pathway comparison (direct vs. cascade):**
-
-| Co-product | Econ — Direct (A) | Econ — Cascade (B) | Difference | Mass — Direct (A) | Mass — Cascade (B) | Difference |
-|------------|-------------------|-------------------|------------|-------------------|-------------------|------------|
-| Cotton lint | 77.7% | 73.1% | −4.6 pp | 38.5% | 38.5% | 0.0 pp |
-| Cottonseed / seed-derived | 22.3% | 26.9% | +4.6 pp | 61.5% | 61.5% | 0.0 pp |
-
-> **Key insight:** The economic allocation of lint differs between pathways (77.7% direct vs. 73.1% cascade) because cottonseed's derived value ($224.18) exceeds its market price ($174.00), increasing cottonseed's share of the larger economic pie. The mass allocation of lint is the same in both pathways (38.5%) because DM is conserved — the mass of cottonseed derivatives equals the mass of cottonseed, so the proportional split is unchanged. This asymmetry between economic and mass allocation in the cascade is the correct and expected result.
-
-### 6.4 Stage 2 Internal Allocation (reference for cascade calculations)
-
-The Stage 2 internal allocations show how the cottonseed's burden is divided among its 4 products. These are **sub-shares of the cottonseed's share**, not shares of the total seed cotton burden. They are provided here for transparency and to document the cascade calculation inputs.
-
-**Stage 2 economic allocation (internal, per tonne of cottonseed):**
+**Economic:**
 
 | Co-product | Calculation | Internal Allocation |
 |------------|-------------|-------------------|
@@ -563,7 +540,7 @@ The Stage 2 internal allocations show how the cottonseed's burden is divided amo
 | Cottonseed linters | (24.50 ÷ 373.63) × 100 | **6.6%** |
 | **Total** | | **100.0%** |
 
-**Stage 2 mass allocation (internal, per tonne of cottonseed):**
+**Mass:**
 
 | Co-product | Calculation | Internal Allocation |
 |------------|-------------|-------------------|
@@ -573,7 +550,7 @@ The Stage 2 internal allocations show how the cottonseed's burden is divided amo
 | Cottonseed linters | (0.0658 ÷ 0.9013) × 100 | **7.3%** |
 | **Total** | | **100.0%** |
 
-> **Note:** These internal allocations sum to 100% of the cottonseed's burden, not 100% of the seed cotton burden. To convert to seed cotton basis, multiply by the cottonseed's Stage 1 share: economic × 26.9%, mass × 61.5%. See Section 6.3 for the cascade results.
+> **Rounding note:** The four mass shares are 18.86%, 46.38%, 27.46% and 7.30% before rounding. Rounded independently to one decimal they sum to 100.1%. All figures in Section 6.3 are computed from unrounded values and rounded once, so the tables there sum to 100.0%.
 
 ---
 
@@ -584,14 +561,15 @@ The Stage 2 internal allocations show how the cottonseed's burden is divided amo
 | Check | Value | Status |
 |-------|-------|--------|
 | Input: Seed cotton at 90% DM | 1.000 t | — |
-| Input DM | 0.900 t | — |
-| Output: Cotton lint (as-is) | 0.380 t | ✓ |
-| Output: Whole cottonseed (as-is) | 0.600 t | ✓ |
-| Total as-is output | 0.980 t | 98.0% of input |
-| Gin trash / losses (as-is) | 0.020 t | 2.0% of input ✓ |
-| Output DM: Lint | 0.342 t | ✓ |
-| Output DM: Seed | 0.546 t | ✓ |
-| Total DM output | 0.888 t | 98.7% of input DM ✓ |
+| Input DM | 0.9000 t | — |
+| Output: Cotton lint (as-is) | 0.380 t | 38.0% of input |
+| Output: Whole cottonseed (as-is) | 0.480 t | 48.0% of input |
+| Total co-product output (as-is) | 0.860 t | 86.0% of input |
+| Gin trash (as-is) | 0.140 t | 14.0% of input |
+| Output DM: Lint | 0.3420 t | 0.380 × 0.90 |
+| Output DM: Seed | 0.4368 t | 0.480 × 0.91 |
+| Total co-product DM | 0.7788 t | 86.5% of input DM |
+| DM in gin trash | 0.1212 t | 13.5% of input DM |
 
 **Stage 1 DM Balance Detail:**
 
@@ -599,12 +577,12 @@ The Stage 2 internal allocations show how the cottonseed's burden is divided amo
 |------|-------|-------|
 | Input DM (1 t seed cotton at 90% DM) | 0.9000 t | 1.000 × 0.90 |
 | **Output DM — co-products:** | | |
-| Cotton lint | 0.3420 t | 0.38 t × 90% DM |
-| Whole cottonseed | 0.5460 t | 0.60 t × 91% DM |
-| Total co-product DM | **0.8880 t** | |
-| DM balance gap | −0.0120 t | −1.33% of input DM |
+| Cotton lint | 0.3420 t | 0.380 t × 90% DM |
+| Whole cottonseed | 0.4368 t | 0.480 t × 91% DM |
+| Total co-product DM | **0.7788 t** | |
+| DM not in a co-product | 0.1212 t | 13.5% of input DM |
 
-> **Balance assessment:** The DM output is 0.012 t (1.33%) below the DM input. This deficit represents gin trash (burrs, sticks, motes, and fine debris) that is removed during cleaning and ginning but not captured as a co-product. The 1.33% DM gap is well within the acceptable range and consistent with industry data showing 2–5% gin trash by weight (at ~60–70% DM).
+> **Balance assessment:** The 0.1212 t of dry matter that does not leave as a co-product is gin trash — burrs, sticks, leaves, motes, sand and fines removed during cleaning and lint cleaning. It is a quantified stream, not an unexplained residual: 0.140 t as-is at an implied 86.6% DM (0.1212 ÷ 0.140), which is consistent with the moisture of ginning waste. The 14.0% as-is trash fraction sits within the measured range for the US crop mix — EPA AP-42 reports about 150 lb of trash per 500-lb bale for spindle-picked cotton and about 1,000 lb per bale for stripper-harvested cotton [^14^], and ICAC puts foreign matter in seed cotton at 5–10% for spindle-harvested and 10–30% for stripper-harvested material [^17^]. Gin trash is not a co-product of this system and carries no allocation.
 
 ### 7.2 Stage 2: Cottonseed Crushing
 
@@ -648,9 +626,9 @@ The Stage 2 internal allocations show how the cottonseed's burden is divided amo
 | Input (seed cotton) | 1.000 t | — |
 | **Output:** | | |
 | Cotton lint | 0.380 t | — |
-| Whole cottonseed | 0.600 t | — |
-| **Total output** | **0.980 t** | |
-| **Gin trash / losses** | **0.020 t** | 2.0%: burrs, sticks, motes, fine debris |
+| Whole cottonseed | 0.480 t | — |
+| **Total co-product output** | **0.860 t** | |
+| **Gin trash** | **0.140 t** | 14.0%: burrs, sticks, leaves, motes, sand, fines |
 | **Balance** | **1.000 t** | ✓ Exact |
 
 **Stage 2:**
@@ -667,23 +645,33 @@ The Stage 2 internal allocations show how the cottonseed's burden is divided amo
 | **Processing losses** | **0.010 t** | 1.0%: handling, moisture loss, fines |
 | **Balance** | **1.000 t** | ✓ Exact |
 
-### 7.4 Cascade DM Balance (Pathway B, per tonne of seed cotton)
+### 7.4 Pathway B DM Balance (per tonne of seed cotton)
 
-All 5 final products on a common seed cotton basis, confirming that total DM does not exceed 1.0.
+All five final products on a common seed cotton basis.
 
 | Item | Value | Notes |
 |------|-------|-------|
 | Input DM (1 t seed cotton at 90% DM) | 0.9000 t | |
 | **Output DM — final co-products:** | | |
 | Cotton lint | 0.3420 t | 0.38 × 0.90 |
-| Cottonseed oil | 0.1020 t | 0.60 × 0.17 × 1.00 |
-| Cottonseed meal | 0.2508 t | 0.60 × 0.475 × 0.88 |
-| Cottonseed hulls | 0.1485 t | 0.60 × 0.275 × 0.90 |
-| Cottonseed linters | 0.0395 t | 0.60 × 0.07 × 0.94 |
-| **Total co-product DM** | **0.8828 t** | |
-| DM balance gap | −0.0172 t | −1.91% of input DM |
+| Cottonseed oil | 0.0816 t | 0.48 × 0.17 × 1.00 |
+| Cottonseed meal | 0.2006 t | 0.48 × 0.475 × 0.88 |
+| Cottonseed hulls | 0.1188 t | 0.48 × 0.275 × 0.90 |
+| Cottonseed linters | 0.0316 t | 0.48 × 0.07 × 0.94 |
+| **Total co-product DM** | **0.7746 t** | |
+| DM not in a co-product | 0.1254 t | 13.9% of input DM |
 
-> **Balance assessment:** The total cascade DM output is 0.8828 t, which is 1.91% below the 0.9000 t DM input. This gap combines Stage 1 losses (gin trash, 0.0120 t = 1.33% of input DM) and Stage 2 losses (processing, 0.0052 t = 0.58% of input DM). The total is well within acceptable limits.
+> **Balance assessment:** The 0.1254 t of dry matter outside the co-products decomposes into gin trash (0.1212 t, 13.5% of the DM input) and Stage 2 processing losses (0.0087 t per t cottonseed × 0.48 = 0.0042 t, 0.5% of the DM input). Gin trash accounts for 97% of the gap and is quantified in Section 7.1.
+
+**As-is cross-check (per tonne of seed cotton):**
+
+| Item | Value |
+|------|-------|
+| Cotton lint | 0.3800 t |
+| Cottonseed oil, meal, hulls, linters (0.48 × 0.990) | 0.4752 t |
+| Gin trash | 0.1400 t |
+| Stage 2 processing losses (0.48 × 0.010) | 0.0048 t |
+| **Total** | **1.0000 t** ✓ |
 
 ---
 
@@ -693,28 +681,29 @@ All 5 final products on a common seed cotton basis, confirming that total DM doe
 
 | Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t seed cotton) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t seed cotton) | Revenue (USD/t seed cotton) | Econ Alloc (%) | Mass Alloc (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|-------------|-------------|---------------|-------------|--------|-----------------|-----------------|----------------|----------------|
-| Cotton | Cotton ginning | Stage 1 | USDA AMS HVI classing | ~10% (seed cotton) | 1 t seed cotton at 90% DM | Cotton lint | 0.38 | 0.36–0.40 | 1,600 | 1,200–2,000 | 90.0 | 0.3420 | 608.00 | 77.7 | 38.5 |
-| Cotton | Cotton ginning | Stage 1 | USDA AMS HVI classing | ~10% (seed cotton) | 1 t seed cotton at 90% DM | Whole cottonseed | 0.60 | 0.58–0.62 | 290 | 200–380 | 91.0 | 0.5460 | 174.00 | 22.3 | 61.5 |
+| Cotton | Cotton ginning | Stage 1 | USDA AMS HVI classing | ~10% (seed cotton) | 1 t seed cotton at 90% DM | Cotton lint | 0.380 | 0.36–0.40 | 1,600 | 1,200–2,000 | 90.0 | 0.3420 | 608.00 | 81.4 | 43.9 |
+| Cotton | Cotton ginning | Stage 1 | USDA AMS HVI classing | ~10% (seed cotton) | 1 t seed cotton at 90% DM | Whole cottonseed | 0.480 | 0.45–0.51 | 290 | 200–380 | 91.0 | 0.4368 | 139.20 | 18.6 | 56.1 |
+| | | | | | | **Total** | | | | | | **0.7788** | **747.20** | **100.0** | **100.0** |
 
-**Pathway B: Cottonseed crushed (Stage 1 + Stage 2 cascade)**
+**Pathway B: Cottonseed crushed (five final products)**
 
-All values below are on a **per-tonne-of-seed-cotton basis** for consistency. Stage 2 yields, DM outputs, and revenues are converted from the per-cottonseed basis (Section 4.2) by multiplying by the cottonseed yield (0.60 t seed/t seed cotton). The Stage 2 products' allocations are sub-shares of the cottonseed's 26.9% (economic) or 61.5% (mass), and their sum never exceeds the cottonseed's share.
+All values are on a **per-tonne-of-seed-cotton basis**. Stage 2 yields, DM outputs and revenues are converted from the per-cottonseed basis (Section 4.2) by multiplying by the cottonseed yield (0.48 t seed/t seed cotton). Every row shares one denominator, so the allocation columns sum across all five rows — this is the direct end-of-chain treatment set out in Section 6.1.
 
-| Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t seed cotton) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t seed cotton) | Revenue (USD/t seed cotton) | Econ Alloc — cascade (%) | Mass Alloc — cascade (%) |
+| Parent Crop | Crop System | Stage | USDA Standard | Standard Moisture | Parent Input Basis | Co-product Stream | Yield (t/t seed cotton) | Yield Range | Price (USD/t) | Price Range | DM (%) | DM Output (t/t seed cotton) | Revenue (USD/t seed cotton) | Econ Alloc (%) | Mass Alloc (%) |
 |-------------|-------------|-------|---------------|-------------------|-------------------|-------------------|-------------|-------------|---------------|-------------|--------|-----------------|-----------------|----------------|----------------|
-| Cotton | Cotton ginning | Stage 1 | USDA AMS HVI classing | ~10% (seed cotton) | 1 t seed cotton | Cotton lint | 0.380 | 0.36–0.40 | 1,600 | 1,200–2,000 | 90.0 | 0.3420 | 608.00 | 73.1 | 38.5 |
-| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed oil | 0.102 | 0.096–0.108 | 1,000 | 800–1,200 | 100.0 | 0.1020 | 102.00 | 12.2 (= 26.9% × 45.5%) | 11.6 (= 61.5% × 18.9%) |
-| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed meal | 0.285 | 0.270–0.300 | 325 | 250–400 | 88.0 | 0.2508 | 92.63 | 11.1 (= 26.9% × 41.3%) | 28.5 (= 61.5% × 46.4%) |
-| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed hulls | 0.165 | 0.150–0.180 | 90 | 60–120 | 90.0 | 0.1485 | 14.85 | 1.8 (= 26.9% × 6.6%) | 16.9 (= 61.5% × 27.5%) |
-| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed linters | 0.042 | 0.030–0.054 | 350 | 200–500 | 94.0 | 0.0395 | 14.70 | 1.8 (= 26.9% × 6.6%) | 4.5 (= 61.5% × 7.3%) |
-| | | | | | | **Seed-derived subtotal** | | | | | | | | **26.9** (= cottonseed's Stage 1 share) | **61.5** (= cottonseed's Stage 1 share) |
-| | | | | | | **Total** | | | | | | **0.8828** | **832.18** | **100.0** | **100.0** |
+| Cotton | Cotton ginning | Stage 1 | USDA AMS HVI classing | ~10% (seed cotton) | 1 t seed cotton | Cotton lint | 0.3800 | 0.360–0.400 | 1,600 | 1,200–2,000 | 90.0 | 0.3420 | 608.00 | 77.2 | 44.2 |
+| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed oil | 0.0816 | 0.0768–0.0864 | 1,000 | 800–1,200 | 100.0 | 0.0816 | 81.60 | 10.4 | 10.5 |
+| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed meal | 0.2280 | 0.2160–0.2400 | 325 | 250–400 | 88.0 | 0.2006 | 74.10 | 9.4 | 25.9 |
+| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed hulls | 0.1320 | 0.1200–0.1440 | 90 | 60–120 | 90.0 | 0.1188 | 11.88 | 1.5 | 15.3 |
+| Cotton | Cottonseed crushing | Stage 2 | NCPA specifications | ~9% (whole cottonseed) | 1 t seed cotton | Cottonseed linters | 0.0336 | 0.0240–0.0432 | 350 | 200–500 | 94.0 | 0.0316 | 11.76 | 1.5 | 4.1 |
+| | | | | | | **Seed-derived subtotal** | 0.4752 | | | | | 0.4326 | 179.34 | **22.8** | **55.8** |
+| | | | | | | **Total** | | | | | | **0.7746** | **787.34** | **100.0** | **100.0** |
 
-> **Key principle:** The 4 Stage 2 cascade allocations always sum to the cottonseed's Stage 1 share. For economic allocation: 12.2 + 11.1 + 1.8 + 1.8 = 26.9%. For mass allocation: 11.6 + 28.5 + 16.9 + 4.5 = 61.5%. This ensures that the crushing products never claim more burden than the cottonseed itself carries.
+> **Basis conversion note:** Stage 2 yields above are on a seed cotton basis (for example, oil 0.0816 = 0.48 × 0.17). On the per-cottonseed basis the yields are oil 0.17, meal 0.475, hulls 0.275 and linters 0.07 t/t cottonseed (Section 4.2). Yield ranges are converted the same way (oil 0.0768–0.0864 = 0.48 × 0.16–0.18). Stage 2 figures are carried at four decimals so that the seed cotton basis reproduces the per-cottonseed yields exactly. DM outputs and revenues are all on the seed cotton basis and can be summed down the column without a basis inconsistency.
 
-> **Basis conversion note:** Stage 2 yields above are on a seed cotton basis (e.g., Oil 0.102 = 0.60 × 0.17). The per-cottonseed basis yields are: Oil 0.17, Meal 0.475, Hulls 0.275, Linters 0.07 t/t cottonseed (see Section 4.2). Yield ranges above are also on seed cotton basis (e.g., Oil 0.096–0.108 = 0.60 × 0.16–0.18). All DM outputs and revenues are on seed cotton basis, so they can be summed across all rows without basis inconsistency.
+> **Stage 2 internal allocations (for reference):** Within Stage 2 the cottonseed's own burden divides as oil 45.5%/18.9%, meal 41.3%/46.4%, hulls 6.6%/27.5%, linters 6.6%/7.3% (economic/mass), on the per-cottonseed basis. These are not the final allocations; Section 6.4 explains their role.
 
-> **Stage 2 internal allocations (for reference):** Within Stage 2, the cottonseed's burden is divided as: Oil 45.5%/18.9%, Meal 41.3%/46.4%, Hulls 6.6%/27.5%, Linters 6.6%/7.3% (economic/mass). These internal percentages are the basis for the cascade calculation but are NOT the final allocations — they must be multiplied by the cottonseed's Stage 1 share (26.9% economic, 61.5% mass) to convert to seed cotton basis.
+> **Gin trash:** 0.140 t as-is (0.1212 t DM) per tonne of seed cotton leaves the gin as trash. It is not a co-product, receives no allocation, and is excluded from both denominators. It is quantified in Section 7.1.
 
 ---
 
@@ -724,13 +713,12 @@ All values below are on a **per-tonne-of-seed-cotton basis** for consistency. St
 
 | Data Point | Confidence | Source |
 |------------|-----------|--------|
-| Lint yield (0.38 t/t) | **High** | Well-documented; midpoint of narrow range [^1^][^6^] |
-| Seed yield (0.60 t/t) | **High** | Well-documented; midpoint of narrow range [^1^][^6^] |
+| Lint yield (0.38 t/t) | **High** | Gin turnout is directly measured and consistently reported [^1^][^6^][^12^] |
 | Oil yield (0.17 t/t) | **High** | Well-documented for solvent extraction [^7^][^10^] |
 | Oil DM% (100%) | **High** | Pure lipid with negligible moisture |
 | Meal DM% (88%) | **High** | Industry trading specification (max 12% moisture) [^10^] |
 | Lint price ($1,600/t) | **High** | Well-documented commodity with transparent pricing [^3^] |
-| DM balances (1.3% and 0.96%) | **High** | Well within acceptable range |
+| Seed-to-lint ratio (1.26) | **High** | Three consecutive years of national production data agree to within 0.03, and independently measured gin turnouts agree to within 0.03 [^11^][^12^] |
 
 ### 9.2 Medium-Confidence Data
 
@@ -742,6 +730,8 @@ All values below are on a **per-tonne-of-seed-cotton basis** for consistency. St
 | Hulls yield (0.275 t/t) | **Medium** | Depends on degree of dehulling (partial vs. complete) |
 | Hulls price ($90/t) | **Medium** | Low-value product with limited price transparency |
 | Meal yield (0.475 t/t) | **Medium** | Depends on protein specification and hull blend |
+| Seed yield (0.48 t/t) | **Medium-High** | The ratio it derives from is well constrained, but published sources still carry the older 1.62 figure, so the literature is split. Section 4.1 gives both. |
+| Gin trash (0.14 t/t) | **Medium** | Set as the residual and cross-checked against measured gin waste; varies widely with harvest system, from roughly 0.08 for spindle-picked to over 0.20 for stripper-harvested cotton [^14^][^17^] |
 
 ### 9.3 Known Limitations
 
@@ -755,42 +745,43 @@ All values below are on a **per-tonne-of-seed-cotton basis** for consistency. St
 
 3. **Gossypol toxicity limits feed use:** Cottonseed products contain gossypol, a naturally occurring polyphenolic compound that is toxic to monogastric animals (poultry, swine) at high concentrations. This limits the use of cottonseed meal primarily to ruminant feed (cattle, sheep). Gossypol also limits the use of whole cottonseed as feed. The gossypol content affects market prices and demand patterns, particularly for meal. Solvent extraction and meal toasting reduce free gossypol levels, but the residual levels still restrict end markets.
 
-4. **Lint quality affects price:** Cotton lint prices vary dramatically with quality (staple length, micronaire, strength, color grade, leaf grade). The $1,600/t midpoint reflects average-quality upland cotton. Premium cotton (long staple, high micronaire, clean) can exceed $2,000/t, while discounted cotton (short staple, low micronaire, high trash) can fall below $1,200/t. The economic allocation is sensitive to lint price: under Pathway A, if lint price drops to $1,200/t, lint's economic allocation drops from 77.7% to ~72%; under Pathway B (cascade), the same price drop reduces lint's allocation from 73.1% to ~67%.
+4. **Lint quality affects price:** Cotton lint prices vary dramatically with quality (staple length, micronaire, strength, color grade, leaf grade). The $1,600/t midpoint reflects average-quality upland cotton. Premium cotton (long staple, high micronaire, clean) can exceed $2,000/t, while discounted cotton (short staple, low micronaire, high trash) can fall below $1,200/t. The economic allocation is sensitive to lint price: under Pathway A, if the lint price drops to $1,200/t, lint's economic allocation falls from 81.4% to ~76.6%; under Pathway B the same drop takes it from 77.2% to ~71.8%.
 
-5. **Cottonseed as cattle feed (dual pathway):** Whole cottonseed is a significant cattle feed product, especially for dairy rations (high energy from oil, high protein, effective fiber). In practice, a substantial fraction of cottonseed is fed directly rather than crushed — the split varies by region (more crushing near oil mills, more direct feeding near dairy operations) and season. This document presents both pathways explicitly (see Sections 6.1–6.3 and 8): Pathway A (seed used directly) and Pathway B (seed crushed). LCA practitioners must select the pathway that matches their specific system boundary. If a study covers a mixed system where some seed is fed and some is crushed, a weighted average of the two pathway allocations may be appropriate.
+5. **Cottonseed as cattle feed (dual pathway):** Whole cottonseed is a significant cattle feed product, especially for dairy rations (high energy from oil, high protein, effective fiber). In practice, a substantial fraction of cottonseed is fed directly rather than crushed — the split varies by region (more crushing near oil mills, more direct feeding near dairy operations) and season. This document presents both pathways explicitly (Sections 6.1–6.3 and 8). A given tonne of seed follows one pathway or the other, so the two factor sets are alternatives, not a double count. Practitioners should select the pathway matching their system boundary, or weight the two by the share of seed crushed in the region modelled.
 
-6. **Regional variation:** Cotton ginning and crushing are concentrated in the US South and West (Texas, Georgia, Arkansas, Mississippi, California). Prices, yields, and gin trash composition vary by region due to variety differences, growing conditions, and proximity to end markets. Texas cotton typically has lower lint turnout (~36–38%) than Mississippi Delta cotton (~38–42%).
+6. **Regional variation:** Cotton ginning and crushing are concentrated in the US South and West (Texas, Georgia, Arkansas, Mississippi, California). Prices, yields and gin trash vary by region with variety, growing conditions, harvest system and proximity to end markets. The harvest system matters most for the mass balance: stripper-harvested cotton, which dominates the Texas High Plains, delivers far more foreign matter to the gin than spindle-picked cotton, so gin trash can range from under 0.10 to over 0.20 t/t seed cotton around the 0.14 adopted here [^12^][^14^][^17^]. The seed-to-lint ratio is far more stable across regions than the trash fraction, which is why the seed yield is derived from that ratio rather than from a turnout figure directly.
 
 7. **Organic and non-GMO cotton:** Organic and non-GMO cotton lint commands a significant premium (~$300–800/t above conventional), and organic cottonseed products may also have higher prices. This table uses conventional cotton prices. Studies focused on organic cotton should use organic-specific pricing.
 
 8. **Cottonseed oil as a byproduct vs. co-product:** In some economic frameworks, cottonseed oil is treated as a byproduct (with meal as the primary product) because the crushing decision is driven by meal demand rather than oil demand. This distinction affects the interpretation of economic allocation but does not change the calculation method. Under the co-product framework used in this review, all products with market value are treated equally.
 
+9. **Seed-to-lint ratio is still moving:** Lint percent has been rising steadily and cottonseed per bale falling with it [^13^][^16^]. The 1.26 ratio adopted here reflects the 2023–2025 crops. Studies covering earlier crop years should use a ratio contemporaneous with their data; the sensitivity in Section 4.1 gives the result at the long-standing 1.62 figure.
+
+
 ---
-## 10. System Boundary Assumption and Alternative Cascade Approach
+## 10. System Boundary Assumption and the Alternative Sequential Treatment
 
 ### 10.1 Assumption: Single Integrated Processing Block
 
-This methodology models the entire cotton processing chain—ginning and cottonseed crushing—as a **single, integrated processing block**. The system boundary is defined at the point where seed cotton enters the gin and extends to the point where all final, marketable co-products exit the system (lint, oil, meal, hulls, and linters).
+This methodology models the cotton processing chain — ginning and cottonseed crushing — as a **single integrated processing block**. The system boundary opens where seed cotton enters the gin and closes where the marketable co-products leave: lint and whole cottonseed under Pathway A, and lint, oil, meal, hulls and linters under Pathway B.
 
-Under this assumption, economic allocation is applied to the combined set of final co-products using their final market values (see Section 8). This results in a lint allocation of **73.1%** (economic) for the overall system burden.
+Within one block, all final products compete for one denominator. That is the direct end-of-chain treatment set out in Section 6.1, and it gives lint **77.2%** of the economic burden and **44.2%** of the mass burden under Pathway B.
 
 ### 10.2 Alternative: Sequential Unit Process Boundary
 
-If the system were modeled as **two separate unit processes** (Ginning Process 1 and Crushing Process 2), the allocation would follow a different, cascade-based logic:
+A study that models the gin and the crusher as **two separate unit processes** would instead cascade at the market price of the intermediate, exactly as this review does for barley, rice and peanut:
 
-- **Process 1 (Ginning):** The upstream ginning burden would be allocated between lint (final product) and whole cottonseed (intermediate product). Under ISO 14044, allocation at this divergence point would use the **market price of whole cottonseed** ($290/t) rather than the derived value of the crushed products. This would result in lint receiving approximately **77.7%** of the ginning burden.
-- **Process 2 (Crushing):** The seed’s share of the ginning burden (22.3%) would be cascaded into the crusher and then subdivided among oil, meal, hulls, and linters based on their relative Stage 2 revenues.
+- **Process 1 (Ginning):** the ginning burden is divided between lint and whole cottonseed using the seed's market price of $290/t. Lint receives **81.4%** and the seed **18.6%** (economic); on a mass basis, 43.9% and 56.1%. These are the Pathway A figures of Section 6.2 — Pathway A and the first stage of a market-price cascade are the same calculation.
+- **Process 2 (Crushing):** the seed's 18.6% is then subdivided among oil, meal, hulls and linters in proportion to their Stage 2 revenues (Section 6.4), giving oil 8.5%, meal 7.7%, hulls 1.2% and linters 1.2% of the total chain burden.
 
-The alternative sequential approach is methodologically valid for process-level LCA studies where ginning and crushing have distinct emission factors, energy sources, and waste streams (e.g., gin trash vs. hexane emissions).
+The difference from the integrated-block result is not a rounding artefact. Under the sequential treatment the seed side carries 18.6% of the economic burden however the seed is used; under the integrated-block treatment it carries 22.8% when it is crushed, because the products it becomes are worth $179.34 against the seed's own $139.20. Both are defensible; they answer different questions.
 
-### 10.3 Justification for the Chosen Approach
+### 10.3 Why the Integrated Block Is Used Here
 
-The **single integrated block** approach is selected as the primary methodology for this document because:
+1. **Whole cottonseed is a final product of this study.** It is a major dairy feed and carries its own allocation factor (Pathway A). Its $290/t is the price in a competing end use, not a transfer price into the crush — the point developed in Section 6.1. This is what distinguishes cotton from the other two-stage crops in this review, where the intermediate is consumed entirely by the next stage.
 
-1. **Vertically Integrated Supply Chain:** In practice, a significant portion of U.S. cottonseed moves directly from the gin to the crusher without entering the open market as a separate transaction, effectively acting as an internal transfer. Modeling the chain as a single block reflects this operational reality.
+2. **Much cottonseed never transacts at a market price.** A substantial share moves from gin to crusher as an internal transfer, so the spot price would be doing work the physical system does not support.
 
-2. **Avoids Arbitrary Intermediate Pricing:** Whole cottonseed spot prices are volatile and vary regionally based on dairy demand and crushing capacity. Using them to split upstream burdens would introduce unnecessary uncertainty and market dependency into the environmental allocation without improving the physical accuracy of the mass balance.
+3. **The practitioner's question is about final products.** Attributing burden to what leaves the system boundary is the usual goal, and one denominator across all five products is the direct way to get there.
 
-3. **Final Products as the System Outputs:** The LCA practitioner's goal is typically to attribute environmental burden to the final products that leave the system boundary. Treating the entire processing chain as a single system ensures that all five final co-products are competing for the same total economic pie, providing a consistent and straightforward basis for allocation.
-
-> **Guidance for LCA Practitioners:** If your specific LCA model requires separate process modules for the gin and crusher (e.g., because you have process-specific emission factors), you should adopt the sequential cascade logic described in Section 10.2. The allocation factors for that alternative approach are provided for reference in the notes accompanying Section 8. However, for the purposes of this document and its primary data table, the single integrated block approach (lint at 73.1%) is the recommended default.
+> **Guidance for LCA practitioners:** If your model requires separate process modules for the gin and the crusher — because you hold distinct emission factors, energy sources or waste streams for each, such as gin trash against hexane emissions — use the sequential cascade of Section 10.2. For the primary data table in this document, the integrated block applies and lint carries 77.2% (economic) and 44.2% (mass) under Pathway B.
